@@ -1,0 +1,581 @@
+
+
+<div class="row main_de">
+        <div id="content_page" class="col-sm-12 col-xs-12 col-lg-12">
+            <div class="row product-info quick">
+              <div class="col-lg-5 col-sm-5 col-xs-12 image_zoo">
+                <div class="row product_zoom" ng-controller="EZPlusCtrl" ng-init="setApproot('');zoom01=false;zoom01a=false;zoom03=false;zoom04=false;">
+                    <div class="col-lg-10 pull-right">
+                    <div class="image">
+                  
+
+               <img 
+                 src="images/mobile/mo_img.jpg"
+                 data-zoom-image="images/mobile/mo_img.jpg"
+
+                 ez-plus
+                 ezp-model="zoomModelGallery01"
+                 ezp-options="zoomOptionsGallery01"
+                />
+                    
+
+            
+                     </div>
+                    <div class="center-block text-center">
+                    
+                    <span class="zoom-gallery"><i class="fa fa-search"></i> Mouse over to zoom in</span></div>
+                    
+                    </div>
+                    <div class="col-lg-2 pull-left">
+                        <!-- <div class="image-additional" id="gallery_01"> 
+                         <a class="thumbnail" href="#" data-zoom-image="images/mobile/mo_big1.jpg" data-image="images/mobile/mo_big1.jpg" title="Laptop Silver black">
+                 <img src="images/mobile/mo_sm1.png" title="Laptop Silver black" alt = "Laptop Silver black"/></a>
+                 
+                  <a class="thumbnail" href="#" data-zoom-image="images/mobile/mo_big1.jpg" data-image="images/mobile/mo_big1.jpg" title="Laptop Silver black">
+                  <img src="images/mobile/mo_sm2.png" title="Laptop Silver black" alt="Laptop Silver black" /></a> 
+                  <a class="thumbnail" href="#" data-zoom-image="images/product/macbook_air_2-500x500.jpg" data-image="image/product/macbook_air_2-350x350.jpg" title="Laptop Silver black"><img src="images/mobile/mo_sm3.png" title="Laptop Silver black" alt="Laptop Silver black" /></a> <a class="thumbnail" href="#" data-zoom-image="images/product/macbook_air_3-500x500.jpg" data-image="image/product/macbook_air_3-350x350.jpg" title="Laptop Silver black"><img src="images/mobile/mo_sm4.png" title="Laptop Silver black" alt="Laptop Silver black" /></a> </div>-->
+                   <div id="gallery_01">
+                            <a class="img-group-01"
+                               ng-repeat="image2 in imagesForGallery"
+                               ng-click="setActiveImageInGallery('zoomModelGallery01',image2);"
+            
+                               data-image="{{approot}}{{image2.small}}"
+                               data-zoom-image="{{approot}}{{image2.large}}"
+            
+                               href="javascript:void(0)">
+                                <img ng-src="{{approot}}{{image2.thumb}}"/>
+                            </a>
+                        </div>
+                  		
+                    </div>
+                  </div>
+                  <div class="row pro_descr"> 
+                      <div class="col-lg-12">
+                        <h5>Description:</h5>
+                        <p>Easy multitasking with faster SJ1.5's Quad-core MediaTek processor, 
+Stay connected, always ready with 3,000 mAh battery,  SJ1.5 comes with 16GB of internal storage and a MicroSD™ tray, Dual SIM, Know your position with an A-GPS sensor that helps navigate</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-7 cont_are">
+              <div class="set_pa">
+              <h3 class="title" itemprop="name">Obi Worldphone SJ5.1 Dual Sim 16 GB Smartphone</h3>
+                <div class="rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                  <meta itemprop="ratingValue" content="0" />
+                 <p>
+                   <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                   <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                   <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                   <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                   <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> 
+                   <span class="rev_c">(105)</span>                                   
+                  
+                  <a  href="javascript:void(0)" onClick="$('a[href=\'#tab-review\']').trigger('click'); return false;" ng-click="scrollTo('review_tab')"><span itemprop="reviewCount" >reviews <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                  
+                  </a> | <a onClick="$('a[href=\'#tab-review\']').trigger('click'); return false;" href="#"><b>160 already sold</b></a></p>
+                </div>
+                <hr>
+                
+                <ul class="list-unstyled price_pro">
+                  <li>Price:</li>
+                  <li class="price">
+                  <span class="price-old">Rs.1,202.00</span>
+                  <span itemprop="price">Rs.1,142.00</span>
+                  <span class="label label-danger">3% Off</span>
+                   </li>
+                </ul>
+                
+                
+                <div class="price-box detail_ca">
+                  <div class="row">
+                      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                      Color:
+                      </div>
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="btn btn-default">Black</a></li>
+                                <li><a href="#" class="btn btn-default">Red</a></li>
+                                <li><a href="#" class="btn btn-default">Blue</a></li>
+                            </ul>
+                          </div>
+                   </div>
+                 <div class="row">
+                      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                      Size:
+                      </div>
+                       <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                       <ul class="list-unstyled">
+                            <li><a href="#" class="btn btn-default">S</a></li>
+                            <li><a href="#" class="btn btn-default">M</a></li>
+                            <li><a href="#" class="btn btn-default">L</a></li>
+                            <li><a href="#" class="btn btn-default">XL</a></li>
+                            <li><a href="#" class="btn btn-default">XXL</a></li>
+                        </ul>
+                      </div>
+                   </div>
+                  <div class="row">
+                      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                      Quantity:
+                      </div>
+                      <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                     <div class="qty">
+                        
+                        <input type="text" name="quantity" value="1" size="2" id="input-quantity" class="form-control" />
+                     
+                            <a class="qtyBtn plus" href="javascript:void(0);">+</a>
+                            <a class="qtyBtn mines" href="javascript:void(0);">-</a>
+                       
+                        <div class="clear"></div>
+                      </div>
+                  </div>
+                  
+                  </div>
+                  <div class="row">
+                      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">Shiping:</div>
+                       <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 ship_are">
+                       <label>Rs 150 to
+                       <button id="ship_button" ui-sref="Modal.shiping">Forgot Password?
+                       
+                       <span>Kathmandu Inside Ring Road via SID Standard Delivery</span><i class="fa fa-angle-down" aria-hidden="true"></i></button> </label>
+                       <p>Estimated Delivery Time: 1-3 days (ships out within 3 business days)</p>
+                       </div>
+                      
+                </div>
+                </div>
+               
+                <div class="row but_sec">
+                 
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                  <button type="button" id="button-cart" class="btn btn-primary btn-lg btn-block ">Buy Now</button>
+                  <ul class="list-unstyled favor">
+                    <li><a href="#"> <i class="fa fa-heart"></i> <span>Add to Favourite</span></a> </li>
+                    <li><a href="#"><img src="images/compare.png"><span>Compare</span></a> </li>
+                  </ul>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                      <div class="coup">
+                        <h4>COUPON</h4>
+                        <p>Get<span> 5% discount</span> per Rs. 1500</p>
+                      </div>
+                  </div>
+                  
+                </div>
+                <div class="row pro_sec">
+                 
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="product_de text-center">
+                        <h4>Seller Information</h4>
+                        <img src="images/product/mic.png" alt="product" />
+                        <b>obiw</b>
+                        <span class="pro_titl">Selling for 2 years</span>
+                        <p class="rating">
+                   <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                   <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                   <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                   <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                   <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> 
+                   <span class="rev_c">(10)</span></p> 
+                   <p class="veri_class"> <a href="#"><img src="images/checkd.png" alt="check" /> Verified by SID [?]</a></p>
+                        
+                    </div>
+                  </div>
+                   <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 set_us">
+                        <div class="user_sec1">
+                            
+                                <ul class="list-unstyled">
+                                    <li>
+                                    <a href="#" ><img src="images/store.png" />Visit Store </a>
+                                    </li>
+                                    <li>
+                                    <a href="#" ><img src="images/user_ plus.png" />  Follow Seller</a>
+                                    </li>
+                                    <li>
+                                    <a href="#" ><img src="images/chart.png" />Chat with Seller</a>
+                                    </li>
+                                </ul>
+                          
+                        </div>
+                        <div class="list_user">
+                         <h5>This Seller has <span>30 followers</span></h5>
+                         <ul class="list-unstyled list_data">
+                         <li><img src="images/user_ico/user1.jpg" alt="user" /></li>
+                         <li><img src="images/user_ico/user2.jpg" alt="user" /></li>
+                         <li><img src="images/user_ico/user3.jpg" alt="user" /></li>
+                         <li><img src="images/user_ico/user4.jpg" alt="user" /></li>
+                         <li><img src="images/user_ico/user5.jpg" alt="user" /></li>
+                         <li><img src="images/user_ico/user6.jpg" alt="user" /></li>
+                         <li><img src="images/user_ico/user7.jpg" alt="user" /></li>
+                         <li><img src="images/user_ico/user8.jpg" alt="user" /></li>
+                         <li><img src="images/user_ico/user5.jpg" alt="user" /></li>
+                         <li><img src="images/user_ico/userN.jpg" alt="user" /></li>
+                         <li><img src="images/user_ico/userH.jpg" alt="user" /></li>
+                         <li><img src="images/user_ico/user9.jpg" alt="user" /></li>
+                         <li><img src="images/user_ico/user10.jpg" alt="user" /></li>
+                         <li><img src="images/user_ico/user11.jpg" alt="user" /></li>
+                         <li><img src="images/user_ico/user12.jpg" alt="user" /></li>
+                         <li><img src="images/user_ico/user13.jpg" alt="user" /></li>
+                         <li><img src="images/user_ico/user14.jpg" alt="user" /></li>
+                         <li><img src="images/user_ico/user15.jpg" alt="user" /></li>
+                         <li><img src="images/user_ico/user16.jpg" alt="user" /></li>
+                         <li><img src="images/user_ico/user17.jpg" alt="user" /></li>
+                         <li><img src="images/user_ico/user18.jpg" alt="user" /></li>
+                         <li><img src="images/user_ico/user19.jpg" alt="user" /></li> 
+                          <li><img src="images/user_ico/user3.jpg" alt="user" /></li>
+                         <li><img src="images/user_ico/user20.jpg" alt="user" /></li>
+                         <li><img src="images/user_ico/user21.jpg" alt="user" /></li>
+                         <li><img src="images/user_ico/user22.jpg" alt="user" /></li>
+                         <li><img src="images/user_ico/user23.jpg" alt="user" /></li>
+                         <li><img src="images/user_ico/user8.jpg" alt="user" /></li>
+                         <li><img src="images/user_ico/user5.jpg" alt="user" /></li>
+                         <li><img src="images/user_ico/user22.jpg" alt="user" /></li>
+                             
+                             
+                         </ul>
+                        </div>
+                   </div>
+               </div>
+              
+               </div>
+              </div>
+            </div>
+        </div>
+    <br>
+    
+  </div>
+
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 slid_pa">
+<div class = "panel panel-default">
+       <div class = "panel-heading">
+          <h3 class = "panel-title">Top Selling Products From This Seller</h3>
+       </div>
+       
+       <div class = "panel-body left_con1">
+               <data-owl-carousel id="carousel_25" class="owl-carousel pro about-carousel" data-options="{autoPlay: 5000, stopOnHover: true,  
+        slideSpeed : 300, paginationSpeed : 400,pagination:true, singleItem : true,navigation :false}" >
+              <div owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_phons">
+              
+                    <div class="product-thumb clearfix">
+                    
+                        <div class="image deta_img">
+                            <a href="#"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="" class="img-responsive" border="0" /></a>                        </div>
+                        <div class="caption">
+                            <h4><a href="#">{{slid_data.title}}</a></h4>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-12">
+                                    <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> </div>
+                                </div>                            
+                                <div class="col-xs-12 col-md-12">
+                                    <p class="price"> {{slid_data.price}}  </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+              </div>           
+       
+      </data-owl-carousel>
+      </div>
+</div>
+
+<div class="row">
+ <div class="col-lg-12">
+    <div class = "panel panel-default">
+       <div class = "panel-heading">
+          <h3 class = "panel-title">Promotional</h3>
+       </div>
+       
+       <div class = "panel-body left_con">
+          <span>UseCoupon: SIDPTshirt</span>
+          <p> Additional 10% Discount on buying 3 Print Tshirts</p>
+       </div>
+        <div class = "panel-body left_con">
+          <span>Get Free Gifts on Hisense</span>
+          <p>  Televisions Euro Cup Giveaways. Grab The offers Now!</p>
+       </div>
+        <div class = "panel-body left_con">
+          <span>Free Gold Coin + Memory Card </span>
+          <p>Get Offer with purchase of every AQUA STAR II 16GB Intex Mobile. Hurry!</p>
+       </div>
+    </div>
+ </div> 
+</div>
+</div>
+<div class="col-lg-10 col-md-10 col-sm-8 col-xs-12">
+
+<div class="row">
+     <div  class="col-sm-12 col-xs-12 col-lg-12">
+    <ul class="nav nav-tabs tab_con">
+      <li class="active"><a data-toggle="tab" href="#tab-description">Feature</a></li>
+      <li><a data-toggle="tab" href="#tab-specification">Product Details</a></li>
+      <li id="review_tab"><a data-toggle="tab" href="#tab-review">Reviews</a></li>
+       <li><a data-toggle="tab" href="javascript:void(0)">Seller Guarantees</a></li>
+    </ul>
+    <div class="tab-content detail_content">
+      <div itemprop="description" id="tab-description" class="tab-pane in active fade">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+             <div class="produ_con main_con">
+             <h3>Designed for living</h3>
+             <p>Obi Worldphone SJ1.5 is built to go with you. The beautifully designed slim body is supercharged with long battery life, screen protection and never fail reliability. SJ1.5 gives you everything you need to be on top of it all.</p>
+             </div>
+            </div> 
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="image">
+                <img src="images/mobile/tab_mo1.jpg" class="img-responsive" alt="image1" />
+            </div>
+            </div>
+         
+        </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="image main_con2">
+                    <img src="images/mobile/tab_mo2.jpg" class="img-responsive" alt="image1" />
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+             <div class="produ_con main_con2 conte">
+             <h3>Distinctive style</h3>
+             <p>You can recognise Obi Worldphone SJ1.5 from across the room. Quality materials, carefully applied splashes of color and extra sharp finishes show off your smart choice. An instantly recognisable shape breaks the mold. With a crisp, squared-off top and a curved bottom that gives it a distinctive look and feel, SJ1.5 is modern fun that never grows old. </p>
+             </div>
+         
+        </div>
+        </div> 
+          <div class="row text-center">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+             <div class="produ_con main_con3">
+             <h3>Ahead of the curve</h3>
+             <p>Obi Worldphone SJ1.5 has a vivid curved glass display, built flush with the body for a comfortable feel. The brilliant 5" 
+high-definition screen is made for multimedia. Enjoy video, images and games in excellent clarity everywhere you go protected by scratch-resistant Corning® Gorilla® Glass 3. 5"High-Definition(1280 x 720 pixels) IPSIn-plane switching -accurate color at any angle.  </p>
+             </div>
+                <div class="image cent_img">
+                    <img src="images/mobile/tab_mo3.jpg" class="img-responsive" alt="image1" />
+                </div>
+            </div>
+           
+        </div> 
+          <div class="row text-center">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                 <div class="produ_con main_hea">
+                 <h3>Sharp design. Sharper photos</h3>
+                 </div>
+             </div>
+           </div>
+          <div class="row text-center">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                 <div class="produ_con main_con2">
+                 <h4>8MP camera with LED flash </h4>
+                 <p>An OmniVision sensor delivers best-in-class pixel performance while using less power. </p>
+                 </div>
+             </div>
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                 <div class="produ_con main_con2">
+                 <h4>5MP front-facing camera</h4>
+                 <p>For crystal clear video chat and better Selfies </p>
+                 </div>
+             </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+             
+                <div class="image cent_img">
+                    <img src="images/mobile/tab_mo4.jpg" class="img-responsive" alt="image1" />
+                </div>
+            </div>
+           
+        </div>
+      </div>
+      <div id="tab-specification" class="tab-pane fade">
+       
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <td colspan="2"><strong>Memory</strong></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>test 1</td>
+              <td>8gb</td>
+            </tr>
+          </tbody>
+          </table>
+        <table class="table table-bordered">
+        <thead>
+            <tr>
+              <td colspan="2"><strong>Processor</strong></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>No. of Cores</td>
+              <td>1</td>
+            </tr>
+          </tbody>
+        </table>
+     
+      </div>
+      <div id="tab-review" class="tab-pane fade">
+        <form class="form-horizontal">
+          <div id="review">
+            <div>
+              <table class="table table-striped table-bordered">
+                <tbody>
+                  <tr>
+                    <td style="width: 50%;"><strong><span>harvey</span></strong></td>
+                    <td class="text-right"><span>20/01/2016</span></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> </div></td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table-striped table-bordered">
+                <tbody>
+                  <tr>
+                    <td style="width: 50%;"><strong><span>Andrson</span></strong></td>
+                    <td class="text-right"><span>20/01/2016</span></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="text-right"></div>
+          </div>
+          <h2>Write a review</h2>
+          <div class="form-group required">
+            <div class="col-sm-12">
+              <label for="input-name" class="control-label">Your Name</label>
+              <input type="text" class="form-control" id="input-name" value="" name="name">
+            </div>
+          </div>
+          <div class="form-group required">
+            <div class="col-sm-12">
+              <label for="input-review" class="control-label">Your Review</label>
+              <textarea class="form-control" id="input-review" rows="5" name="text"></textarea>
+              <div class="help-block"><span class="text-danger">Note:</span> HTML is not translated!</div>
+            </div>
+          </div>
+          <div class="form-group required">
+            <div class="col-sm-12">
+              <label class="control-label">Rating</label>
+              &nbsp;&nbsp;&nbsp; Bad&nbsp;
+              <input type="radio" value="1" name="rating">
+              &nbsp;
+              <input type="radio" value="2" name="rating">
+              &nbsp;
+              <input type="radio" value="3" name="rating">
+              &nbsp;
+              <input type="radio" value="4" name="rating">
+              &nbsp;
+              <input type="radio" value="5" name="rating">
+              &nbsp;Good</div>
+          </div>
+          <div class="buttons">
+            <div class="pull-right">
+              <button class="btn btn-primary" id="button-review" type="button">Continue</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+</div>
+</div>
+
+</div>
+
+<h3 class="subtitle">Customers who viewed this product also viewed</h3>
+
+ <div class="category-module" id="latest_category">
+
+<data-owl-carousel id="carousel_6" class="owl-carousel about-carousel" data-options="{itemsCustom : [[320, 2],[768, 3],[1200, 6],[1600, 6]]}">
+  <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_phon">
+     <div class="product-thumb slid_layou">
+    <div class="button-group hidden-xs hidden-sm">
+     <div class="add-to-links">
+        <div class="row ico_data">
+           <div class="col-lg-6 col-md-6 col-sm-6">
+              <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+              <i class="fa fa-heart"></i> <span>Favorite</span></button>
+           </div>
+           <div class="col-lg-6 col-md-6 col-sm-6">
+              <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+              <img src="images/compare.png"><span>Compare</span></button>
+           </div>
+        </div>
+        <div class="row">
+        
+        <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                    </div>
+        </div>
+     </div>
+  </div>
+    <div class="image">
+        <a href="javascript:void(0)"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Aspire Ultrabook Laptop" class="img-responsive" /></a>                                </div>
+    <div class="caption">
+        <h4><a href="javascript:void(0)">{{slid_data.title}}</a></h4>
+        <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+            <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> <span class="rev_c">(165)</span>                                   </div>                                    
+        <p class="price"> 
+            
+            <span class="price-old">{{slid_data.d_price}}</span>
+            <span class="price-new">{{slid_data.price}}</span>  
+            <span class="saving" ng-if="slid_data.off_p">{{slid_data.off_p}}</span>                                    </p>
+    </div>
+    
+</div>
+  </div>
+</data-owl-carousel>	
+
+</div>
+
+<script>
+
+	
+jQuery(document).ready(function(){
+		 $(".nav-tabs.tab_con a").click(function(e){
+        e.preventDefault();
+        $(this).tab('show');
+	});
+	
+	
+	 /*---------------------------------------------------
+        Increase and Decrease Button Quantity for Product Page
+    ----------------------------------------------------- */
+    $(".qtyBtn").on("click", function() {
+        if ($(this).hasClass("plus")) {
+            var qty = $(".qty #input-quantity").val();
+            qty++;
+            $(".qty #input-quantity").val(qty);
+        } else {
+            var qty = $(".qty #input-quantity").val();
+            qty--;
+            if (qty > 0) {
+                $(".qty #input-quantity").val(qty);
+            }
+        }
+        return false;
+    });
+	
+	});
+
+</script>
+
+
+
+            
+          

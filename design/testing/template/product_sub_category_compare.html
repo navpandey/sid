@@ -1,0 +1,1442 @@
+<div class="row list_pro">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <div class="panel panel-default compa_content">
+      <div class="panel-body">
+      <span class="main_close"><a href="javascript:void(0)" title="close" ><img src="images/close_thum.png" alt="close" /></a></span>
+          <ul>
+               <li>
+                 <div class="row smal_com">
+                   <div class="col-lg-12"> 
+                   <span><a href="javascript:void(0)" title="cancel"><img src="images/cros_thum.png" alt="cross" /></a></span>
+                    <p><img src="images/product/sam-45.jpg"></p>
+                    <p>Samsung 32 Inch Smart LED TV - UA32J4303</p>
+                   </div>
+                 </div>
+               </li>
+               <li>
+                 <div class="row smal_com">
+                   <div class="col-lg-12">
+                    <span><a href="javascript:void(0)" title="cancel"><img src="images/cros_thum.png" alt="cross" /></a></span>
+                    <p><img src="images/product/sam-45.jpg"></p>
+                    <p>Samsung 32 Inch Smart LED TV - UA32J4303</p>
+                   </div>
+                 </div>
+               </li>
+               <li></li>
+               <li></li>
+               <li> <p class="pull-right"><a href="javascript:void(0)" class="btn btn-primary" title="Compare">COMPARE</a></p></li>
+               
+            </ul>
+           
+      </div>
+    </div>
+</div>
+</div>
+
+<div class="row list_pro">
+<!--Left Part Start -->
+<aside id="column-left" class="col-sm-2  hidden-xs hidden-sm">
+               <div class="box-category">
+                  <ul id="cat_accordion">
+                     <li>
+                        <a href="javascript:void(0)" class="active">Offer</a> <span class="down"></span>
+                       
+                        <ul>
+                            <li>
+                             <input type="text" id="sid_search1" placeholder="Enter Brand" class="form-control" ng-model="Offer" /> 
+                            </li>
+                           <li ng-repeat="subcategory_1 in sub_cat_offer | filter:Offer">
+                              <div class="checkbox">
+                                 <label><input type="checkbox" value="">{{subcategory_1.labl_dscnt}}<span>({{subcategory_1.labl_cnt}})</span></label>
+                              </div>
+                           </li>
+                          
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="javascript:void(0)" class="active">Brand</a> <span class="down"></span>
+                       
+                        <ul>
+                            <li>
+                             <input type="text" id="sid_search1" placeholder="Enter Brand" class="form-control" ng-model="Brand" /> 
+                            </li>
+                           <li ng-repeat="subcategory_1 in sub_cat_brand | filter:Brand">
+                              <div class="checkbox">
+                                 <label><input type="checkbox" value="">{{subcategory_1.sub_brand}}<span>({{subcategory_1.sub_cnt}})</span></label>
+                              </div>
+                           </li>
+                           
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="javascript:void(0)" class="active">Screen Size</a> <span class="down"></span>
+                    
+                        <ul>
+                          <li>
+                          <input type="text" id="sid_search_screen" placeholder="Enter Screen size" class="form-control" ng-model="Screen_Size" />
+                          </li>
+                           <li ng-repeat="subcategory_1 in sub_cat_screen | filter:Screen_Size">
+                              <div class="checkbox">
+                                 <label><input type="checkbox" value="">{{subcategory_1.sub_screen}}<span>({{subcategory_1.sub_screen_inchs}})</span></label>
+                              </div>
+                           </li>
+                          
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="javascript:void(0)" class="active">Color</a> <span class="down"></span>
+                        
+                        <ul>
+                           <li>
+                              <input type="text" id="sid_search_color" placeholder="Enter color" class="form-control" ng-model="Color" /> 
+                           </li>
+                           <li ng-repeat="subcategory_1 in sub_cat_color | filter:Color">
+                              <div class="checkbox">
+                                 <label><input type="checkbox" value="">{{subcategory_1.sub_color}}<span>({{subcategory_1.sub_color_cnt}})</span></label>
+                              </div>
+                           </li>
+                           
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="javascript:void(0)" class="active">Category Type</a> <span class="down"></span>
+                        <ul>
+                           <li ng-repeat="subcategory_1 in sub_cat_typ">
+                              <div class="checkbox">
+                                 <label><input type="checkbox" value="">{{subcategory_1.sub_typ}}<span>({{subcategory_1.sub_typ_cnt}})</span></label>
+                              </div>
+                           </li>
+                         
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="javascript:void(0)" class="active">Resolution</a> <span class="down"></span>
+                        <ul>
+                           <li ng-repeat="subcategory_1 in sub_cat_res">
+                              <div class="checkbox">
+                                 <label><input type="checkbox" value="">{{subcategory_1.sub_res}} <span>({{subcategory_1.sub_res_cnt}})</span></label>
+                              </div>
+                           </li>
+                         
+                        </ul>
+                     </li>
+                      <li>
+                        <a href="javascript:void(0)" class="active">Condition</a> <span class="down"></span>
+                        <ul>
+                           <li ng-repeat="subcategory_1 in sub_cat_con">
+                              <div class="checkbox">
+                                 <label><input type="checkbox" value="">{{subcategory_1.sub_res}} <span>({{subcategory_1.sub_res_cnt}})</span></label>
+                              </div>
+                           </li>
+                         
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="javascript:void(0)" class="active">Price</a> <span class="down"></span>
+                        <ul>
+                           <li ng-repeat="subcategory_1 in sub_cat_price"><a href="#">{{subcategory_1.sub_price}}</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+                <div class="banner">
+                 
+                <a href="javascript:void(0)"><img src="images/banner/cate_bana.jpg" alt="small banner1" class="img-responsive" /></a>
+               </div>
+            </aside>
+ <!--Left Part End -->
+  <!--Middle Part Start-->
+            <div id="content" class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+               <h3 class="subtitle">Televisions<span class="more_cat"><a href="javascript:void(0)">(680 Items)</a></span></h3>
+               <!--Tabs Part Start-->
+               <div class="panel panel-default">
+                  <div class="panel-body product_sub">
+                     <span class="short_c">Sort By:</span>
+                     <ul class="nav nav-tabs short_c">
+                        <li class="active"><a data-toggle="tab" href="#tab-1">Popularity</a></li>
+                        <li><a data-toggle="tab" href="#tab-2">Top ratings</a></li>
+                        <li><a data-toggle="tab" href="#tab-3">Newness</a></li>
+                        <li><a data-toggle="tab" href="#tab-4">Price Low to High </a></li>
+                        <li><a data-toggle="tab" href="#tab-5">Price High to Low </a></li>
+                        <li><a data-toggle="tab" href="#tab-6">Discount: By Price </a></li>
+                        <li><a data-toggle="tab" href="#tab-7">Discount: By Percent </a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="tab-content tab_con">
+                  <div class="tab-pane active" id="tab-1">
+                       <div class="row products-category prd_new">
+                         <div class="product-layout product-grid col-lg-2 col-md-3 col-sm-4 col-xs-12" ng-repeat="subcategory_1 in sub_cat_prd_th">
+                           <div class="product-thumb">
+                              <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="image">
+                                 <a href="product.html"><img src="{{subcategory_1.sub_prdct_image}}" alt=" Strategies for Acquiring Your Own Laptop " title=" Strategies for Acquiring Your Own Laptop " class="img-responsive"></a>
+                              </div>
+                              <div>
+                                 <div class="caption">
+                                    <h4><a href="product.html">{{subcategory_1.tittle}}</a></h4>
+                                    <div class="rating"> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> 
+                                       <span class="rev_c">({{subcategory_1.str_cnt}})</span>                                   
+                                    </div>
+                                    <p class="price"> 
+                                       <span class="price-old">{{subcategory_1.price_old}}</span> 
+                                       <span class="price-new">{{subcategory_1.price_new}}</span>
+                                       <span class="saving">{{subcategory_1.saving}}</span>                                   
+                                    </p>
+                                 </div>
+                                 <div class="button-group dropdown" id="siml_pro">
+                                    <button class="btn btn-primary btn-block dropdown-toggle" type="button"  data-toggle="dropdown">
+                                    <span class="tip">{{subcategory_1.similar}}</span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                       <li role="presentation">
+                                          <div class="row tool-con">
+                                             <div class="col-md-12">
+                                                <h5>8 Similar Product (s) found</h5>
+                                                <p class="tip_close">
+                                                   <a href="javascript:void(0);" title="close"><img src="images/close2.png" title="close"  alt="close"/></a>
+                                                </p>
+                                             </div>
+                                          </div> 
+                                            <data-owl-carousel id="carousel_6" class="owl-carousel product_carousel_tip too_cont about-carousel" data-options="{itemsCustom : [[320, 1],[768, 3],[1200,4],[1600, 4]]}">
+                                            <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="subcategory_1 in sub_cat_prd_th">
+                                           <div class="product-thumb clearfix" >
+                                                <div class="image">
+                                                   <a href="javascript:void(0)"><img src="{{subcategory_1.sub_prdct_image}}" alt="iPhone5" title="iPhone5" class="img-responsive" /></a>                        
+                                                </div>
+                                                <div class="caption">
+                                                   <h4><a href="javascript:void(0)">{{subcategory_1.tittle}}</a></h4>
+                                                   <div class="row">
+                                                      <div class="col-xs-6 col-md-6">
+                                                         <p class="price-old">{{subcategory_1.price_old}}</p>
+                                                      </div>
+                                                       <div class="col-xs-6 col-md-6">
+                                                         <p class="price">{{subcategory_1.price_new}} </p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                            </div>
+                                            </data-owl-carousel>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                         
+                        
+						<span class="clearfix visible-lg-block"></span>
+                       </div>
+                       <div class="row products-category prd_new">
+                         <div class="product-layout product-grid col-lg-2 col-md-3 col-sm-4 col-xs-12" ng-repeat="subcategory_1 in sub_cat_prd_th">
+                           <div class="product-thumb">
+                              <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="image">
+                                 <a href="product.html"><img src="{{subcategory_1.sub_prdct_image}}" alt=" Strategies for Acquiring Your Own Laptop " title=" Strategies for Acquiring Your Own Laptop " class="img-responsive"></a>
+                              </div>
+                              <div>
+                                 <div class="caption">
+                                    <h4><a href="product.html">{{subcategory_1.tittle}}</a></h4>
+                                    <div class="rating"> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> 
+                                       <span class="rev_c">({{subcategory_1.str_cnt}})</span>                                   
+                                    </div>
+                                    <p class="price"> 
+                                       <span class="price-old">{{subcategory_1.price_old}}</span> 
+                                       <span class="price-new">{{subcategory_1.price_new}}</span>
+                                       <span class="saving">{{subcategory_1.saving}}</span>                                   
+                                    </p>
+                                 </div>
+                                 <div class="button-group dropdown" id="siml_pro">
+                                    <button class="btn btn-primary btn-block dropdown-toggle" type="button"  data-toggle="dropdown">
+                                    <span class="tip">{{subcategory_1.similar}}</span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                       <li role="presentation">
+                                          <div class="row tool-con">
+                                             <div class="col-md-12">
+                                                <h5>8 Similar Product (s) found</h5>
+                                                <p class="tip_close">
+                                                   <a href="javascript:void(0);" title="close"><img src="images/close2.png" title="close"  alt="close"/></a>
+                                                </p>
+                                             </div>
+                                          </div> 
+                                          <data-owl-carousel id="carousel_6" class="owl-carousel product_carousel_tip too_cont about-carousel" data-options="{itemsCustom : [[320, 1],[768, 3],[1200,4],[1600, 4]]}">
+                                            <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="subcategory_1 in sub_cat_prd_th">
+                                           <div class="product-thumb clearfix" >
+                                                <div class="image">
+                                                   <a href="javascript:void(0)"><img src="{{subcategory_1.sub_prdct_image}}" alt="iPhone5" title="iPhone5" class="img-responsive" /></a>                        
+                                                </div>
+                                                <div class="caption">
+                                                   <h4><a href="javascript:void(0)">{{subcategory_1.tittle}}</a></h4>
+                                                   <div class="row">
+                                                      <div class="col-xs-6 col-md-6">
+                                                         <p class="price-old">{{subcategory_1.price_old}}</p>
+                                                      </div>
+                                                       <div class="col-xs-6 col-md-6">
+                                                         <p class="price">{{subcategory_1.price_new}} </p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                            </div>
+                                            </data-owl-carousel>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                         
+                       
+					   <span class="clearfix visible-lg-block"></span>
+                       </div>
+                       <div class="row products-category prd_new">
+                         <div class="product-layout product-grid col-lg-2 col-md-3 col-sm-4 col-xs-12" ng-repeat="subcategory_1 in sub_cat_prd_th">
+                           <div class="product-thumb">
+                              <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="image">
+                                 <a href="product.html"><img src="{{subcategory_1.sub_prdct_image}}" alt=" Strategies for Acquiring Your Own Laptop " title=" Strategies for Acquiring Your Own Laptop " class="img-responsive"></a>
+                              </div>
+                              <div>
+                                 <div class="caption">
+                                    <h4><a href="product.html">{{subcategory_1.tittle}}</a></h4>
+                                    <div class="rating"> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> 
+                                       <span class="rev_c">({{subcategory_1.str_cnt}})</span>                                   
+                                    </div>
+                                    <p class="price"> 
+                                       <span class="price-old">{{subcategory_1.price_old}}</span> 
+                                       <span class="price-new">{{subcategory_1.price_new}}</span>
+                                       <span class="saving">{{subcategory_1.saving}}</span>                                   
+                                    </p>
+                                 </div>
+                                 <div class="button-group dropdown" id="siml_pro">
+                                    <button class="btn btn-primary btn-block dropdown-toggle" type="button"  data-toggle="dropdown">
+                                    <span class="tip">{{subcategory_1.similar}}</span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                       <li role="presentation">
+                                          <div class="row tool-con">
+                                             <div class="col-md-12">
+                                                <h5>8 Similar Product (s) found</h5>
+                                                <p class="tip_close">
+                                                   <a href="javascript:void(0);" title="close"><img src="images/close2.png" title="close"  alt="close"/></a>
+                                                </p>
+                                             </div>
+                                          </div> 
+                                          <data-owl-carousel id="carousel_6" class="owl-carousel product_carousel_tip too_cont about-carousel" data-options="{itemsCustom : [[320, 1],[768, 3],[1200,4],[1600, 4]]}">
+                                            <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="subcategory_1 in sub_cat_prd_th">
+                                           <div class="product-thumb clearfix" >
+                                                <div class="image">
+                                                   <a href="javascript:void(0)"><img src="{{subcategory_1.sub_prdct_image}}" alt="iPhone5" title="iPhone5" class="img-responsive" /></a>                        
+                                                </div>
+                                                <div class="caption">
+                                                   <h4><a href="javascript:void(0)">{{subcategory_1.tittle}}</a></h4>
+                                                   <div class="row">
+                                                      <div class="col-xs-6 col-md-6">
+                                                         <p class="price-old">{{subcategory_1.price_old}}</p>
+                                                      </div>
+                                                       <div class="col-xs-6 col-md-6">
+                                                         <p class="price">{{subcategory_1.price_new}} </p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                            </div>
+                                            </data-owl-carousel>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                         
+                        
+					   <span class="clearfix visible-lg-block"></span>
+                       </div>
+                       <div class="row products-category prd_new">
+                         <div class="product-layout product-grid col-lg-2 col-md-3 col-sm-4 col-xs-12" ng-repeat="subcategory_1 in sub_cat_prd_th">
+                           <div class="product-thumb">
+                              <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="image">
+                                 <a href="product.html"><img src="{{subcategory_1.sub_prdct_image}}" alt=" Strategies for Acquiring Your Own Laptop " title=" Strategies for Acquiring Your Own Laptop " class="img-responsive"></a>
+                              </div>
+                              <div>
+                                 <div class="caption">
+                                    <h4><a href="product.html">{{subcategory_1.tittle}}</a></h4>
+                                    <div class="rating"> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> 
+                                       <span class="rev_c">({{subcategory_1.str_cnt}})</span>                                   
+                                    </div>
+                                    <p class="price"> 
+                                       <span class="price-old">{{subcategory_1.price_old}}</span> 
+                                       <span class="price-new">{{subcategory_1.price_new}}</span>
+                                       <span class="saving">{{subcategory_1.saving}}</span>                                   
+                                    </p>
+                                 </div>
+                                 <div class="button-group dropdown" id="siml_pro">
+                                    <button class="btn btn-primary btn-block dropdown-toggle" type="button"  data-toggle="dropdown">
+                                    <span class="tip">{{subcategory_1.similar}}</span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                       <li role="presentation">
+                                          <div class="row tool-con">
+                                             <div class="col-md-12">
+                                                <h5>8 Similar Product (s) found</h5>
+                                                <p class="tip_close">
+                                                   <a href="javascript:void(0);" title="close"><img src="images/close2.png" title="close"  alt="close"/></a>
+                                                </p>
+                                             </div>
+                                          </div> 
+                                          <data-owl-carousel id="carousel_6" class="owl-carousel product_carousel_tip too_cont about-carousel" data-options="{itemsCustom : [[320, 1],[768, 3],[1200,4],[1600, 4]]}">
+                                            <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="subcategory_1 in sub_cat_prd_th">
+                                           <div class="product-thumb clearfix" >
+                                                <div class="image">
+                                                   <a href="javascript:void(0)"><img src="{{subcategory_1.sub_prdct_image}}" alt="iPhone5" title="iPhone5" class="img-responsive" /></a>                        
+                                                </div>
+                                                <div class="caption">
+                                                   <h4><a href="javascript:void(0)">{{subcategory_1.tittle}}</a></h4>
+                                                   <div class="row">
+                                                      <div class="col-xs-6 col-md-6">
+                                                         <p class="price-old">{{subcategory_1.price_old}}</p>
+                                                      </div>
+                                                       <div class="col-xs-6 col-md-6">
+                                                         <p class="price">{{subcategory_1.price_new}} </p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                            </div>
+                                            </data-owl-carousel>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                         
+                       
+						<span class="clearfix visible-lg-block"></span>
+                       </div>
+                       <div class="row products-category prd_new">
+                         <div class="product-layout product-grid col-lg-2 col-md-3 col-sm-4 col-xs-12" ng-repeat="subcategory_1 in sub_cat_prd_th">
+                           <div class="product-thumb">
+                              <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="image">
+                                 <a href="product.html"><img src="{{subcategory_1.sub_prdct_image}}" alt=" Strategies for Acquiring Your Own Laptop " title=" Strategies for Acquiring Your Own Laptop " class="img-responsive"></a>
+                              </div>
+                              <div>
+                                 <div class="caption">
+                                    <h4><a href="product.html">{{subcategory_1.tittle}}</a></h4>
+                                    <div class="rating"> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> 
+                                       <span class="rev_c">({{subcategory_1.str_cnt}})</span>                                   
+                                    </div>
+                                    <p class="price"> 
+                                       <span class="price-old">{{subcategory_1.price_old}}</span> 
+                                       <span class="price-new">{{subcategory_1.price_new}}</span>
+                                       <span class="saving">{{subcategory_1.saving}}</span>                                   
+                                    </p>
+                                 </div>
+                                 <div class="button-group dropdown" id="siml_pro">
+                                    <button class="btn btn-primary btn-block dropdown-toggle" type="button"  data-toggle="dropdown">
+                                    <span class="tip">{{subcategory_1.similar}}</span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                       <li role="presentation">
+                                          <div class="row tool-con">
+                                             <div class="col-md-12">
+                                                <h5>8 Similar Product (s) found</h5>
+                                                <p class="tip_close">
+                                                   <a href="javascript:void(0);" title="close"><img src="images/close2.png" title="close"  alt="close"/></a>
+                                                </p>
+                                             </div>
+                                          </div> 
+                                          <data-owl-carousel id="carousel_6" class="owl-carousel product_carousel_tip too_cont about-carousel" data-options="{itemsCustom : [[320, 1],[768, 3],[1200,4],[1600, 4]]}">
+                                            <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="subcategory_1 in sub_cat_prd_th">
+                                           <div class="product-thumb clearfix" >
+                                                <div class="image">
+                                                   <a href="javascript:void(0)"><img src="{{subcategory_1.sub_prdct_image}}" alt="iPhone5" title="iPhone5" class="img-responsive" /></a>                        
+                                                </div>
+                                                <div class="caption">
+                                                   <h4><a href="javascript:void(0)">{{subcategory_1.tittle}}</a></h4>
+                                                   <div class="row">
+                                                      <div class="col-xs-6 col-md-6">
+                                                         <p class="price-old">{{subcategory_1.price_old}}</p>
+                                                      </div>
+                                                       <div class="col-xs-6 col-md-6">
+                                                         <p class="price">{{subcategory_1.price_new}} </p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                            </div>
+                                            </data-owl-carousel>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                       
+					   <span class="clearfix visible-lg-block"></span>
+                       </div>
+                       <div class="row products-category prd_new">
+                         <div class="product-layout product-grid col-lg-2 col-md-3 col-sm-4 col-xs-12" ng-repeat="subcategory_1 in sub_cat_prd_th">
+                           <div class="product-thumb">
+                              <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="image">
+                                 <a href="product.html"><img src="{{subcategory_1.sub_prdct_image}}" alt=" Strategies for Acquiring Your Own Laptop " title=" Strategies for Acquiring Your Own Laptop " class="img-responsive"></a>
+                              </div>
+                              <div>
+                                 <div class="caption">
+                                    <h4><a href="product.html">{{subcategory_1.tittle}}</a></h4>
+                                    <div class="rating"> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> 
+                                       <span class="rev_c">({{subcategory_1.str_cnt}})</span>                                   
+                                    </div>
+                                    <p class="price"> 
+                                       <span class="price-old">{{subcategory_1.price_old}}</span> 
+                                       <span class="price-new">{{subcategory_1.price_new}}</span>
+                                       <span class="saving">{{subcategory_1.saving}}</span>                                   
+                                    </p>
+                                 </div>
+                                 <div class="button-group dropdown" id="siml_pro">
+                                    <button class="btn btn-primary btn-block dropdown-toggle" type="button"  data-toggle="dropdown">
+                                    <span class="tip">{{subcategory_1.similar}}</span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                       <li role="presentation">
+                                          <div class="row tool-con">
+                                             <div class="col-md-12">
+                                                <h5>8 Similar Product (s) found</h5>
+                                                <p class="tip_close">
+                                                   <a href="javascript:void(0);" title="close"><img src="images/close2.png" title="close"  alt="close"/></a>
+                                                </p>
+                                             </div>
+                                          </div> 
+                                          <data-owl-carousel id="carousel_6" class="owl-carousel product_carousel_tip too_cont about-carousel" data-options="{itemsCustom : [[320, 1],[768, 3],[1200,4],[1600, 4]]}">
+                                            <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="subcategory_1 in sub_cat_prd_th">
+                                           <div class="product-thumb clearfix" >
+                                                <div class="image">
+                                                   <a href="javascript:void(0)"><img src="{{subcategory_1.sub_prdct_image}}" alt="iPhone5" title="iPhone5" class="img-responsive" /></a>                        
+                                                </div>
+                                                <div class="caption">
+                                                   <h4><a href="javascript:void(0)">{{subcategory_1.tittle}}</a></h4>
+                                                   <div class="row">
+                                                      <div class="col-xs-6 col-md-6">
+                                                         <p class="price-old">{{subcategory_1.price_old}}</p>
+                                                      </div>
+                                                       <div class="col-xs-6 col-md-6">
+                                                         <p class="price">{{subcategory_1.price_new}} </p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                            </div>
+                                            </data-owl-carousel>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                       
+					   <span class="clearfix visible-lg-block"></span>
+                       </div>
+                       
+                       
+					   
+					   
+                       
+                       
+                      <div class="text-center row">
+                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                <p><a href="javascript:void(0)" class="btn btn-default load_cla" title="Load More"> Load more >> </a></p>
+                           </div>
+                       </div>
+                      
+                  </div>
+				  
+				  
+				  
+				  
+                  <div class="tab-pane" id="tab-2">
+                     <div class="row products-category prd_new">
+					
+                         <div class="product-layout  product-grid col-lg-2 col-md-3 col-sm-4 col-xs-12" ng-repeat="subcategory_1 in sub_cat_prd_top" >						 
+                           <div class="product-thumb">
+                              <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="#product-modal" class="view_pro"><img src="{{subcategory_1.sub_img1}}" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="image">
+                                 <a href="product.html"><img src="{{subcategory_1.sub_prdct_image1}}" alt=" Strategies for Acquiring Your Own Laptop " title=" Strategies for Acquiring Your Own Laptop " class="img-responsive"></a>
+                              </div>
+                              <div>
+                                 <div class="caption">
+                                    <h4><a href="product.html">{{subcategory_1.tittle}}</a></h4>
+                                    <div class="rating"> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> 
+                                       <span class="rev_c">({{subcategory_1.str_cnt2}})</span>                                   
+                                    </div>
+                                    <p class="price"> 
+                                       <span class="price-old">{{subcategory_1.price_old2}}</span> 
+                                       <span class="price-new">{{subcategory_1.price_new2}}</span>
+                                       <span class="saving">{{subcategory_1.saving2}}</span>                                   
+                                    </p>
+                                 </div>
+                                 <div class="button-group dropdown" id="siml_pro">
+                                    <button class="btn btn-primary btn-block dropdown-toggle" type="button"  data-toggle="dropdown">
+                                    <span>{{subcategory_1.similar2}}</span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                       <li role="presentation">
+                                          <div class="row tool-con">
+                                             <div class="col-md-12">
+                                                <h5>8 Similar Product (s) found</h5>
+                                                <p class="tip_close">
+                                                   <a href="javascript:void(0);" title="close"><img src="images/close2.png" title="close"  alt="close"/></a>
+                                                </p>
+                                             </div>
+                                          </div>
+                                          
+                                           <data-owl-carousel id="carousel_6" class="owl-carousel product_carousel_tip too_cont about-carousel" data-options="{itemsCustom : [[320, 1],[768, 3],[1200,4],[1600, 4]]}">
+                                            <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="subcategory_1 in sub_cat_prd_th">
+                                           <div class="product-thumb clearfix" >
+                                                <div class="image">
+                                                   <a href="javascript:void(0)"><img src="{{subcategory_1.sub_prdct_image}}" alt="iPhone5" title="iPhone5" class="img-responsive" /></a>                        
+                                                </div>
+                                                <div class="caption">
+                                                   <h4><a href="javascript:void(0)">{{subcategory_1.tittle}}</a></h4>
+                                                   <div class="row">
+                                                      <div class="col-xs-6 col-md-6">
+                                                         <p class="price-old">{{subcategory_1.price_old}}</p>
+                                                      </div>
+                                                       <div class="col-xs-6 col-md-6">
+                                                         <p class="price">{{subcategory_1.price_new}} </p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                            </div>
+                                            </data-owl-carousel>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <span class="clearfix visible-lg-block"></span>
+                     </div>
+                      <div class="row products-category prd_new">
+					
+                         <div class="product-layout  product-grid col-lg-2 col-md-3 col-sm-4 col-xs-12" ng-repeat="subcategory_1 in sub_cat_prd_top" >						 
+                           <div class="product-thumb">
+                              <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="#product-modal" class="view_pro"><img src="{{subcategory_1.sub_img1}}" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="image">
+                                 <a href="product.html"><img src="{{subcategory_1.sub_prdct_image1}}" alt=" Strategies for Acquiring Your Own Laptop " title=" Strategies for Acquiring Your Own Laptop " class="img-responsive"></a>
+                              </div>
+                              <div>
+                                 <div class="caption">
+                                    <h4><a href="product.html">{{subcategory_1.tittle}}</a></h4>
+                                    <div class="rating"> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> 
+                                       <span class="rev_c">({{subcategory_1.str_cnt2}})</span>                                   
+                                    </div>
+                                    <p class="price"> 
+                                       <span class="price-old">{{subcategory_1.price_old2}}</span> 
+                                       <span class="price-new">{{subcategory_1.price_new2}}</span>
+                                       <span class="saving">{{subcategory_1.saving2}}</span>                                   
+                                    </p>
+                                 </div>
+                                 <div class="button-group dropdown" id="siml_pro">
+                                    <button class="btn btn-primary btn-block dropdown-toggle" type="button"  data-toggle="dropdown">
+                                    <span>{{subcategory_1.similar2}}</span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                       <li role="presentation">
+                                          <div class="row tool-con">
+                                             <div class="col-md-12">
+                                                <h5>8 Similar Product (s) found</h5>
+                                                <p class="tip_close">
+                                                   <a href="javascript:void(0);" title="close"><img src="images/close2.png" title="close"  alt="close"/></a>
+                                                </p>
+                                             </div>
+                                          </div>
+                                          
+                                           <data-owl-carousel id="carousel_6" class="owl-carousel product_carousel_tip too_cont about-carousel" data-options="{itemsCustom : [[320, 1],[768, 3],[1200,4],[1600, 4]]}">
+                                            <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="subcategory_1 in sub_cat_prd_th">
+                                           <div class="product-thumb clearfix" >
+                                                <div class="image">
+                                                   <a href="javascript:void(0)"><img src="{{subcategory_1.sub_prdct_image}}" alt="iPhone5" title="iPhone5" class="img-responsive" /></a>                        
+                                                </div>
+                                                <div class="caption">
+                                                   <h4><a href="javascript:void(0)">{{subcategory_1.tittle}}</a></h4>
+                                                   <div class="row">
+                                                      <div class="col-xs-6 col-md-6">
+                                                         <p class="price-old">{{subcategory_1.price_old}}</p>
+                                                      </div>
+                                                       <div class="col-xs-6 col-md-6">
+                                                         <p class="price">{{subcategory_1.price_new}} </p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                            </div>
+                                            </data-owl-carousel>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <span class="clearfix visible-lg-block"></span>
+                     </div>
+                      <div class="row products-category prd_new">
+					
+                         <div class="product-layout  product-grid col-lg-2 col-md-3 col-sm-4 col-xs-12" ng-repeat="subcategory_1 in sub_cat_prd_top" >						 
+                           <div class="product-thumb">
+                              <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="#product-modal" class="view_pro"><img src="{{subcategory_1.sub_img1}}" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="image">
+                                 <a href="product.html"><img src="{{subcategory_1.sub_prdct_image1}}" alt=" Strategies for Acquiring Your Own Laptop " title=" Strategies for Acquiring Your Own Laptop " class="img-responsive"></a>
+                              </div>
+                              <div>
+                                 <div class="caption">
+                                    <h4><a href="product.html">{{subcategory_1.tittle}}</a></h4>
+                                    <div class="rating"> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> 
+                                       <span class="rev_c">({{subcategory_1.str_cnt2}})</span>                                   
+                                    </div>
+                                    <p class="price"> 
+                                       <span class="price-old">{{subcategory_1.price_old2}}</span> 
+                                       <span class="price-new">{{subcategory_1.price_new2}}</span>
+                                       <span class="saving">{{subcategory_1.saving2}}</span>                                   
+                                    </p>
+                                 </div>
+                                 <div class="button-group dropdown" id="siml_pro">
+                                    <button class="btn btn-primary btn-block dropdown-toggle" type="button"  data-toggle="dropdown">
+                                    <span>{{subcategory_1.similar2}}</span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                       <li role="presentation">
+                                          <div class="row tool-con">
+                                             <div class="col-md-12">
+                                                <h5>8 Similar Product (s) found</h5>
+                                                <p class="tip_close">
+                                                   <a href="javascript:void(0);" title="close"><img src="images/close2.png" title="close"  alt="close"/></a>
+                                                </p>
+                                             </div>
+                                          </div>
+                                          
+                                           <data-owl-carousel id="carousel_6" class="owl-carousel product_carousel_tip too_cont about-carousel" data-options="{itemsCustom : [[320, 1],[768, 3],[1200,4],[1600, 4]]}">
+                                            <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="subcategory_1 in sub_cat_prd_th">
+                                           <div class="product-thumb clearfix" >
+                                                <div class="image">
+                                                   <a href="javascript:void(0)"><img src="{{subcategory_1.sub_prdct_image}}" alt="iPhone5" title="iPhone5" class="img-responsive" /></a>                        
+                                                </div>
+                                                <div class="caption">
+                                                   <h4><a href="javascript:void(0)">{{subcategory_1.tittle}}</a></h4>
+                                                   <div class="row">
+                                                      <div class="col-xs-6 col-md-6">
+                                                         <p class="price-old">{{subcategory_1.price_old}}</p>
+                                                      </div>
+                                                       <div class="col-xs-6 col-md-6">
+                                                         <p class="price">{{subcategory_1.price_new}} </p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                            </div>
+                                            </data-owl-carousel>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <span class="clearfix visible-lg-block"></span>
+                     </div>
+                     <div class="row products-category prd_new">
+					
+                         <div class="product-layout  product-grid col-lg-2 col-md-3 col-sm-4 col-xs-12" ng-repeat="subcategory_1 in sub_cat_prd_top" >						 
+                           <div class="product-thumb">
+                              <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="#product-modal" class="view_pro"><img src="{{subcategory_1.sub_img1}}" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="image">
+                                 <a href="product.html"><img src="{{subcategory_1.sub_prdct_image1}}" alt=" Strategies for Acquiring Your Own Laptop " title=" Strategies for Acquiring Your Own Laptop " class="img-responsive"></a>
+                              </div>
+                              <div>
+                                 <div class="caption">
+                                    <h4><a href="product.html">{{subcategory_1.tittle}}</a></h4>
+                                    <div class="rating"> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> 
+                                       <span class="rev_c">({{subcategory_1.str_cnt2}})</span>                                   
+                                    </div>
+                                    <p class="price"> 
+                                       <span class="price-old">{{subcategory_1.price_old2}}</span> 
+                                       <span class="price-new">{{subcategory_1.price_new2}}</span>
+                                       <span class="saving">{{subcategory_1.saving2}}</span>                                   
+                                    </p>
+                                 </div>
+                                 <div class="button-group dropdown" id="siml_pro">
+                                    <button class="btn btn-primary btn-block dropdown-toggle" type="button"  data-toggle="dropdown">
+                                    <span>{{subcategory_1.similar2}}</span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                       <li role="presentation">
+                                          <div class="row tool-con">
+                                             <div class="col-md-12">
+                                                <h5>8 Similar Product (s) found</h5>
+                                                <p class="tip_close">
+                                                   <a href="javascript:void(0);" title="close"><img src="images/close2.png" title="close"  alt="close"/></a>
+                                                </p>
+                                             </div>
+                                          </div>
+                                          
+                                           <data-owl-carousel id="carousel_6" class="owl-carousel product_carousel_tip too_cont about-carousel" data-options="{itemsCustom : [[320, 1],[768, 3],[1200,4],[1600, 4]]}">
+                                            <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="subcategory_1 in sub_cat_prd_th">
+                                           <div class="product-thumb clearfix" >
+                                                <div class="image">
+                                                   <a href="javascript:void(0)"><img src="{{subcategory_1.sub_prdct_image}}" alt="iPhone5" title="iPhone5" class="img-responsive" /></a>                        
+                                                </div>
+                                                <div class="caption">
+                                                   <h4><a href="javascript:void(0)">{{subcategory_1.tittle}}</a></h4>
+                                                   <div class="row">
+                                                      <div class="col-xs-6 col-md-6">
+                                                         <p class="price-old">{{subcategory_1.price_old}}</p>
+                                                      </div>
+                                                       <div class="col-xs-6 col-md-6">
+                                                         <p class="price">{{subcategory_1.price_new}} </p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                            </div>
+                                            </data-owl-carousel>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <span class="clearfix visible-lg-block"></span>
+                     </div>
+                     
+					   <div class="text-center row">
+                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                <p><a href="javascript:void(0)" class="btn btn-default load_cla" title="Load More"> Load more >> </a></p>
+                           </div>
+                       </div>
+					 
+                  </div>
+				  
+				  
+                  <div class="tab-pane" id="tab-3">
+                     <div class="row products-category prd_new">
+                         <div class="product-layout product-grid col-lg-2 col-md-3 col-sm-4 col-xs-12" ng-repeat="subcategory_1 in sub_cat_prd_newnes">
+                           <div class="product-thumb">
+                              <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="javascript:void(0)" class="view_pro"><img src="{{subcategory_1.sub_img_new}}" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="image">
+                                 <a href="product.html"><img src="{{subcategory_1.sub_prdct_image_new}}" alt=" Strategies for Acquiring Your Own Laptop " title=" Strategies for Acquiring Your Own Laptop " class="img-responsive"></a>
+                              </div>
+                              <div>
+                                 <div class="caption">
+                                    <h4><a href="product.html">{{subcategory_1.tittle}}</a></h4>
+                                    <div class="rating"> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> 
+                                       <span class="rev_c">({{subcategory_1.str_cnt_new}})</span>                                   
+                                    </div>
+                                    <p class="price"> 
+                                       <span class="price-old">({{subcategory_1.price_old_new}})</span> 
+                                       <span class="price-new">({{subcategory_1.price_newnes}})</span>
+                                       <span class="saving">({{subcategory_1.saving_new}})</span>                                   
+                                    </p>
+                                 </div>
+                                 <div class="button-group dropdown" id="siml_pro">
+                                    <button class="btn btn-primary btn-block dropdown-toggle" type="button"  data-toggle="dropdown">
+                                    <span>({{subcategory_1.similar_new}})</span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                       <li role="presentation">
+                                          <div class="row tool-con">
+                                             <div class="col-md-12">
+                                                <h5>8 Similar Product (s) found</h5>
+                                                <p class="tip_close">
+                                                   <a href="javascript:void(0);" title="close"><img src="images/close2.png" title="close"  alt="close"/></a>
+                                                </p>
+                                             </div>
+                                          </div>
+                                          
+                                           <data-owl-carousel id="carousel_6" class="owl-carousel product_carousel_tip too_cont about-carousel" data-options="{itemsCustom : [[320, 1],[768, 3],[1200,4],[1600, 4]]}">
+                                            <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="subcategory_1 in sub_cat_prd_th">
+                                           <div class="product-thumb clearfix" >
+                                                <div class="image">
+                                                   <a href="javascript:void(0)"><img src="{{subcategory_1.sub_prdct_image_new}}" alt="iPhone5" title="iPhone5" class="img-responsive" /></a>                        
+                                                </div>
+                                                <div class="caption">
+                                                   <h4><a href="javascript:void(0)">{{subcategory_1.tittle}}</a></h4>
+                                                   <div class="row">
+                                                      <div class="col-xs-6 col-md-6">
+                                                         <p class="price-old">{{subcategory_1.price_old}}</p>
+                                                      </div>
+                                                       <div class="col-xs-6 col-md-6">
+                                                         <p class="price">{{subcategory_1.price_new}} </p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                            </div>
+                                            </data-owl-carousel>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <span class="clearfix visible-lg-block"></span>
+                     </div>
+                      <div class="row products-category prd_new">
+					
+                         <div class="product-layout  product-grid col-lg-2 col-md-3 col-sm-4 col-xs-12" ng-repeat="subcategory_1 in sub_cat_prd_top" >						 
+                           <div class="product-thumb">
+                              <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="#product-modal" class="view_pro"><img src="{{subcategory_1.sub_img1}}" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="image">
+                                 <a href="product.html"><img src="{{subcategory_1.sub_prdct_image1}}" alt=" Strategies for Acquiring Your Own Laptop " title=" Strategies for Acquiring Your Own Laptop " class="img-responsive"></a>
+                              </div>
+                              <div>
+                                 <div class="caption">
+                                    <h4><a href="product.html">{{subcategory_1.tittle}}</a></h4>
+                                    <div class="rating"> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> 
+                                       <span class="rev_c">({{subcategory_1.str_cnt2}})</span>                                   
+                                    </div>
+                                    <p class="price"> 
+                                       <span class="price-old">{{subcategory_1.price_old2}}</span> 
+                                       <span class="price-new">{{subcategory_1.price_new2}}</span>
+                                       <span class="saving">{{subcategory_1.saving2}}</span>                                   
+                                    </p>
+                                 </div>
+                                 <div class="button-group dropdown" id="siml_pro">
+                                    <button class="btn btn-primary btn-block dropdown-toggle" type="button"  data-toggle="dropdown">
+                                    <span>{{subcategory_1.similar2}}</span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                       <li role="presentation">
+                                          <div class="row tool-con">
+                                             <div class="col-md-12">
+                                                <h5>8 Similar Product (s) found</h5>
+                                                <p class="tip_close">
+                                                   <a href="javascript:void(0);" title="close"><img src="images/close2.png" title="close"  alt="close"/></a>
+                                                </p>
+                                             </div>
+                                          </div>
+                                          
+                                           <data-owl-carousel id="carousel_6" class="owl-carousel product_carousel_tip too_cont about-carousel" data-options="{itemsCustom : [[320, 1],[768, 3],[1200,4],[1600, 4]]}">
+                                            <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="subcategory_1 in sub_cat_prd_th">
+                                           <div class="product-thumb clearfix" >
+                                                <div class="image">
+                                                   <a href="javascript:void(0)"><img src="{{subcategory_1.sub_prdct_image}}" alt="iPhone5" title="iPhone5" class="img-responsive" /></a>                        
+                                                </div>
+                                                <div class="caption">
+                                                   <h4><a href="javascript:void(0)">{{subcategory_1.tittle}}</a></h4>
+                                                   <div class="row">
+                                                      <div class="col-xs-6 col-md-6">
+                                                         <p class="price-old">{{subcategory_1.price_old}}</p>
+                                                      </div>
+                                                       <div class="col-xs-6 col-md-6">
+                                                         <p class="price">{{subcategory_1.price_new}} </p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                            </div>
+                                            </data-owl-carousel>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <span class="clearfix visible-lg-block"></span>
+                     </div>
+                     <div class="row products-category prd_new">
+                         <div class="product-layout product-grid col-lg-2 col-md-3 col-sm-4 col-xs-12" ng-repeat="subcategory_1 in sub_cat_prd_newnes">
+                           <div class="product-thumb">
+                              <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="javascript:void(0)" class="view_pro"><img src="{{subcategory_1.sub_img_new}}" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="image">
+                                 <a href="product.html"><img src="{{subcategory_1.sub_prdct_image_new}}" alt=" Strategies for Acquiring Your Own Laptop " title=" Strategies for Acquiring Your Own Laptop " class="img-responsive"></a>
+                              </div>
+                              <div>
+                                 <div class="caption">
+                                    <h4><a href="product.html">{{subcategory_1.tittle}}</a></h4>
+                                    <div class="rating"> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> 
+                                       <span class="rev_c">({{subcategory_1.str_cnt_new}})</span>                                   
+                                    </div>
+                                    <p class="price"> 
+                                       <span class="price-old">({{subcategory_1.price_old_new}})</span> 
+                                       <span class="price-new">({{subcategory_1.price_newnes}})</span>
+                                       <span class="saving">({{subcategory_1.saving_new}})</span>                                   
+                                    </p>
+                                 </div>
+                                 <div class="button-group dropdown" id="siml_pro">
+                                    <button class="btn btn-primary btn-block dropdown-toggle" type="button"  data-toggle="dropdown">
+                                    <span>({{subcategory_1.similar_new}})</span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                       <li role="presentation">
+                                          <div class="row tool-con">
+                                             <div class="col-md-12">
+                                                <h5>8 Similar Product (s) found</h5>
+                                                <p class="tip_close">
+                                                   <a href="javascript:void(0);" title="close"><img src="images/close2.png" title="close"  alt="close"/></a>
+                                                </p>
+                                             </div>
+                                          </div>
+                                          
+                                           <data-owl-carousel id="carousel_6" class="owl-carousel product_carousel_tip too_cont about-carousel" data-options="{itemsCustom : [[320, 1],[768, 3],[1200,4],[1600, 4]]}">
+                                            <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="subcategory_1 in sub_cat_prd_th">
+                                           <div class="product-thumb clearfix" >
+                                                <div class="image">
+                                                   <a href="javascript:void(0)"><img src="{{subcategory_1.sub_prdct_image_new}}" alt="iPhone5" title="iPhone5" class="img-responsive" /></a>                        
+                                                </div>
+                                                <div class="caption">
+                                                   <h4><a href="javascript:void(0)">{{subcategory_1.tittle}}</a></h4>
+                                                   <div class="row">
+                                                      <div class="col-xs-6 col-md-6">
+                                                         <p class="price-old">{{subcategory_1.price_old}}</p>
+                                                      </div>
+                                                       <div class="col-xs-6 col-md-6">
+                                                         <p class="price">{{subcategory_1.price_new}} </p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                            </div>
+                                            </data-owl-carousel>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <span class="clearfix visible-lg-block"></span>
+                     </div>
+                      <div class="row products-category prd_new">
+					
+                         <div class="product-layout  product-grid col-lg-2 col-md-3 col-sm-4 col-xs-12" ng-repeat="subcategory_1 in sub_cat_prd_top" >						 
+                           <div class="product-thumb">
+                              <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="#product-modal" class="view_pro"><img src="{{subcategory_1.sub_img1}}" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="image">
+                                 <a href="product.html"><img src="{{subcategory_1.sub_prdct_image1}}" alt=" Strategies for Acquiring Your Own Laptop " title=" Strategies for Acquiring Your Own Laptop " class="img-responsive"></a>
+                              </div>
+                              <div>
+                                 <div class="caption">
+                                    <h4><a href="product.html">{{subcategory_1.tittle}}</a></h4>
+                                    <div class="rating"> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                       <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> 
+                                       <span class="rev_c">({{subcategory_1.str_cnt2}})</span>                                   
+                                    </div>
+                                    <p class="price"> 
+                                       <span class="price-old">{{subcategory_1.price_old2}}</span> 
+                                       <span class="price-new">{{subcategory_1.price_new2}}</span>
+                                       <span class="saving">{{subcategory_1.saving2}}</span>                                   
+                                    </p>
+                                 </div>
+                                 <div class="button-group dropdown" id="siml_pro">
+                                    <button class="btn btn-primary btn-block dropdown-toggle" type="button"  data-toggle="dropdown">
+                                    <span>{{subcategory_1.similar2}}</span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                       <li role="presentation">
+                                          <div class="row tool-con">
+                                             <div class="col-md-12">
+                                                <h5>8 Similar Product (s) found</h5>
+                                                <p class="tip_close">
+                                                   <a href="javascript:void(0);" title="close"><img src="images/close2.png" title="close"  alt="close"/></a>
+                                                </p>
+                                             </div>
+                                          </div>
+                                          
+                                           <data-owl-carousel id="carousel_6" class="owl-carousel product_carousel_tip too_cont about-carousel" data-options="{itemsCustom : [[320, 1],[768, 3],[1200,4],[1600, 4]]}">
+                                            <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="subcategory_1 in sub_cat_prd_th">
+                                           <div class="product-thumb clearfix" >
+                                                <div class="image">
+                                                   <a href="javascript:void(0)"><img src="{{subcategory_1.sub_prdct_image}}" alt="iPhone5" title="iPhone5" class="img-responsive" /></a>                        
+                                                </div>
+                                                <div class="caption">
+                                                   <h4><a href="javascript:void(0)">{{subcategory_1.tittle}}</a></h4>
+                                                   <div class="row">
+                                                      <div class="col-xs-6 col-md-6">
+                                                         <p class="price-old">{{subcategory_1.price_old}}</p>
+                                                      </div>
+                                                       <div class="col-xs-6 col-md-6">
+                                                         <p class="price">{{subcategory_1.price_new}} </p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                            </div>
+                                            </data-owl-carousel>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <span class="clearfix visible-lg-block"></span>
+                     </div>
+                     
+                     
+                     <div class="text-center row">
+                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                <p><a href="javascript:void(0)" class="btn btn-default load_cla" title="Load More"> Load more >> </a></p>
+                           </div>
+                       </div>
+                     
+                  </div>
+               </div>
+               <!--Tabs Part End-->
+               <div class="row text-center">
+                  <div class="col-sm-12">
+                     <div>
+                        <div class="item"> <a href="javascript:void(0)"><img src="images/banner/cate_bana2.jpg" alt="small banner" class="img-responsive" /></a> </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+  <!--Middle Part End -->
+</div>
+<script>
+          /*---------------------------------------------------
+        Categories Accordion
+    ----------------------------------------------------- */
+  jQuery(document).ready(function($){
+	  
+	  $('#cat_accordion').cutomAccordion({
+        saveState: false,
+        autoExpand: true
+    });
+	
+	 $(".nav-tabs.short_c a").click(function(e){
+        e.preventDefault();
+        $(this).tab('show');
+			});
+	  });  
+ </script>
+ 
+ 

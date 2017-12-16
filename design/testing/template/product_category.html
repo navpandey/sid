@@ -1,0 +1,1359 @@
+<div class="row panel_spac">
+<div class="col-lg-12 col-md-12">
+<h3 class="subtitle">Electronics</h3>
+<div class="panel-group" id="accordion1">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <!--<a href="javascript:void(0)">Shop By Category</a>-->
+      <!--<a id="aco1" data-toggle="collapse" data-parent="#accordion" href="javascript:void(0)" class="pull-right arrow_dow">-->
+      
+      <!--<a data-toggle="collapse" data-parent="#accordion1" href="javascript:void(0);#collapse1" aria-expanded="true" aria-controls="collapse1">-->
+      <a data-toggle="collapse" data-parent="#accordion" href="javascript:void(0);#collapse1" class="arrow_dow">
+      	<!--Shop By Category <i class="fa fa-angle-up pull-right " aria-hidden="true"></i>-->
+        <span>Shop By Category</span> <i class="fa fa-angle-up pull-right"></i>
+      </a>
+    </h4>
+     
+  </div>
+  <div id="collapse1" class="panel-collapse collapse in">
+    <div class="panel-body">
+        <div class="row product_to_sop text-center">
+            
+            <div class="col-sm-3 col-xs-12" ng-repeat="category_1 in shop_by_cat">
+                     <img src="{{category_1.prdct_img}}" alt="Sample Image" class="img-responsive" />
+                    <div class="caption">
+                        <h3>{{category_1.title}}</h3>
+                        <p><a href="javascript:void(0)" class="btn button-primary btn-primary">Shop Now</a></p>
+                    </div>
+            </div>
+            
+        </div>
+        <div class="row product_to_sop2 text-center" >
+            
+            <div class="col-sm-3 col-xs-12" ng-repeat="category_1 in shop_by_cat2">
+                     <img src="{{category_1.prdct_img2}}" alt="Sample Image" class="img-responsive" />
+                    <div class="caption">
+                        <h3>{{category_1.title}}</h3>
+                        <p><a href="javascript:void(0)" class="btn button-primary btn-primary">Shop Now</a></p>
+                    </div>
+            </div>
+            
+        </div>
+    
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <!--<a  href="javascript:void(0)">Shop By Brand</a>
+       <a id="aco2" data-toggle="collapse" data-parent="#accordion" href="javascript:void(0)" class="pull-right arrow_dow acc2">-->
+       <a data-toggle="collapse" data-parent="#accordion" href="javascript:void(0);#collapse2" class="arrow_dow">
+       <span>Shop By Brand</span> <i class="fa fa-angle-up pull-right"></i>
+      <!-- <i class="fa fa-angle-up up_angl"></i>-->
+      </a>
+    </h4>
+  </div>
+  <div id="collapse2" class="panel-collapse collapse in">
+    <div class="panel-body">
+       <div class="row brands">
+            <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12"  >
+               <ul class="brand_list" >
+                 <li ng-repeat="category_1 in shop_by_brand"><a href=""><img src="{{category_1.brnd_img}}" title="Brand" alt="Brand" class="img-responsive" /></a></li>
+               </ul>
+            </div>
+       </div>
+        <div class="row brands">
+            <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12">
+               <ul class="brand_list">
+                 <li ng-repeat="category_1 in shop_by_brand2"><a href=""><img src="{{category_1.brnd_img2}}" title="Brand" alt="Brand" class="img-responsive" /></a></li>
+               </ul>
+            </div>
+       </div>                               
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+
+</div> 
+<!-- Categories Product Slider Start-->
+<div class="category-module" id="latest_category">
+<h3 class="subtitle">Television </h3>
+<div class="category-module-content">
+<ul id="sub-cat" class="tabs">
+<li><a href="#tab-cat1">Laptops</a></li>
+<li><a href="#tab-cat2">Desktops</a></li>
+<li><a href="#tab-cat3">Cameras</a></li>
+<li><a href="#tab-cat4">Mobile Phones</a></li>
+<li><a href="#tab-cat5">TV &amp; Home Audio</a></li>
+<li><a href="#tab-cat6">MP3 Players</a></li>
+</ul>
+<div id="tab-cat1" class="tab_content">
+
+ <data-owl-carousel  id="carousel_3" class="owl-carousel about-carousel">
+      <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_lap">
+    <div class="product-thumb slid_layou">
+     <div class="button-group hidden-xs hidden-sm">
+         <div class="add-to-links">
+            <div class="row ico_data">
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                  <i class="fa fa-heart"></i> <span>Favorite</span></button>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                  <img src="images/compare.png"><span>Compare</span></button>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                       </div>
+            </div>
+         </div>
+      </div>
+        <div class="image">
+            <a href="javascript:void(0)"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Aspire Ultrabook Laptop" class="img-responsive" /></a>                                </div>
+        <div class="caption">
+            <h4><a href="product.html">{{slid_data.title}}</a></h4>
+            <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> <span class="rev_c">(05)</span>                                   </div>                                    
+            <p class="price"> 
+                 
+                <span class="price-old">{{slid_data.d_price}}</span> 
+                 <span class="price-new">{{slid_data.price}}</span>
+                <span class="saving">{{slid_data.off_p}}</span>                                    </p>
+        </div>
+        
+    </div>
+    
+</div>
+</data-owl-carousel>
+</div>
+<div id="tab-cat2" class="tab_content">
+ <data-owl-carousel id="carousel_4" class="owl-carousel about-carousel">
+      <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_desk">
+    <div class="product-thumb slid_layou">
+    <div class="button-group hidden-xs hidden-sm">
+         <div class="add-to-links">
+            <div class="row ico_data">
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                  <i class="fa fa-heart"></i> <span>Favorite</span></button>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                  <img src="images/compare.png"><span>Compare</span></button>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                       </div>
+            </div>
+         </div>
+      </div>
+        <div class="image">
+            <a href="javascript:void(0)"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Hp Pavilion G6 2314ax Notebok Laptop" class="img-responsive" /></a>                                </div>
+        <div class="caption">
+            <h4><a href="javascript:void(0)">{{slid_data.title}}</a></h4>
+            <p class="price"> {{slid_data.price}} </p>
+        </div>
+        
+    </div>
+   
+</div>
+ </data-owl-carousel>
+</div>
+<div id="tab-cat3" class="tab_content">
+ <data-owl-carousel id="carousel_5" class="owl-carousel about-carousel">
+      <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_came">
+    <div class="product-thumb slid_layou">
+     <div class="button-group hidden-xs hidden-sm">
+         <div class="add-to-links">
+            <div class="row ico_data">
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                  <i class="fa fa-heart"></i> <span>Favorite</span></button>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                  <img src="images/compare.png"><span>Compare</span></button>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                       </div>
+            </div>
+         </div>
+      </div>
+        <div class="image">
+            <a href="javascript:void(0)"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="FinePix S8400W Long Zoom Camera" class="img-responsive" /></a>                                </div>
+        <div class="caption">
+            <h4><a href="javascript:void(0)">{{slid_data.title}}</a></h4>
+            <p class="price"> {{slid_data.price}} </p>
+        </div>
+    </div>
+    
+     </div>
+  </data-owl-carousel>
+</div>
+<div id="tab-cat4" class="tab_content">
+ <data-owl-carousel id="carousel_6" class="owl-carousel about-carousel">
+      <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_phon">
+         <div class="product-thumb slid_layou">
+        <div class="button-group hidden-xs hidden-sm">
+         <div class="add-to-links">
+            <div class="row ico_data">
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                  <i class="fa fa-heart"></i> <span>Favorite</span></button>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                  <img src="images/compare.png"><span>Compare</span></button>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                       </div>
+            </div>
+         </div>
+      </div>
+        <div class="image">
+            <a href="javascript:void(0)"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Aspire Ultrabook Laptop" class="img-responsive" /></a>                                </div>
+        <div class="caption">
+            <h4><a href="javascript:void(0)">{{slid_data.title}}</a></h4>
+            <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> <span class="rev_c">(165)</span>                                   </div>                                    
+            <p class="price"> 
+                
+                <span class="price-old">{{slid_data.d_price}}</span>
+                <span class="price-new">{{slid_data.price}}</span>  
+                <span class="saving" ng-if="slid_data.off_p">{{slid_data.off_p}}</span>                                    </p>
+        </div>
+        
+    </div>
+      </div>
+ </data-owl-carousel>
+</div>
+<div id="tab-cat5" class="tab_content">
+ <data-owl-carousel id="carousel_7" class="owl-carousel about-carousel">
+      <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_tv">
+    <div class="product-thumb slid_layou">
+        <div class="button-group hidden-xs hidden-sm">
+         <div class="add-to-links">
+            <div class="row ico_data">
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                  <i class="fa fa-heart"></i> <span>Favorite</span></button>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                  <img src="images/compare.png"><span>Compare</span></button>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                       </div>
+            </div>
+         </div>
+      </div>
+        <div class="image">
+            <a href="javascript:void(0)"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Aspire Ultrabook Laptop" class="img-responsive" /></a>                                </div>
+        <div class="caption">
+            <h4><a href="javascript:void(0)">{{slid_data.title}}</a></h4>
+            <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> <span class="rev_c">(635)</span>                                   </div>                                    
+            <p class="price"> 
+              
+                <span class="price-old">{{slid_data.d_price}}</span> 
+                 <span class="price-new">{{slid_data.price}}</span> 
+                <span class="saving" ng-if="slid_data.off_p">{{slid_data.off_p}}</span>                                    </p>
+        </div>
+        
+    </div>
+    
+     </div>
+</data-owl-carousel>
+</div>
+<div id="tab-cat6" class="tab_content">
+<data-owl-carousel id="carousel_8" class="owl-carousel about-carousel">
+      <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_mp3">
+      <div class="product-thumb slid_layou">
+      <div class="button-group hidden-xs hidden-sm">
+         <div class="add-to-links">
+            <div class="row ico_data">
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                  <i class="fa fa-heart"></i> <span>Favorite</span></button>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                  <img src="images/compare.png"><span>Compare</span></button>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                       </div>
+            </div>
+         </div>
+      </div>
+        <div class="image">
+            <a href="javascript:void(0)"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Portable Mp3 Player" class="img-responsive" /></a>                                </div>
+        <div class="caption">
+            <h4><a href="javascript:void(0)">{{slid_data.title}}</a></h4>
+            <p class="price"> {{slid_data.price}} </p>
+        </div>
+        
+    </div>
+</div>
+</data-owl-carousel>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-body slid_footer">
+    <div class="row slid_foo">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+       
+            <span class="pull-left"><b>What’s Popular Now:</b> </span>
+            <ul class="list-inline pull-left">
+                <li><a href="javascript:void(0)">Television 1</a></li>
+                <li><a href="javascript:void(0)">Television 2</a></li>
+                <li><a href="javascript:void(0)">Television 3</a></li>
+                <li><a href="javascript:void(0)">Television 4</a></li>
+            </ul>
+           
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+         <h5> <a class="view_1" href="javascript:void(0)"></a> Television</h5>
+        </div>
+    </div> 
+</div>
+</div>
+
+</div>
+<!-- Categories Product Slider End-->
+<!-- Categories Product Slider Start-->
+<div class="category-module" id="latest_category4">
+<h3 class="subtitle">Cameras & Accessories</h3>
+<div class="category-module-content">
+<ul id="sub-cat" class="tabs">
+
+<li><a href="#tab-cat19">Nikon</a></li>
+<li><a href="#tab-cat20">Canon</a></li>
+<li><a href="#tab-cat21">Dji</a></li>
+<li><a href="#tab-cat22">Gopro</a></li>
+</ul>
+
+<div id="tab-cat19" class="tab_content">
+ <data-owl-carousel id="carousel_9" class="owl-carousel about-carousel">
+      <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_came">
+    <div class="product-thumb slid_layou">
+     <div class="button-group hidden-xs hidden-sm">
+         <div class="add-to-links">
+            <div class="row ico_data">
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                  <i class="fa fa-heart"></i> <span>Favorite</span></button>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                  <img src="images/compare.png"><span>Compare</span></button>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                       </div>
+            </div>
+         </div>
+      </div>
+        <div class="image">
+            <a href="javascript:void(0)"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="FinePix S8400W Long Zoom Camera" class="img-responsive" /></a>                                </div>
+        <div class="caption">
+            <h4><a href="javascript:void(0)">{{slid_data.title}}</a></h4>
+            <p class="price"> {{slid_data.price}} </p>
+        </div>
+    </div>
+    
+     </div>
+  </data-owl-carousel>
+</div>
+<div id="tab-cat20" class="tab_content">
+ <data-owl-carousel id="carousel_10" class="owl-carousel about-carousel">
+      <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_phon">
+         <div class="product-thumb slid_layou">
+        <div class="button-group hidden-xs hidden-sm">
+         <div class="add-to-links">
+            <div class="row ico_data">
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                  <i class="fa fa-heart"></i> <span>Favorite</span></button>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                  <img src="images/compare.png"><span>Compare</span></button>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                       </div>
+            </div>
+         </div>
+      </div>
+        <div class="image">
+            <a href="javascript:void(0)"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Aspire Ultrabook Laptop" class="img-responsive" /></a>                                </div>
+        <div class="caption">
+            <h4><a href="javascript:void(0)">{{slid_data.title}}</a></h4>
+            <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> <span class="rev_c">(165)</span>                                   </div>                                    
+            <p class="price"> 
+                
+                <span class="price-old">{{slid_data.d_price}}</span>
+                <span class="price-new">{{slid_data.price}}</span>  
+                <span class="saving" ng-if="slid_data.off_p">{{slid_data.off_p}}</span>                                    </p>
+        </div>
+        
+    </div>
+      </div>
+ </data-owl-carousel>
+</div>
+<div id="tab-cat21" class="tab_content">
+ <data-owl-carousel id="carousel_11" class="owl-carousel about-carousel">
+      <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_tv">
+    <div class="product-thumb slid_layou">
+        <div class="button-group hidden-xs hidden-sm">
+         <div class="add-to-links">
+            <div class="row ico_data">
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                  <i class="fa fa-heart"></i> <span>Favorite</span></button>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                  <img src="images/compare.png"><span>Compare</span></button>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                       </div>
+            </div>
+         </div>
+      </div>
+        <div class="image">
+            <a href="javascript:void(0)"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Aspire Ultrabook Laptop" class="img-responsive" /></a>                                </div>
+        <div class="caption">
+            <h4><a href="javascript:void(0)">{{slid_data.title}}</a></h4>
+            <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> <span class="rev_c">(635)</span>                                   </div>                                    
+            <p class="price"> 
+              
+                <span class="price-old">{{slid_data.d_price}}</span> 
+                 <span class="price-new">{{slid_data.price}}</span> 
+                <span class="saving" ng-if="slid_data.off_p">{{slid_data.off_p}}</span>                                    </p>
+        </div>
+        
+    </div>
+    
+     </div>
+</data-owl-carousel>
+</div>
+<div id="tab-cat22" class="tab_content">
+<data-owl-carousel id="carousel_12" class="owl-carousel about-carousel">
+      <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_mp3">
+      <div class="product-thumb slid_layou">
+      <div class="button-group hidden-xs hidden-sm">
+         <div class="add-to-links">
+            <div class="row ico_data">
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                  <i class="fa fa-heart"></i> <span>Favorite</span></button>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                  <img src="images/compare.png"><span>Compare</span></button>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                       </div>
+            </div>
+         </div>
+      </div>
+        <div class="image">
+            <a href="javascript:void(0)"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Portable Mp3 Player" class="img-responsive" /></a>                                </div>
+        <div class="caption">
+            <h4><a href="javascript:void(0)">{{slid_data.title}}</a></h4>
+            <p class="price"> {{slid_data.price}} </p>
+        </div>
+        
+    </div>
+</div>
+</data-owl-carousel>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-body slid_footer">
+    <div class="row slid_foo">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <span class="pull-left"><b>What’s Popular Now:</b> </span>
+            <ul class="list-inline pull-left">
+                <li><a href="javascript:void(0)">Camera 1</a></li>
+                <li><a href="javascript:void(0)">Camera 2</a></li>
+                <li><a href="javascript:void(0)">Camera 3</a></li>
+                <li><a href="javascript:void(0)">Camera 4</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <h5><a class="view_4" href="javascript:void(0)"></a> Cameras & Accessories</h5>
+        </div>
+    </div> 
+</div>
+</div> 	
+</div>
+<!-- Categories Product Slider End-->
+<!-- Categories Product Slider Start-->
+<div class="category-module" id="latest_category2">
+<h3 class="subtitle">Fashion</h3>
+<div class="category-module-content">
+<ul id="sub-cat" class="tabs">
+<li><a href="#tab-cat7">Clothes</a></li>
+<li><a href="#tab-cat8">Watches</a></li>
+<li><a href="#tab-cat9">Eyewere</a></li>
+<li><a href="#tab-cat10">Shoes</a></li>
+<li><a href="#tab-cat11">Ring</a></li>
+<li><a href="#tab-cat12">Locket</a></li>
+</ul>
+<div id="tab-cat7" class="tab_content">
+
+ <data-owl-carousel id="carousel_13" class="owl-carousel about-carousel">
+      <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_lap">
+    <div class="product-thumb slid_layou">
+     <div class="button-group hidden-xs hidden-sm">
+         <div class="add-to-links">
+            <div class="row ico_data">
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                  <i class="fa fa-heart"></i> <span>Favorite</span></button>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                  <img src="images/compare.png"><span>Compare</span></button>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                       </div>
+            </div>
+         </div>
+      </div>
+        <div class="image">
+            <a href="javascript:void(0)"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Aspire Ultrabook Laptop" class="img-responsive" /></a>                                </div>
+        <div class="caption">
+            <h4><a href="product.html">{{slid_data.title}}</a></h4>
+            <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> <span class="rev_c">(05)</span>                                   </div>                                    
+            <p class="price"> 
+                 
+                <span class="price-old">{{slid_data.d_price}}</span> 
+                 <span class="price-new">{{slid_data.price}}</span>
+                <span class="saving">{{slid_data.off_p}}</span>                                    </p>
+        </div>
+        
+    </div>
+    
+</div>
+</data-owl-carousel>
+</div>
+<div id="tab-cat8" class="tab_content">
+ <data-owl-carousel  id="carousel_14" class="owl-carousel about-carousel">
+      <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_desk">
+    <div class="product-thumb slid_layou">
+    <div class="button-group hidden-xs hidden-sm">
+         <div class="add-to-links">
+            <div class="row ico_data">
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                  <i class="fa fa-heart"></i> <span>Favorite</span></button>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                  <img src="images/compare.png"><span>Compare</span></button>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                       </div>
+            </div>
+         </div>
+      </div>
+        <div class="image">
+            <a href="javascript:void(0)"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Hp Pavilion G6 2314ax Notebok Laptop" class="img-responsive" /></a>                                </div>
+        <div class="caption">
+            <h4><a href="javascript:void(0)">{{slid_data.title}}</a></h4>
+            <p class="price"> {{slid_data.price}} </p>
+        </div>
+        
+    </div>
+   
+</div>
+ </data-owl-carousel>
+</div>
+<div id="tab-cat9" class="tab_content">
+ <data-owl-carousel  id="carousel_15" class="owl-carousel about-carousel">
+      <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_came">
+    <div class="product-thumb slid_layou">
+     <div class="button-group hidden-xs hidden-sm">
+         <div class="add-to-links">
+            <div class="row ico_data">
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                  <i class="fa fa-heart"></i> <span>Favorite</span></button>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                  <img src="images/compare.png"><span>Compare</span></button>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                       </div>
+            </div>
+         </div>
+      </div>
+        <div class="image">
+            <a href="javascript:void(0)"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="FinePix S8400W Long Zoom Camera" class="img-responsive" /></a>                                </div>
+        <div class="caption">
+            <h4><a href="javascript:void(0)">{{slid_data.title}}</a></h4>
+            <p class="price"> {{slid_data.price}} </p>
+        </div>
+    </div>
+    
+     </div>
+  </data-owl-carousel>
+</div>
+<div id="tab-cat10" class="tab_content">
+ <data-owl-carousel  id="carousel_16" class="owl-carousel about-carousel">
+      <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_phon">
+         <div class="product-thumb slid_layou">
+        <div class="button-group hidden-xs hidden-sm">
+         <div class="add-to-links">
+            <div class="row ico_data">
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                  <i class="fa fa-heart"></i> <span>Favorite</span></button>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                  <img src="images/compare.png"><span>Compare</span></button>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                       </div>
+            </div>
+         </div>
+      </div>
+        <div class="image">
+            <a href="javascript:void(0)"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Aspire Ultrabook Laptop" class="img-responsive" /></a>                                </div>
+        <div class="caption">
+            <h4><a href="javascript:void(0)">{{slid_data.title}}</a></h4>
+            <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> <span class="rev_c">(165)</span>                                   </div>                                    
+            <p class="price"> 
+                
+                <span class="price-old">{{slid_data.d_price}}</span>
+                <span class="price-new">{{slid_data.price}}</span>  
+                <span class="saving" ng-if="slid_data.off_p">{{slid_data.off_p}}</span>                                    </p>
+        </div>
+        
+    </div>
+      </div>
+ </data-owl-carousel>
+</div>
+<div id="tab-cat11" class="tab_content">
+ <data-owl-carousel  id="carousel_17" class="owl-carousel about-carousel">
+      <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_tv">
+    <div class="product-thumb slid_layou">
+        <div class="button-group hidden-xs hidden-sm">
+         <div class="add-to-links">
+            <div class="row ico_data">
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                  <i class="fa fa-heart"></i> <span>Favorite</span></button>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                  <img src="images/compare.png"><span>Compare</span></button>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                       </div>
+            </div>
+         </div>
+      </div>
+        <div class="image">
+            <a href="javascript:void(0)"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Aspire Ultrabook Laptop" class="img-responsive" /></a>                                </div>
+        <div class="caption">
+            <h4><a href="javascript:void(0)">{{slid_data.title}}</a></h4>
+            <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> <span class="rev_c">(635)</span>                                   </div>                                    
+            <p class="price"> 
+              
+                <span class="price-old">{{slid_data.d_price}}</span> 
+                 <span class="price-new">{{slid_data.price}}</span> 
+                <span class="saving" ng-if="slid_data.off_p">{{slid_data.off_p}}</span>                                    </p>
+        </div>
+        
+    </div>
+    
+     </div>
+</data-owl-carousel>
+</div>
+<div id="tab-cat12" class="tab_content">
+<data-owl-carousel  id="carousel_18" class="owl-carousel about-carousel">
+      <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_mp3">
+      <div class="product-thumb slid_layou">
+      <div class="button-group hidden-xs hidden-sm">
+         <div class="add-to-links">
+            <div class="row ico_data">
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                  <i class="fa fa-heart"></i> <span>Favorite</span></button>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                  <img src="images/compare.png"><span>Compare</span></button>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                       </div>
+            </div>
+         </div>
+      </div>
+        <div class="image">
+            <a href="javascript:void(0)"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Portable Mp3 Player" class="img-responsive" /></a>                                </div>
+        <div class="caption">
+            <h4><a href="javascript:void(0)">{{slid_data.title}}</a></h4>
+            <p class="price"> {{slid_data.price}} </p>
+        </div>
+        
+    </div>
+</div>
+</data-owl-carousel>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-body slid_footer">
+    <div class="row slid_foo">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <span class="pull-left"><b>What’s Popular Now:</b> </span>
+            <ul class="list-inline pull-left">
+                <li><a href="javascript:void(0)">Fashion 1</a></li>
+                <li><a href="javascript:void(0)">Fashion 2</a></li>
+                <li><a href="javascript:void(0)">Fashion 3</a></li>
+                <li><a href="javascript:void(0)">Fashion 4</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+         <h5><a class="view_2" href="javascript:void(0)"></a> Fashion</h5>
+        </div>
+    </div> 
+</div>
+</div>
+
+
+</div>
+<!-- Categories Product Slider End-->
+
+<!-- Categories Product Slider Start-->
+<div class="category-module" id="latest_category3">
+<h3 class="subtitle">Perfumes</h3>
+<div class="category-module-content">
+<ul id="sub-cat" class="tabs">
+<li><a href="#tab-cat13">For Men</a></li>
+<li><a href="#tab-cat14">For Women</a></li>
+<li><a href="#tab-cat15">Arabic Fragrances</a></li>
+<li><a href="#tab-cat16">American Fragrances</a></li>
+<li><a href="#tab-cat17">Deodorant</a></li>
+<li><a href="#tab-cat18">Gift Set</a></li>
+</ul>
+<div id="tab-cat13" class="tab_content">
+
+ <data-owl-carousel id="carousel_19" class="owl-carousel about-carousel">
+      <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_lap">
+    <div class="product-thumb slid_layou">
+     <div class="button-group hidden-xs hidden-sm">
+         <div class="add-to-links">
+            <div class="row ico_data">
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                  <i class="fa fa-heart"></i> <span>Favorite</span></button>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                  <img src="images/compare.png"><span>Compare</span></button>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                       </div>
+            </div>
+         </div>
+      </div>
+        <div class="image">
+            <a href="javascript:void(0)"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Aspire Ultrabook Laptop" class="img-responsive" /></a>                                </div>
+        <div class="caption">
+            <h4><a href="product.html">{{slid_data.title}}</a></h4>
+            <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> <span class="rev_c">(05)</span>                                   </div>                                    
+            <p class="price"> 
+                 
+                <span class="price-old">{{slid_data.d_price}}</span> 
+                 <span class="price-new">{{slid_data.price}}</span>
+                <span class="saving">{{slid_data.off_p}}</span>                                    </p>
+        </div>
+        
+    </div>
+    
+</div>
+</data-owl-carousel>
+</div>
+<div id="tab-cat14" class="tab_content">
+ <data-owl-carousel id="carousel_20" class="owl-carousel about-carousel">
+      <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_desk">
+    <div class="product-thumb slid_layou">
+    <div class="button-group hidden-xs hidden-sm">
+         <div class="add-to-links">
+            <div class="row ico_data">
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                  <i class="fa fa-heart"></i> <span>Favorite</span></button>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                  <img src="images/compare.png"><span>Compare</span></button>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                       </div>
+            </div>
+         </div>
+      </div>
+        <div class="image">
+            <a href="javascript:void(0)"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Hp Pavilion G6 2314ax Notebok Laptop" class="img-responsive" /></a>                                </div>
+        <div class="caption">
+            <h4><a href="javascript:void(0)">{{slid_data.title}}</a></h4>
+            <p class="price"> {{slid_data.price}} </p>
+        </div>
+        
+    </div>
+   
+</div>
+ </data-owl-carousel>
+</div>
+<div id="tab-cat15" class="tab_content">
+ <data-owl-carousel id="carousel_21" class="owl-carousel about-carousel">
+      <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_came">
+    <div class="product-thumb slid_layou">
+     <div class="button-group hidden-xs hidden-sm">
+         <div class="add-to-links">
+            <div class="row ico_data">
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                  <i class="fa fa-heart"></i> <span>Favorite</span></button>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                  <img src="images/compare.png"><span>Compare</span></button>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                       </div>
+            </div>
+         </div>
+      </div>
+        <div class="image">
+            <a href="javascript:void(0)"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="FinePix S8400W Long Zoom Camera" class="img-responsive" /></a>                                </div>
+        <div class="caption">
+            <h4><a href="javascript:void(0)">{{slid_data.title}}</a></h4>
+            <p class="price"> {{slid_data.price}} </p>
+        </div>
+    </div>
+    
+     </div>
+  </data-owl-carousel>
+</div>
+<div id="tab-cat16" class="tab_content">
+ <data-owl-carousel id="carousel_22" class="owl-carousel about-carousel">
+      <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_phon">
+         <div class="product-thumb slid_layou">
+        <div class="button-group hidden-xs hidden-sm">
+         <div class="add-to-links">
+            <div class="row ico_data">
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                  <i class="fa fa-heart"></i> <span>Favorite</span></button>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                  <img src="images/compare.png"><span>Compare</span></button>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                       </div>
+            </div>
+         </div>
+      </div>
+        <div class="image">
+            <a href="javascript:void(0)"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Aspire Ultrabook Laptop" class="img-responsive" /></a>                                </div>
+        <div class="caption">
+            <h4><a href="javascript:void(0)">{{slid_data.title}}</a></h4>
+            <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> <span class="rev_c">(165)</span>                                   </div>                                    
+            <p class="price"> 
+                
+                <span class="price-old">{{slid_data.d_price}}</span>
+                <span class="price-new">{{slid_data.price}}</span>  
+                <span class="saving" ng-if="slid_data.off_p">{{slid_data.off_p}}</span>                                    </p>
+        </div>
+        
+    </div>
+      </div>
+ </data-owl-carousel>
+</div>
+<div id="tab-cat17" class="tab_content">
+ <data-owl-carousel id="carousel_23" class="owl-carousel about-carousel">
+      <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_tv">
+    <div class="product-thumb slid_layou">
+        <div class="button-group hidden-xs hidden-sm">
+         <div class="add-to-links">
+            <div class="row ico_data">
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                  <i class="fa fa-heart"></i> <span>Favorite</span></button>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                  <img src="images/compare.png"><span>Compare</span></button>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                       </div>
+            </div>
+         </div>
+      </div>
+        <div class="image">
+            <a href="javascript:void(0)"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Aspire Ultrabook Laptop" class="img-responsive" /></a>                                </div>
+        <div class="caption">
+            <h4><a href="javascript:void(0)">{{slid_data.title}}</a></h4>
+            <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> <span class="rev_c">(635)</span>                                   </div>                                    
+            <p class="price"> 
+              
+                <span class="price-old">{{slid_data.d_price}}</span> 
+                 <span class="price-new">{{slid_data.price}}</span> 
+                <span class="saving" ng-if="slid_data.off_p">{{slid_data.off_p}}</span>                                    </p>
+        </div>
+        
+    </div>
+    
+     </div>
+</data-owl-carousel>
+</div>
+<div id="tab-cat18" class="tab_content">
+<data-owl-carousel id="carousel_24"  class="owl-carousel about-carousel">
+      <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_mp3">
+      <div class="product-thumb slid_layou">
+      <div class="button-group hidden-xs hidden-sm">
+         <div class="add-to-links">
+            <div class="row ico_data">
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                  <i class="fa fa-heart"></i> <span>Favorite</span></button>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                  <img src="images/compare.png"><span>Compare</span></button>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 vie_prodmod view_pro"> 
+                                          <!-- <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a> -->
+										 <button ui-sref="Modal.productmodel"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                       </div>
+            </div>
+         </div>
+      </div>
+        <div class="image">
+            <a href="javascript:void(0)"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Portable Mp3 Player" class="img-responsive" /></a>                                </div>
+        <div class="caption">
+            <h4><a href="javascript:void(0)">{{slid_data.title}}</a></h4>
+            <p class="price"> {{slid_data.price}} </p>
+        </div>
+        
+    </div>
+</div>
+</data-owl-carousel>
+</div>
+</div>
+<div class="panel panel-default last_cro">
+<div class="panel-body slid_footer">
+    <div class="row slid_foo">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <span class="pull-left"><b>What’s Popular Now:</b> </span>
+            <ul class="list-inline pull-left">
+                <li><a href="javascript:void(0)">Perfume 1</a></li>
+                <li><a href="javascript:void(0)">Perfume 2</a></li>
+                <li><a href="javascript:void(0)">Perfume 3</a></li>
+                <li><a href="javascript:void(0)">Perfume 4</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-6col-md-6 col-sm-6 col-xs-12">
+         <h5><a class="view_3" href="javascript:void(0)"></a> Perfumes</h5>
+        </div>
+    </div> 
+</div>
+</div>
+
+</div>
+<!-- Categories Product Slider End-->
+
+<script>
+jQuery(document).ready(function($){
+	
+	
+	
+	$("#aco1").click(function(){
+        $("#collapse1").collapse('toggle','fast');
+   });
+	$("#aco2").click(function(){
+        $("#collapse2").collapse('toggle','fast');
+    });
+	
+	 function toggleChevron(e){$(e.target).prev('.panel-heading').find("i.fa").toggleClass('fa-angle-up fa-angle-down');}
+			  
+			  $('#accordion1').on('hidden.bs.collapse',toggleChevron);$('#accordion1').on('shown.bs.collapse',toggleChevron);
+			  
+			  
+    $("#latest_category .tab_content").addClass("deactive");
+    $("#latest_category .tab_content:first").show();
+    //Default Action
+    $("#latest_category ul#sub-cat li:first").addClass("active").show(); //Activate first tab
+    //On Click Event
+    $("#latest_category ul#sub-cat li").on("click", function() {
+        $("#latest_category ul#sub-cat li").removeClass("active"); //Remove any "active" class
+        $(this).addClass("active"); //Add "active" class to selected tab
+        $("#latest_category .tab_content").hide();
+        var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+        $(activeTab).fadeIn(); //Fade in the active content
+        return false;
+    });
+
+//----------------------------------------------
+
+    $("#latest_category2 .owl-carousel.latest_category_tabs").owlCarousel({
+        itemsCustom: [
+            [320, 2],
+            [600, 2],
+            [768, 3],
+            [992, 5],
+            [1199, 6]
+        ],
+        lazyLoad: true,
+        navigation: true,
+        navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+        scrollPerPage: true,
+    });
+    $("#latest_category2 .tab_content").addClass("deactive");
+    $("#latest_category2 .tab_content:first").show();
+    //Default Action
+    $("#latest_category2 ul#sub-cat li:first").addClass("active").show(); //Activate first tab
+    //On Click Event
+    $("#latest_category2 ul#sub-cat li").on("click", function() {
+        $("#latest_category2 ul#sub-cat li").removeClass("active"); //Remove any "active" class
+        $(this).addClass("active"); //Add "active" class to selected tab
+        $("#latest_category2 .tab_content").hide();
+        var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+        $(activeTab).fadeIn(); //Fade in the active content
+        return false;
+    });
+	
+	//------------------------------------------------------------
+	
+	$("#latest_category3 .owl-carousel.latest_category_tabs").owlCarousel({
+        itemsCustom: [
+            [320, 2],
+            [600, 2],
+            [768, 3],
+            [992, 5],
+            [1199, 6]
+        ],
+        lazyLoad: true,
+        navigation: true,
+        navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+        scrollPerPage: true,
+    });
+    $("#latest_category3 .tab_content").addClass("deactive");
+    $("#latest_category3 .tab_content:first").show();
+    //Default Action
+    $("#latest_category3 ul#sub-cat li:first").addClass("active").show(); //Activate first tab
+    //On Click Event
+    $("#latest_category3 ul#sub-cat li").on("click", function() {
+        $("#latest_category3 ul#sub-cat li").removeClass("active"); //Remove any "active" class
+        $(this).addClass("active"); //Add "active" class to selected tab
+        $("#latest_category3 .tab_content").hide();
+        var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+        $(activeTab).fadeIn(); //Fade in the active content
+        return false;
+    });
+
+
+
+
+$("#latest_category4 .owl-carousel.latest_category_tabs").owlCarousel({
+        itemsCustom: [
+            [320, 2],
+            [600, 2],
+            [768, 3],
+            [992, 5],
+            [1199, 6]
+        ],
+        lazyLoad: true,
+        navigation: true,
+        navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+        scrollPerPage: true,
+    });
+    $("#latest_category4 .tab_content").addClass("deactive");
+    $("#latest_category4 .tab_content:first").show();
+    //Default Action
+    $("#latest_category4 ul#sub-cat li:first").addClass("active").show(); //Activate first tab
+    //On Click Event
+    $("#latest_category4 ul#sub-cat li").on("click", function() {
+        $("#latest_category4 ul#sub-cat li").removeClass("active"); //Remove any "active" class
+        $(this).addClass("active"); //Add "active" class to selected tab
+        $("#latest_category4 .tab_content").hide();
+        var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+        $(activeTab).fadeIn(); //Fade in the active content
+        return false;
+    });
+    /*---------------------------------------------------
+         Brand Slider (Default Owl Carousel)
+    ----------------------------------------------------- */
+    $('#carousel').owlCarousel({
+        items: 6,
+        autoPlay: 3000,
+        lazyLoad: true,
+        navigation: true,
+        navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+        pagination: true
+    });
+
+    /*---------------------------------------------------
+         Product Tab Carousel Slider(Featured,Latest,specila,etc..)
+    ----------------------------------------------------- */
+    $("#product-tab .product_carousel_tab").owlCarousel({
+        itemsCustom: [
+            [320, 2],
+            [600, 2],
+            [768, 3],
+            [992, 5],
+            [1199, 5]
+        ],
+        lazyLoad: true,
+        navigation: true,
+        navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+        scrollPerPage: true
+    });
+    $("#product-tab .tab_content").addClass("deactive");
+    $("#product-tab .tab_content:first").show();
+    //Default Action
+    $("ul#tabs li:first").addClass("active").show(); //Activate first tab
+    //On Click Event
+    $("ul#tabs li").on("click", function() {
+        $("ul#tabs li").removeClass("active"); //Remove any "active" class
+        $(this).addClass("active"); //Add "active" class to selected tab
+        $("#product-tab .tab_content").hide();
+        var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+        $(activeTab).fadeIn(); //Fade in the active content
+        return false;
+    });
+
+   
+
+	
+	
+	
+	
+	
+	/*---------------------------------------------------
+       Custom Side text View All
+    ----------------------------------------------------- */
+	$("a.view_1").html("View all  " + $("#latest_category li.active a").text());
+	
+	$("#latest_category li a").click(function(){
+		 var srr1= $(this).text();
+		$("a.view_1").html("View all  " + srr1);
+		
+		});
+	
+	$("a.view_2").html("View all  " + $( "#latest_category2 li.active a").text());
+	
+	$("#latest_category2 li a").click(function(){
+		 var srr2= $(this).text();
+		$("a.view_2").html("View all  " + srr2);
+		
+		});
+		
+	$("a.view_3").html("View all  " + $("#latest_category3 li.active a").text());
+	
+	$("#latest_category3 li a").click(function(){
+		 var srr3= $(this).text();
+		$("a.view_3").html("View all  " + srr3);
+		
+		});
+		
+		  
+	$("a.view_4").html("View all  " + $("#latest_category4 li.active a").text());
+		
+		
+		$("#latest_category4 li a").click(function(){
+		 var srr4= $(this).text();
+		$("a.view_4").html("View all  " + srr4);
+		
+		});
+		$("#latest_category li a").click(function(){
+			event.preventDefault();
+		$(".category-module .tabs li").toggleClass('slider_li');
+		
+		});
+		$("#latest_category2 li a").click(function(){
+		$(".category-module .tabs li").toggleClass('slider_li');
+		
+		});
+		$("#latest_category3 li a").click(function(){
+		$(".category-module .tabs li").toggleClass('slider_li');
+		
+		});
+		$("#latest_category4 li a").click(function(){
+		$(".category-module .tabs li").toggleClass('slider_li');
+		
+		});
+		
+    $("#navToggle").click(function(){
+		$("body.ng-scope").toggleClass('slide_heade');
+		
+		
+		});
+		$(".wsmenucontent").click(function(){
+		$("body.ng-scope").removeClass('slide_heade');
+		
+		});
+		
+		$(".megamenu").mouseenter(function(){
+			
+			$(".mobile-sub > li:nth-child(2) > a").addClass('active');
+			
+			});
+		$(".megamenu").mouseleave(function(){
+			
+			$(".mobile-sub > li:nth-child(2) > a").removeClass('active');
+			});
+			
+			$(".wsmenu-submenu").mouseenter(function(){
+			$(".wsmenu-submenu").parent( ).find("a").addClass('active');
+			});
+			$(".wsmenu-submenu").mouseleave(function(){
+			$(".wsmenu-submenu").parent( ).find("a").removeClass('active');
+			});
+			
+			/*$(".up_angl").hide();
+			$(".acc2 .fa-angle-down").click(function(){ $(".up_angl").show(); $(".acc2 .fa-angle-down").hide(); });
+			$(".acc2 .fa-angle-up").click(function(){ $(".up_angl").hide(); $(".acc2 .fa-angle-down").show(); });*/
+			
+		
+	});
+</script>

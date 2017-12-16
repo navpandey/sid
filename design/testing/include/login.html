@@ -1,0 +1,65 @@
+<!-- loginpopup-->
+<div class="Modal-box">
+   <div id="login-modal">
+        <div>
+            <div class="modal-content">
+                <div class="modal-header">
+                   <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>-->
+                  <a href="javascript:void(0)"  title="close" class="close" ><img src="images/close.png" alt="close" /></a> 
+                </div>
+                <div class="modal-body">
+                              <div class="loginmodal-container">
+                                <h4>Login</h4><br>
+                              <form>
+                                <div class="form-group">
+                                   
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="Email Or Username">
+                                </div>
+                                <div class="form-group">
+                                   
+                                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox"> Remember me</label>
+                                    <!-- <a href="#Forgot-modal" data-toggle="modal" id="forgetPassword" class="forgot-pass">Forgot Password?</a> -->
+									<button id="forgetPassword" ui-sref="Modal.forgot">Forgot Password?</button>
+                                </div>
+                                <button type="submit" class="btn btn-primary rg_btn btn-lg btn-sm btn-block">Login</button>
+                               
+                            </form>
+                           
+                             
+                            </div>
+                            <div class="row">
+                                 <div class="col-lg-12 fb-permission">
+                                     <p class="login-with-fb"><i> </i></p>
+                                 <div class="or-seperator"><span>Or</span></div>
+                                </div>
+                            </div>
+                             <div class="row fa_ub">
+                                 <div class="col-lg-12">
+                                  <a href="#" class="btn btn-primary btn-lg btn-sm btn-block face_cla">
+                                  <i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;  Login With Facebook</a>
+                                 </div>
+                             </div>
+                             <div class="row">
+                                 <div class="col-lg-12">
+                                  <a  href="#" class="btn btn-danger btn-lg btn-sm btn-block">
+                                  <i class="fa fa-google-plus" aria-hidden="true"></i>&nbsp;&nbsp;  Login With Google +</a>
+                                 </div>
+                             </div>
+                   
+                   
+                    
+                    <div class="row regi_na">
+                        <div class="col-lg-12"><p> Don't Have an Account <!-- <a href="#reg-modal" data-toggle="modal" id="hide_log" >Register Now!</a> --><button ui-sref="Modal.registration">Register Now</button></p></div>
+                    </div>
+                </div>
+               
+            </div>
+			
+        </div>
+		
+    </div>
+  <!-- <button ui-sref="Base">Ok</button> -->
+</div>

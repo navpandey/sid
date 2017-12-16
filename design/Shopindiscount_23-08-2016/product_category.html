@@ -1,0 +1,2092 @@
+<!DOCTYPE html>
+<html  ng-app="myApp">
+<head>
+<meta charset="UTF-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="images/favicon.png" rel="icon" />
+<title>Marketshop - eCommerce HTML Template</title>
+<meta name="description" content="Responsive and clean html template design for any kind of ecommerce webshop">
+<!-- CSS Part Start-->
+<link rel="stylesheet" type="text/css" href="css/webslidemenu.css" />
+<link rel="stylesheet" type="text/css" href="library/css/framework.min.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/global.css" />
+<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet"> 
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+<!-- CSS Part End-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body ng-controller="MyCtrl">
+
+<div class="wrapper-wide">
+	<div id="header">
+    <!-- Top Bar Start-->
+    	<nav id="top" class="htop">
+      		<div class="container">
+        		<div class="row"> 
+                <div class="col-xs-12">
+                	<span class="drop-icon visible-sm visible-xs me_top"><i class="fa fa-align-justify"></i></span>
+          			<div class="flip">
+            			<div class="links-left">
+                        	<div id="currency" class="btn-group">
+             					<button class="btn-link dropdown-toggle" data-toggle="dropdown"><img src="images/flags/nrs.png" alt=""> <span> NRS <i class="fa fa-caret-down"></i></span></button>
+              					<ul class="dropdown-menu">
+                                    <li><button class="currency-select btn btn-link btn-block" type="button" name="USD"><img src="images/flags/gb.png"> US Dollar</button></li>
+              					</ul>
+            				</div>
+              				<ul>
+                				<li class="mobile"><i class="fa fa-phone"></i> Phone: (+977) 1 4780680</li>
+								<li><a href="#">Home Delivery</a></li>                               
+              				</ul>
+            			</div>
+
+          				<div id="top-links" class="left-top nav pull-right flip">
+          					<div class="links">
+            					<ul>
+                                    <li><a href="#">Advertise</a></li>
+                                    <li><a href="#">24x7 Customer Care</a></li> 
+                                    <li><a href="#">Track Order</a></li>
+                                    <li><a href="#">Deal of the Day</a></li>
+                                    <li><a href="#">Sell with Us</a></li>         
+                                    <li><a href="#login-modal" data-toggle="modal">Log In</a></li>
+            					</ul>
+            				</div>
+          				</div>
+          			</div>
+                    </div>
+        		</div>
+      		</div>
+    	</nav>
+    <!-- Top Bar End-->
+    <!-- Header Start-->
+    <div class="row mob_lo">
+    	<div class="col-xs-3">
+        <div class="wsmenuexpandermain slideRight"><a id="navToggle" class="animated-arrow slideLeft" href="#"><span></span></a></div>
+        <div class="wsmenucontent overlapblackbg"></div> 
+      
+        </div>
+        <div class="col-xs-6 res_are">
+        
+            <div id="logo"><a href="#"><img class="img-responsive" src="images/logo_w.png" title="MarketShop" alt="MarketShop" /></a></div>
+          		
+        </div>
+        <div class="col-xs-3 right_pa">
+        <ul>
+        <li><a href="#" ><img src="images/user.png" title="user" /> </a></li>
+        <li><a href="#"> <img src="images/cart.png" title="cart" /> </a></li>
+        </ul>
+        </div>
+    </div>
+    <header class="header-row">
+		<div class="container mob_bg">
+        	<div class="table-container">
+          	<!-- Logo Start -->
+          		<div class="col-table-cell col-lg-5 col-md-5 col-sm-4 col-xs-12 inner">
+            		<div id="logo"><a href="index.html"><img class="img-responsive" src="images/logo.png" title="MarketShop" alt="MarketShop" /></a></div>
+          		</div>
+               
+          	<!-- Logo End -->
+          	<!-- Search Start-->
+          	<div class="col-table-cell col-lg-6 col-md-6  col-sm-6  col-xs-12 ">
+            	
+                    <div id="search" class="input-group mb_sea">
+              		<input id="filter_name" type="text" name="search" value="" placeholder="What are you looking for today" class="form-control input-lg" />
+              		<button type="button" class="button-search"><i class="fa fa-search"></i></button>
+            	   </div>
+                    
+            
+    
+		    <div class="input-group cate_sear">
+               
+                <input type="hidden" name="search_param" value="all" id="search_param">         
+                <input type="text" class="form-control" name="x" placeholder="I'am Looking for...">
+                 <div class="input-group-btn search-panel">
+                    <button type="button" class="btn btn-default dropdown-toggle categr" data-toggle="dropdown">
+                    	<span id="search_concept">All Categories</span>&nbsp;&nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </button>
+                   <!-- <ul class="dropdown-menu drop" role="menu">
+                      <li><a href="#contains">Contains</a></li>
+                      <li><a href="#its_equal">Html</a></li>
+                      <li><a href="#greather_than">CSS</a></li>
+                      <li><a href="#less_than">Less than</a></li>
+                
+                     
+                    </ul>-->
+                </div>
+                <span class="input-group-btn">
+                    <button class="btn btn-default sear" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+            </div>
+        
+
+                    
+          	</div>
+          	<!-- Search End-->
+          	<!-- Mini Cart Start-->
+          	<div class="col-table-cell col-lg-1 col-md-2 col-sm-2 col-xs-12 inner">
+            	<div id="cart">
+              		<button type="button" data-toggle="dropdown" data-loading-text="Loading..." class="heading dropdown-toggle"> 
+                            <!--<i class="fa fa-shopping-cart" aria-hidden="true"></i>--><img src="images/cart.png" title="cart" alt="cart" /> <span id="cart-total">Cart <b>1</b></span></button>
+              	<ul class="dropdown-menu">
+                    <li>
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <td class="text-center"><a href="product.html"><img class="img-thumbnail" title="Xitefun Causal Wear Fancy Shoes" alt="Xitefun Causal Wear Fancy Shoes" src="images/product/sony_vaio_1-50x50.jpg"></a></td>
+                            <td class="text-left"><a href="product.html">Xitefun Causal Wear Fancy Shoes</a></td>
+                            <td class="text-right">x 1</td>
+                            <td class="text-right">Rs.902.00</td>
+                            <td class="text-center"><button class="btn btn-danger btn-xs remove" title="Remove" onClick="" type="button"><i class="fa fa-times"></i></button></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><a href="product.html"><img class="img-thumbnail" title="Aspire Ultrabook Laptop" alt="Aspire Ultrabook Laptop" src="images/product/samsung_tab_1-50x50.jpg"></a></td>
+                            <td class="text-left"><a href="product.html">Aspire Ultrabook Laptop</a></td>
+                            <td class="text-right">x 1</td>
+                            <td class="text-right">Rs.230.00</td>
+                            <td class="text-center"><button class="btn btn-danger btn-xs remove" title="Remove" onClick="" type="button"><i class="fa fa-times"></i></button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </li>
+                    <li>
+                      <div>
+                        <table class="table table-bordered">
+                          <tbody>
+                            <tr>
+                              <td class="text-right"><strong>Sub-Total</strong></td>
+                              <td class="text-right">Rs.940.00</td>
+                            </tr>
+                            <tr>
+                              <td class="text-right"><strong>Eco Tax (-2.00)</strong></td>
+                              <td class="text-right">Rs.4.00</td>
+                            </tr>
+                            <tr>
+                              <td class="text-right"><strong>VAT (20%)</strong></td>
+                              <td class="text-right">Rs.188.00</td>
+                            </tr>
+                            <tr>
+                              <td class="text-right"><strong>Total</strong></td>
+                              <td class="text-right">Rs.1,132.00</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <p class="checkout"><a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> View Cart</a>&nbsp;&nbsp;&nbsp;<a href="checkout.html" class="btn btn-primary"><i class="fa fa-share"></i> Checkout</a></p>
+                      </div>
+                    </li>
+              	</ul>
+            </div>
+          </div>
+          <!-- Mini Cart End-->
+        </div>
+      </div>
+    </header>
+    <!-- Header End-->
+    <!-- Main Menu Start-->
+ 
+    
+
+	<nav id="menu" class="navbar wsmenu slideLeft clearfix">
+    	<div class="container">
+        	<ul class="mobile-sub wsmenu-list">
+                <li><a href="#">All Categories</a>
+					<ul class="wsmenu-submenu">
+                  		<li> <a href="#">Clothing<span>&rsaquo;</span></a>
+                      		<ul class="wsmenu-submenu-sub">
+                        		<li><a href="#">Men <span>&rsaquo;</span></a>
+									<ul class="wsmenu-submenu-sub-sub">
+										<li><a href="#">Sub Categories</a></li>
+                                        <li><a href="#">Sub Categories</a></li>
+                                        <li><a href="#">Sub Categories</a></li>
+                                        <li><a href="#">Sub Categories</a></li>
+                                        <li><a href="#">Sub Categories New</a></li>
+									</ul>
+								</li>
+								<li><a href="#" >Women</a></li>
+                        		<li><a href="#">Girls<span>&rsaquo;</span></a>
+                          			<ul class="wsmenu-submenu-sub-sub">
+                                    	<li><a href="#">Sub Categories </a></li>
+                                        <li><a href="#">Sub Categories New</a></li>
+                                        <li><a href="#">Sub Categories New</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Boys</a></li>
+                                <li><a href="#">Baby</a></li>
+                        		<li><a href="#">Accessories <span>&rsaquo;</span></a>
+									<ul class="wsmenu-submenu-sub-sub">
+                              			<li><a href="#">New Sub Categories</a></li>
+                            		</ul>
+								</li>
+							</ul>
+						</li>
+						<li> <a href="#">Electronics<span>&rsaquo;</span></a>
+                    		<ul class="wsmenu-submenu-sub">
+								<li> <a href="#">Laptops <span>&rsaquo;</span></a>
+                          			<ul class="wsmenu-submenu-sub-sub">
+										<li> <a href="#">New Sub Categories </a> </li>
+                                        <li> <a href="#">New Sub Categories </a> </li>
+                                        <li> <a href="#">Sub Categories New </a> </li>
+									</ul>
+                          		</li>
+                        		<li> <a href="#">Desktops <span>&rsaquo;</span></a>
+                          			<ul class="wsmenu-submenu-sub-sub">
+										<li> <a href="#">New Sub Categories </a> </li>
+                                        <li> <a href="#">Sub Categories New </a> </li>
+                                        <li> <a href="#">Sub Categories New </a> </li>
+									</ul>
+								</li>
+                        		<li> <a href="#">Cameras <span>&rsaquo;</span></a>
+                          			<ul class="wsmenu-submenu-sub-sub">
+                              			<li> <a href="#">New Sub Categories</a></li>
+									</ul>
+								</li>
+                        		<li><a href="#">Mobile Phones <span>&rsaquo;</span></a>
+                          			<ul class="wsmenu-submenu-sub-sub">
+										<li><a href="#">New Sub Categories</a></li>
+                                        <li><a href="#">New Sub Categories</a></li>
+									</ul>
+								</li>
+                        		<li><a href="#">TV &amp; Home Audio <span>&rsaquo;</span></a>
+									<ul class="wsmenu-submenu-sub-sub">
+										<li><a href="#">New Sub Categories </a> </li>
+                                        <li><a href="#">Sub Categories New </a> </li>
+									</ul>
+								</li>
+                        		<li><a href="#">MP3 Players</a> </li>
+							</ul>
+						</li>
+						<li><a href="#">Shoes<span>&rsaquo;</span></a>
+							<ul class="wsmenu-submenu-sub">
+								<li><a href="#">Men</a> </li>
+                        		<li><a href="#">Women <span>&rsaquo;</span></a>
+									<ul class="wsmenu-submenu-sub-sub">
+                            			<li><a href="#">New Sub Categories </a> </li>
+                            			<li><a href="#">Sub Categories </a> </li>
+									</ul>
+								</li>
+                                <li><a href="#">Girls</a> </li>
+                                <li><a href="#">Boys</a> </li>
+                                <li><a href="#">Baby</a> </li>
+                        		<li><a href="#">Accessories <span>&rsaquo;</span></a>
+									<ul class="wsmenu-submenu-sub-sub">
+										<li><a href="#">New Sub Categories</a></li>
+                                        <li><a href="#">New Sub Categories</a></li>
+                                        <li><a href="#">Sub Categories</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li> <a href="#">Watches<span>&rsaquo;</span></a>
+                      		<ul class="wsmenu-submenu-sub">
+                            	<li> <a href="#">Men's Watches</a></li>
+                                <li> <a href="#">Women's Watches</a></li>
+                                <li> <a href="#">Kids' Watches</a></li>
+                                <li> <a href="#">Accessories</a></li>
+							</ul>
+						</li>
+						<li> <a href="#">Jewellery<span>&rsaquo;</span></a>
+                      		<ul class="wsmenu-submenu-sub">
+                        		<li> <a href="#">Silver <span>&rsaquo;</span></a>
+									<ul class="wsmenu-submenu-sub-sub">
+										<li> <a href="#">New Sub Categories</a></li>
+                                        <li> <a href="#">New Sub Categories</a></li>
+									</ul>
+								</li>
+                        		<li><a href="#">Gold <span>&rsaquo;</span></a>
+                          			<ul class="wsmenu-submenu-sub">
+										<li><a href="#">test 1</a></li>
+                                        <li><a href="#">test 2</a></li>
+									</ul>
+								</li>
+                        		<li><a href="#">Diamond</a></li>
+                        		<li><a href="#">Pearl <span>&rsaquo;</span></a>
+                          			<ul class="wsmenu-submenu-sub">
+										<li><a href="#">New Sub Categories</a></li>
+									</ul>
+								</li>
+                        		<li><a href="#">Men's Jewellery</a></li>
+                        		<li><a href="#">Children's Jewellery <span>&rsaquo;</span></a>
+                          			<ul class="wsmenu-submenu-sub">
+										<li><a href="#">New Sub Categories </a> </li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+                  		<li><a href="#">Health &amp; Beauty<span>&rsaquo;</span></a>
+							<ul class="wsmenu-submenu-sub">
+                            	<li> <a href="#">Perfumes</a></li>
+                                <li> <a href="#">Makeup</a></li>
+                                <li> <a href="#">Sun Care</a></li>
+                                <li> <a href="#">Skin Care</a></li>
+                                <li> <a href="#">Eye Care</a></li>
+                                <li> <a href="#">Hair Care</a></li>
+							</ul>
+						</li>
+                  		<li> <a href="#">Kids &amp; Babies<span>&rsaquo;</span></a>
+							<ul class="wsmenu-submenu-sub">
+                        		<li><a href="#">Toys</a></li>
+                        		<li><a href="#">Games <span>&rsaquo;</span></a>
+                          			<ul class="wsmenu-submenu-sub-sub">
+                              			<li><a href="#">test 25</a></li>
+									</ul>
+								</li>
+                                <li><a href="#">Puzzles</a></li>
+                                <li><a href="#">Hobbies</a></li>
+                                <li><a href="#">Strollers</a></li>
+                                <li><a href="#">Health &amp; Safety</a></li>
+							</ul>
+						</li>
+                  		<li> <a href="#">Sports<span>&rsaquo;</span></a>
+							<ul class="wsmenu-submenu-sub">
+                            	<li><a href="#">Cycling</a></li>
+                                <li><a href="#">Running</a></li>
+                                <li><a href="#">Swimming</a></li>
+                                <li><a href="#">Football</a></li>
+                                <li><a href="#">Golf</a></li>
+                                <li><a href="#">Windsurfing</a></li>
+							</ul>
+						</li>
+                  		<li> <a href="#">Home &amp; Garden<span>&rsaquo;</span></a>
+							<ul class="wsmenu-submenu-sub">
+                            	<li><a href="#">Bedding</a></li>
+                                <li><a href="#">Food</a></li>
+                                <li><a href="#">Furniture</a></li>
+                                <li><a href="#">Kitchen</a></li>
+                                <li><a href="#">Lighting</a></li>
+                                <li><a href="#">Tools</a></li>
+							</ul>
+						</li>
+                  		<li> <a href="#">Wines &amp; Spirits<span>&rsaquo;</span></a>
+							<ul class="wsmenu-submenu-sub">
+                            	<li><a href="#">Wine</a></li>
+                                <li><a href="#">Whiskey</a></li>
+                                <li><a href="#">Vodka</a></li>
+                                <li><a href="#">Liqueurs</a></li>
+                                <li><a href="#">Beer</a></li>
+							</ul>
+						</li>
+					</ul>                    
+                  </li>
+                  <li><a href="#">Electronics</a>
+                  	<div class="megamenu clearfix">
+                    	<ul class="col-lg-2 col-md-2 col-xs-12 col-sm-4 link-list">
+                        	<li class="title"><b>TV,Audio & Video</b></li>
+                         	<li><a href="#">TVs</a></li>
+                        	<li><a href="#">Speakers &amp; Home Theaters</a></li>
+                        	<li><a href="#">Headphones</a></li>
+                        	<li><a href="#">TV Accessories</a></li>
+                        	<li><a href="#">MP3 &amp; MP4 Players</a></li>
+                        	<li><a href="#">Musical Instruments &amp; DJ</a></li>
+                        	<li><a href="#">Shop All</a></li>
+                      	</ul>
+                      	<ul class="col-lg-2 col-md-2 col-xs-12 col-sm-4 link-list">
+                 			<li class="title"><b>Cameras</b></li>
+                			<li><a href="#">DSLRS</a></li>
+                			<li><a href="#">Point and Shoot</a></li>
+                			<li><a href="#">Action Cameras</a></li>
+                			<li><a href="#">Camcorders</a></li>
+                			<li><a href="#">Lenses &amp; Flashes</a></li>
+                			<li><a href="#">Camera Accessories</a></li>
+                			<li><a href="#">Shop All</a></li>                      
+                		</ul>
+                      	<ul class="col-lg-2 col-md-2 col-xs-12 col-sm-4 link-list">
+              				<li class="title"><b>Laptops</b></li>
+                   			<li><a href="#">Macbooks</a></li>
+                    		<li><a href="#">Everyday Use</a></li>
+                    		<li><a href="#">Gaming Laptops</a></li>
+                    		<li><a href="#">High Performance</a></li>
+                    		<li><a href="#">2 in 1 laptops</a></li>
+                    		<li><a href="#">Software</a></li>
+                    		<li><a href="#">Shop All</a></li>
+                		</ul> 
+                      	<ul class="col-lg-2 col-md-2 col-xs-12 col-sm-4 link-list">
+              				<li class="title"><b>Small Appliances</b></li>
+                 			<li><a href="#">Food Preparation</a></li>
+                			<li><a href="#">Vaccum Cleaners</a></li>
+                			<li><a href="#">Irons</a></li>
+                			<li><a href="#">Juice Extractors</a></li>
+                			<li><a href="#">Coffee &amp; Tea Maker</a></li>
+                			<li><a href="#">Power Tools</a></li>
+                			<li><a href="#">Shop All</a></li>
+                		</ul>    
+                      	<ul class="col-lg-2 col-md-2 col-xs-12 col-sm-4  link-list">
+              				<li class="title"><b>Large Appliances</b></li>
+                			<li><a href="#">Refrigerators</a></li>
+                			<li><a href="#">Washing Machines</a></li>
+                			<li><a href="#">Cooking</a></li>
+                			<li><a href="#">Dish Washers</a></li>
+                			<li><a href="#">Microwaves</a></li>
+                			<li><a href="#">Water Dispensers</a></li>
+                			<li><a href="#">Shop All</a></li>
+                		</ul>  
+                      	<ul class="col-lg-2 col-md-2 col-xs-12 col-sm-4  link-list">
+              				<li class="title"><b>IT Accessories</b></li>
+                			<li><a href="#">Game Console &amp; Titles</a></li>
+                			<li><a href="#">Hard Disks and USB</a></li>
+                			<li><a href="#">Routers</a></li>
+                			<li><a href="#">Printers &amp; Office Supplies</a></li>
+                			<li><a href="#">Cables</a></li>
+                			<li><a href="#">Car Accessories</a></li>
+                			<li><a href="#">Shop All</a></li>
+                		</ul>    
+                        <div class="row">
+			<ul class="brands">
+            <li class="inline-block">
+              <a href="#">
+              <img src="http://cms.souqcdn.com/spring/left-nav/ae/Mobiles/samsung-f-logo.jpg" data-src="http://cms.souqcdn.com/spring/left-nav/ae/Mobiles/samsung-f-logo.jpg" alt="Samsung" title="Samsung" class="lazy-loaded"></a>
+            </li>
+            
+            <li class="inline-block">
+              <a href="#">
+              <img src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/brands/lg.jpg" data-src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/brands/lg.jpg" alt="LG" title="LG" class="lazy-loaded"></a>
+            </li>
+            
+            <li class="inline-block">
+              <a href="#">
+              <img src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/2016/apr05/hisense.jpg" data-src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/2016/apr05/hisense.jpg" alt="Hisense" title="Hisense" class="lazy-loaded"></a>
+            </li>
+            
+            <li class="inline-block">
+              <a href="#">
+              <img src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/brands/sony.jpg" data-src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/brands/sony.jpg" alt="Sony" title="Sony" class="lazy-loaded"></a>
+            </li>
+            
+            <li class="inline-block">
+              <a href="#">
+              <img src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/brands/canon.jpg" data-src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/brands/canon.jpg" alt="Canon" title="Canon" class="lazy-loaded"></a>
+            </li>
+            
+            <li class="inline-block">
+              <a href="#">
+              <img src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/2016/apr05/bose.jpg" data-src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/2016/apr05/bose.jpg" alt="Bose" title="Bose" class="lazy-loaded"></a>
+            </li>
+            
+            <li class="inline-block">
+              <a href="#">
+              <img src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/brands/beats.jpg" data-src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/brands/beats.jpg" alt="Beats" title="Beats" class="lazy-loaded"></a>
+            </li>
+            
+              <li class="inline-block">
+              <a href="#">
+              <img src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/brands/apple.jpg" data-src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/brands/apple.jpg" alt="Apple" title="Apple" class="lazy-loaded"></a>
+            </li>
+            
+              
+            
+              <li class="inline-block">
+              <a href="#">
+              <img src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/2016/apr05/yamaha.jpg" data-src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/2016/apr05/yamaha.jpg" alt="Yamaha" title="Yamaha" class="lazy-loaded"></a>
+            </li>
+            
+            <li class="inline-block">
+              <a href="#">
+              <img src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/2016/apr05/gopro.jpg" data-src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/2016/apr05/gopro.jpg" alt="GoPro" title="GoPro" class="lazy-loaded"></a>
+            </li>
+            
+            <li class="inline-block">
+              <a href="#">
+              <img src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/brands/hp.jpg" data-src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/brands/hp.jpg" alt="HP" title="HP" class="lazy-loaded"></a>
+            </li>
+            
+            <li class="inline-block">
+              <a href="#">
+              <img src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/brands/dell.jpg" data-src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/brands/dell.jpg" alt="Dell" title="Dell" class="lazy-loaded"></a>
+            </li>
+
+            
+            <li class="inline-block">
+              <a href="#">
+              <img src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/brands/lenovo.jpg" data-src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/brands/lenovo.jpg" alt="Lenovo" title="Lenovo" class="lazy-loaded"></a>
+            </li>
+            
+            <li class="inline-block">
+              <a href="#">
+              <img src="http://cms.souqcdn.com/spring/left-nav/ae/sf-home-kitchen/brands/kenwood.jpg" data-src="http://cms.souqcdn.com/spring/left-nav/ae/sf-home-kitchen/brands/kenwood.jpg" alt="Kenwood" title="Kenwood" class="lazy-loaded"></a>
+            </li>
+              
+            <li class="inline-block">
+              <a href="#">
+              <img src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/2016/apr05/delonghi.jpg" data-src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/2016/apr05/delonghi.jpg" alt="DeLonghi" title="DeLonghi" class="lazy-loaded"></a>
+            </li>
+            
+            <li class="inline-block">
+              <a href="#">
+              <img src="http://cms.souqcdn.com/spring/left-nav/ae/sf-home-kitchen/brands/braun.jpg" data-src="http://cms.souqcdn.com/spring/left-nav/ae/sf-home-kitchen/brands/braun.jpg" alt="Braun" title="Braun" class="lazy-loaded"></a>
+            </li>
+            
+            <li class="inline-block">
+              <a href="#">
+              <img src="http://cms.souqcdn.com/spring/left-nav/ae/sf-home-kitchen/brands/moulinex.jpg" data-src="http://cms.souqcdn.com/spring/left-nav/ae/sf-home-kitchen/brands/moulinex.jpg" alt="Moulinex" title="Moulinex" class="lazy-loaded"></a>
+            </li>
+            
+            <li class="inline-block">
+              <a href="#">
+              <img src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/2016/apr05/hitachi.jpg" data-src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/2016/apr05/hitachi.jpg" alt="Hitachi" title="Hitachi" class="lazy-loaded"></a>
+            </li>
+            
+            <li class="inline-block">
+              <a href="#">
+              <img src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/2016/apr05/playstation.jpg" data-src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/2016/apr05/playstation.jpg" alt="Playstation" title="Playstation" class="lazy-loaded"></a>
+            </li>
+            
+              <li class="inline-block">
+              <a href="#">
+              <img src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/brands/microsoft-logo.jpg" data-src="http://cms.souqcdn.com/spring/left-nav/ae/sf-electronics/brands/microsoft-logo.jpg" alt="Microsoft" title="Microsoft" class="lazy-loaded"></a>
+            </li>
+            
+          </ul>
+
+        </div>                                                                                   
+                    </div>
+                  </li>
+				  <li><a href="#">Appliances</a></li>       
+                  <li><a href="#">Mobile & Tablets</a></li>       
+                  <li><a href="#">Men</a></li>       
+                  <li><a href="#">Women</a></li>       
+                  <li><a href="#">Watches</a></li>       
+                  <li><a href="#">Perfumes & Beauty </a></li>      
+                  <li><a href="#">Sports & Fitness </a></li>   
+                  <li class="custom-link-right"><a href="#" target="_blank">Offers</a></li>                                    
+			</ul>
+    	</div>
+	</nav>
+  </div>
+  
+  	<div class="container">
+          <div class="row panel_spac">
+            <div class="col-lg-12 col-md-12">
+                    <h3 class="subtitle">Electronics</h3>
+                   <div class="panel-group" id="accordion1">
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a href="#">Shop By Category</a>
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="pull-right arrow_dow">
+                               <i class="fa fa-angle-up" aria-hidden="true"></i>
+                              </a>
+                            </h4>
+                             
+                          </div>
+                          <div id="collapse1" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                            	<div class="row product_to_sop text-center">
+                                	
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                    		 <img src="images/product/telivision.jpg" alt="Sample Image" class="img-responsive" />
+                                            <div class="caption">
+                                                <h3>Television</h3>
+                                                <p><a href="#" class="btn btn-default">Shop Now</a></p>
+                                            </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                     <img src="images/product/camera.jpg" alt="Sample Image" class="img-responsive" />
+                                            <div class="caption">
+                                                <h3>Camera</h3>
+                                                <p><a href="#" class="btn btn-default">Shop Now</a></p>
+                                            </div>
+                                    
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                     <img src="images/product/audio.jpg" alt="Sample Image" class="img-responsive" />
+                                            <div class="caption">
+                                                <h3>Home Audio</h3>
+                                                <p><a href="#" class="btn btn-default">Shop Now</a></p>
+                                            </div>
+                                    
+                                    </div>
+                                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                     <img src="images/product/headphone.jpg" alt="Sample Image" class="img-responsive" />
+                                            <div class="caption">
+                                                <h3>HeadPhones</h3>
+                                                <p><a href="#" class="btn btn-default">Shop Now</a></p>
+                                            </div>
+                                    
+                                    </div>
+                                </div>
+                                <div class="row product_to_sop2 text-center">
+                                	
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                    		 <img src="images/product/projector.jpg" alt="Sample Image" class="img-responsive" />
+                                            <div class="caption">
+                                                <h3>Projectors</h3>
+                                                <p><a href="#" class="btn btn-default">Shop Now</a></p>
+                                            </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                     <img src="images/product/speaker.jpg" alt="Sample Image" class="img-responsive" />
+                                            <div class="caption">
+                                                <h3>Speakers</h3>
+                                                <p><a href="#" class="btn btn-default">Shop Now</a></p>
+                                            </div>
+                                    
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                     <img src="images/product/data_storage.jpg" alt="Sample Image" class="img-responsive" />
+                                            <div class="caption">
+                                                <h3>Data Storage</h3>
+                                                <p><a href="#" class="btn btn-default">Shop Now</a></p>
+                                            </div>
+                                    
+                                    </div>
+                                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                     <img src="images/product/security.jpg" alt="Sample Image" class="img-responsive" />
+                                            <div class="caption">
+                                                <h3>Sequerty Equipments</h3>
+                                                <p><a href="#" class="btn btn-default">Shop Now</a></p>
+                                            </div>
+                                    
+                                    </div>
+                                </div>
+                            
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a  href="#">Shop By Brand</a>
+                               <a id="aco2" data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="pull-right arrow_dow acc2">
+                               <i class="fa fa-angle-up"></i>
+                              <!-- <i class="fa fa-angle-up up_angl"></i>-->
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="collapse2" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                               <div class="row brands">
+                                    <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12">
+                                       <ul class="brand_list">
+                                         <li><a href=""><img src="images/brand/samsung.jpg" title="Brand" alt="Brand" class="img-responsive" /></a></li>
+                                         <li><a href=""><img src="images/brand/sony.jpg" title="Brand" alt="Brand" class="img-responsive" /></a></li>
+                                         <li><a href=""><img src="images/brand/lg.jpg" title="Brand" alt="Brand"  class="img-responsive"/></a></li>
+                                         <li><a href=""><img src="images/brand/apple.jpg" title="Brand" alt="Brand" class="img-responsive" /></a></li>
+                                         <li><a href=""><img src="images/brand/chrome.jpg" title="Brand" alt="Brand"  class="img-responsive"/></a></li>
+                                         <li><a href=""><img src="images/brand/bose.jpg" title="Brand" alt="Brand" class="img-responsive"/></a></li>
+                                       </ul>
+                                    </div>
+                               </div>
+                                <div class="row brands">
+                                    <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12">
+                                       <ul class="brand_list">
+                                         <li><a href=""><img src="images/brand/braun.jpg" title="Brand" alt="Brand" class="img-responsive" /></a></li>
+                                         <li><a href=""><img src="images/brand/canon.jpg" title="Brand" alt="Brand" class="img-responsive" /></a></li>
+                                         <li><a href=""><img src="images/brand/gopro.jpg" title="Brand" alt="Brand"  class="img-responsive" /></a></li>
+                                         <li><a href=""><img src="images/brand/hisense.jpg" title="Brand" alt="Brand" class="img-responsive" /></a></li>
+                                         <li><a href=""><img src="images/brand/jbl.jpg" title="Brand" alt="Brand"  class="img-responsive" /></a></li>
+                                         <li><a href=""><img src="images/brand/samsung.jpg" title="Brand" alt="Brand" class="img-responsive" /></a></li>
+                                       </ul>
+                                    </div>
+                               </div>                               
+                            </div>
+                          </div>
+                        </div>
+            
+                  </div>
+             </div>
+            
+        </div> 
+         <!-- Categories Product Slider Start-->
+          <div class="category-module" id="latest_category">
+          	<h3 class="subtitle">Television </h3>
+            	<div class="category-module-content">
+              		<ul id="sub-cat" class="tabs">
+                		<li><a href="#tab-cat1">Laptops</a></li>
+                		<li><a href="#tab-cat2">Desktops</a></li>
+                		<li><a href="#tab-cat3">Cameras</a></li>
+                		<li><a href="#tab-cat4">Mobile Phones</a></li>
+                		<li><a href="#tab-cat5">TV &amp; Home Audio</a></li>
+                		<li><a href="#tab-cat6">MP3 Players</a></li>
+              		</ul>
+              		<div id="tab-cat1" class="tab_content">
+                		
+                         <data-owl-carousel  id="carousel_3" class="owl-carousel about-carousel">
+                              <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_lap">
+                  			<div class="product-thumb">
+                             <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                    			<div class="image">
+                               		<a href="#"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Aspire Ultrabook Laptop" class="img-responsive" /></a>                                </div>
+                    			<div class="caption">
+                      				<h4><a href="product.html">{{slid_data.title}}</a></h4>
+                      				<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> <span class="rev_c">(05)</span>                                   </div>                                    
+                      				<p class="price"> 
+                                    	 
+                                        <span class="price-old">{{slid_data.d_price}}</span> 
+                                         <span class="price-new">{{slid_data.price}}</span>
+                                    	<span class="saving">{{slid_data.off_p}}</span>                                    </p>
+                    			</div>
+                    			
+                  			</div>
+                  			
+                		</div>
+                        </data-owl-carousel>
+              		</div>
+              		<div id="tab-cat2" class="tab_content">
+                		 <data-owl-carousel id="carousel_4" class="owl-carousel about-carousel">
+                              <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_desk">
+                  			<div class="product-thumb">
+                            <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                    			<div class="image">
+                                	<a href="#"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Hp Pavilion G6 2314ax Notebok Laptop" class="img-responsive" /></a>                                </div>
+                    			<div class="caption">
+                      				<h4><a href="#">{{slid_data.title}}</a></h4>
+                      				<p class="price"> {{slid_data.price}} </p>
+                    			</div>
+                    			
+                  			</div>
+                           
+                		</div>
+                         </data-owl-carousel>
+              		</div>
+              		<div id="tab-cat3" class="tab_content">
+                		 <data-owl-carousel id="carousel_5" class="owl-carousel about-carousel">
+                              <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_came">
+                  			<div class="product-thumb">
+                             <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                    			<div class="image">
+                                	<a href="#"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="FinePix S8400W Long Zoom Camera" class="img-responsive" /></a>                                </div>
+                    			<div class="caption">
+                      				<h4><a href="#">{{slid_data.title}}</a></h4>
+                      				<p class="price"> {{slid_data.price}} </p>
+                    			</div>
+                  			</div>
+                  			
+                		     </div>
+                          </data-owl-carousel>
+              		</div>
+              		<div id="tab-cat4" class="tab_content">
+                		 <data-owl-carousel id="carousel_6" class="owl-carousel about-carousel">
+                              <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_phon">
+                  			     <div class="product-thumb">
+                                <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                    			<div class="image">
+                                	<a href="#"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Aspire Ultrabook Laptop" class="img-responsive" /></a>                                </div>
+                    			<div class="caption">
+                     				<h4><a href="#">{{slid_data.title}}</a></h4>
+                      				<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> <span class="rev_c">(165)</span>                                   </div>                                    
+                      				<p class="price"> 
+                                        
+                                        <span class="price-old">{{slid_data.d_price}}</span>
+                                        <span class="price-new">{{slid_data.price}}</span>  
+                                        <span class="saving" ng-if="slid_data.off_p">{{slid_data.off_p}}</span>                                    </p>
+                    			</div>
+                    			
+                  			</div>
+                		      </div>
+                         </data-owl-carousel>
+              		</div>
+              		<div id="tab-cat5" class="tab_content">
+                		 <data-owl-carousel id="carousel_7" class="owl-carousel about-carousel">
+                              <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_tv">
+                  			<div class="product-thumb">
+                                <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                    			<div class="image">
+                                	<a href="#"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Aspire Ultrabook Laptop" class="img-responsive" /></a>                                </div>
+                    			<div class="caption">
+                      				<h4><a href="#">{{slid_data.title}}</a></h4>
+                      				<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> <span class="rev_c">(635)</span>                                   </div>                                    
+                      				<p class="price"> 
+                                      
+                                        <span class="price-old">{{slid_data.d_price}}</span> 
+                                         <span class="price-new">{{slid_data.price}}</span> 
+                                        <span class="saving" ng-if="slid_data.off_p">{{slid_data.off_p}}</span>                                    </p>
+                    			</div>
+                    			
+                  			</div>
+                  			
+                		     </div>
+                        </data-owl-carousel>
+              		</div>
+              		<div id="tab-cat6" class="tab_content">
+                		<data-owl-carousel id="carousel_8" class="owl-carousel about-carousel">
+                              <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_mp3">
+                  			  <div class="product-thumb">
+                              <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                    			<div class="image">
+                                	<a href="#"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Portable Mp3 Player" class="img-responsive" /></a>                                </div>
+                    			<div class="caption">
+                      				<h4><a href="#">{{slid_data.title}}</a></h4>
+                      				<p class="price"> {{slid_data.price}} </p>
+                    			</div>
+                    			
+                  			</div>
+               			</div>
+                        </data-owl-carousel>
+            		</div>
+            	</div>
+                <div class="panel panel-default">
+                    <div class="panel-body slid_footer">
+                            <div class="row slid_foo">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                               
+                                    <span class="pull-left"><b>What’s Popular Now:</b> </span>
+                                    <ul class="list-inline pull-left list_pro">
+                                        <li><a href="#">Television 1</a></li>
+                                        <li><a href="#">Television 2</a></li>
+                                        <li><a href="#">Television 3</a></li>
+                                        <li><a href="#">Television 4</a></li>
+                                    </ul>
+                                   
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                 <h5> <a class="view_1" href="#"></a> Television</h5>
+                                </div>
+                            </div> 
+                     </div>
+               </div>
+                
+          	</div>
+          <!-- Categories Product Slider End-->
+           <!-- Categories Product Slider Start-->
+          <div class="category-module" id="latest_category4">
+          	<h3 class="subtitle">Cameras & Accessories</h3>
+            	<div class="category-module-content">
+              		<ul id="sub-cat" class="tabs">
+                		
+                		<li><a href="#tab-cat19">Nikon</a></li>
+                		<li><a href="#tab-cat20">Canon</a></li>
+                		<li><a href="#tab-cat21">Dji</a></li>
+                		<li><a href="#tab-cat22">Gopro</a></li>
+              		</ul>
+              		
+              		<div id="tab-cat19" class="tab_content">
+                		 <data-owl-carousel id="carousel_9" class="owl-carousel about-carousel">
+                              <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_came">
+                  			<div class="product-thumb">
+                             <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                    			<div class="image">
+                                	<a href="#"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="FinePix S8400W Long Zoom Camera" class="img-responsive" /></a>                                </div>
+                    			<div class="caption">
+                      				<h4><a href="#">{{slid_data.title}}</a></h4>
+                      				<p class="price"> {{slid_data.price}} </p>
+                    			</div>
+                  			</div>
+                  			
+                		     </div>
+                          </data-owl-carousel>
+              		</div>
+              		<div id="tab-cat20" class="tab_content">
+                		 <data-owl-carousel id="carousel_10" class="owl-carousel about-carousel">
+                              <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_phon">
+                  			     <div class="product-thumb">
+                                <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                    			<div class="image">
+                                	<a href="#"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Aspire Ultrabook Laptop" class="img-responsive" /></a>                                </div>
+                    			<div class="caption">
+                     				<h4><a href="#">{{slid_data.title}}</a></h4>
+                      				<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> <span class="rev_c">(165)</span>                                   </div>                                    
+                      				<p class="price"> 
+                                        
+                                        <span class="price-old">{{slid_data.d_price}}</span>
+                                        <span class="price-new">{{slid_data.price}}</span>  
+                                        <span class="saving" ng-if="slid_data.off_p">{{slid_data.off_p}}</span>                                    </p>
+                    			</div>
+                    			
+                  			</div>
+                		      </div>
+                         </data-owl-carousel>
+              		</div>
+              		<div id="tab-cat21" class="tab_content">
+                		 <data-owl-carousel id="carousel_11" class="owl-carousel about-carousel">
+                              <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_tv">
+                  			<div class="product-thumb">
+                                <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                    			<div class="image">
+                                	<a href="#"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Aspire Ultrabook Laptop" class="img-responsive" /></a>                                </div>
+                    			<div class="caption">
+                      				<h4><a href="#">{{slid_data.title}}</a></h4>
+                      				<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> <span class="rev_c">(635)</span>                                   </div>                                    
+                      				<p class="price"> 
+                                      
+                                        <span class="price-old">{{slid_data.d_price}}</span> 
+                                         <span class="price-new">{{slid_data.price}}</span> 
+                                        <span class="saving" ng-if="slid_data.off_p">{{slid_data.off_p}}</span>                                    </p>
+                    			</div>
+                    			
+                  			</div>
+                  			
+                		     </div>
+                        </data-owl-carousel>
+              		</div>
+              		<div id="tab-cat22" class="tab_content">
+                		<data-owl-carousel id="carousel_12" class="owl-carousel about-carousel">
+                              <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_mp3">
+                  			  <div class="product-thumb">
+                              <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                    			<div class="image">
+                                	<a href="#"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Portable Mp3 Player" class="img-responsive" /></a>                                </div>
+                    			<div class="caption">
+                      				<h4><a href="#">{{slid_data.title}}</a></h4>
+                      				<p class="price"> {{slid_data.price}} </p>
+                    			</div>
+                    			
+                  			</div>
+               			</div>
+                        </data-owl-carousel>
+            		</div>
+            	</div>
+                <div class="panel panel-default">
+                    <div class="panel-body slid_footer">
+                            <div class="row slid_foo">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <span class="pull-left"><b>What’s Popular Now:</b> </span>
+                                    <ul class="list-inline pull-left">
+                                        <li><a href="#">Camera 1</a></li>
+                                        <li><a href="#">Camera 2</a></li>
+                                        <li><a href="#">Camera 3</a></li>
+                                        <li><a href="#">Camera 4</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                  <h5><a class="view_4" href="#"></a> Cameras & Accessories</h5>
+                                </div>
+                            </div> 
+                     </div>
+               </div> 	
+          	</div>
+          <!-- Categories Product Slider End-->
+           <!-- Categories Product Slider Start-->
+          <div class="category-module" id="latest_category2">
+          	<h3 class="subtitle">Fashion</h3>
+            	<div class="category-module-content">
+              		<ul id="sub-cat" class="tabs">
+                		<li><a href="#tab-cat7">Clothes</a></li>
+                		<li><a href="#tab-cat8">Watches</a></li>
+                		<li><a href="#tab-cat9">Eyewere</a></li>
+                		<li><a href="#tab-cat10">Shoes</a></li>
+                		<li><a href="#tab-cat11">Ring</a></li>
+                		<li><a href="#tab-cat12">Locket</a></li>
+              		</ul>
+              	    <div id="tab-cat7" class="tab_content">
+                		
+                         <data-owl-carousel id="carousel_13" class="owl-carousel about-carousel">
+                              <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_lap">
+                  			<div class="product-thumb">
+                             <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                    			<div class="image">
+                               		<a href="#"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Aspire Ultrabook Laptop" class="img-responsive" /></a>                                </div>
+                    			<div class="caption">
+                      				<h4><a href="product.html">{{slid_data.title}}</a></h4>
+                      				<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> <span class="rev_c">(05)</span>                                   </div>                                    
+                      				<p class="price"> 
+                                    	 
+                                        <span class="price-old">{{slid_data.d_price}}</span> 
+                                         <span class="price-new">{{slid_data.price}}</span>
+                                    	<span class="saving">{{slid_data.off_p}}</span>                                    </p>
+                    			</div>
+                    			
+                  			</div>
+                  			
+                		</div>
+                        </data-owl-carousel>
+              		</div>
+              		<div id="tab-cat8" class="tab_content">
+                		 <data-owl-carousel  id="carousel_14" class="owl-carousel about-carousel">
+                              <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_desk">
+                  			<div class="product-thumb">
+                            <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                    			<div class="image">
+                                	<a href="#"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Hp Pavilion G6 2314ax Notebok Laptop" class="img-responsive" /></a>                                </div>
+                    			<div class="caption">
+                      				<h4><a href="#">{{slid_data.title}}</a></h4>
+                      				<p class="price"> {{slid_data.price}} </p>
+                    			</div>
+                    			
+                  			</div>
+                           
+                		</div>
+                         </data-owl-carousel>
+              		</div>
+              		<div id="tab-cat9" class="tab_content">
+                		 <data-owl-carousel  id="carousel_15" class="owl-carousel about-carousel">
+                              <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_came">
+                  			<div class="product-thumb">
+                             <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                    			<div class="image">
+                                	<a href="#"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="FinePix S8400W Long Zoom Camera" class="img-responsive" /></a>                                </div>
+                    			<div class="caption">
+                      				<h4><a href="#">{{slid_data.title}}</a></h4>
+                      				<p class="price"> {{slid_data.price}} </p>
+                    			</div>
+                  			</div>
+                  			
+                		     </div>
+                          </data-owl-carousel>
+              		</div>
+              		<div id="tab-cat10" class="tab_content">
+                		 <data-owl-carousel  id="carousel_16" class="owl-carousel about-carousel">
+                              <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_phon">
+                  			     <div class="product-thumb">
+                                <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                    			<div class="image">
+                                	<a href="#"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Aspire Ultrabook Laptop" class="img-responsive" /></a>                                </div>
+                    			<div class="caption">
+                     				<h4><a href="#">{{slid_data.title}}</a></h4>
+                      				<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> <span class="rev_c">(165)</span>                                   </div>                                    
+                      				<p class="price"> 
+                                        
+                                        <span class="price-old">{{slid_data.d_price}}</span>
+                                        <span class="price-new">{{slid_data.price}}</span>  
+                                        <span class="saving" ng-if="slid_data.off_p">{{slid_data.off_p}}</span>                                    </p>
+                    			</div>
+                    			
+                  			</div>
+                		      </div>
+                         </data-owl-carousel>
+              		</div>
+              		<div id="tab-cat11" class="tab_content">
+                		 <data-owl-carousel  id="carousel_17" class="owl-carousel about-carousel">
+                              <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_tv">
+                  			<div class="product-thumb">
+                                <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                    			<div class="image">
+                                	<a href="#"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Aspire Ultrabook Laptop" class="img-responsive" /></a>                                </div>
+                    			<div class="caption">
+                      				<h4><a href="#">{{slid_data.title}}</a></h4>
+                      				<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> <span class="rev_c">(635)</span>                                   </div>                                    
+                      				<p class="price"> 
+                                      
+                                        <span class="price-old">{{slid_data.d_price}}</span> 
+                                         <span class="price-new">{{slid_data.price}}</span> 
+                                        <span class="saving" ng-if="slid_data.off_p">{{slid_data.off_p}}</span>                                    </p>
+                    			</div>
+                    			
+                  			</div>
+                  			
+                		     </div>
+                        </data-owl-carousel>
+              		</div>
+              		<div id="tab-cat12" class="tab_content">
+                		<data-owl-carousel  id="carousel_18" class="owl-carousel about-carousel">
+                              <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_mp3">
+                  			  <div class="product-thumb">
+                              <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                    			<div class="image">
+                                	<a href="#"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Portable Mp3 Player" class="img-responsive" /></a>                                </div>
+                    			<div class="caption">
+                      				<h4><a href="#">{{slid_data.title}}</a></h4>
+                      				<p class="price"> {{slid_data.price}} </p>
+                    			</div>
+                    			
+                  			</div>
+               			</div>
+                        </data-owl-carousel>
+            		</div>
+            	</div>
+                <div class="panel panel-default">
+                    <div class="panel-body slid_footer">
+                            <div class="row slid_foo">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <span class="pull-left"><b>What’s Popular Now:</b> </span>
+                                    <ul class="list-inline pull-left">
+                                        <li><a href="#">Fashion 1</a></li>
+                                        <li><a href="#">Fashion 2</a></li>
+                                        <li><a href="#">Fashion 3</a></li>
+                                        <li><a href="#">Fashion 4</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                 <h5><a class="view_2" href="#"></a> Fashion</h5>
+                                </div>
+                            </div> 
+                     </div>
+               </div>
+               
+                
+          </div>
+          <!-- Categories Product Slider End-->
+        
+         <!-- Categories Product Slider Start-->
+          <div class="category-module" id="latest_category3">
+          	<h3 class="subtitle">Perfumes</h3>
+            	<div class="category-module-content">
+              		<ul id="sub-cat" class="tabs">
+                		<li><a href="#tab-cat13">For Men</a></li>
+                		<li><a href="#tab-cat14">For Women</a></li>
+                		<li><a href="#tab-cat15">Arabic Fragrances</a></li>
+                		<li><a href="#tab-cat16">American Fragrances</a></li>
+                		<li><a href="#tab-cat17">Deodorant</a></li>
+                		<li><a href="#tab-cat18">Gift Set</a></li>
+              		</ul>
+              		<div id="tab-cat13" class="tab_content">
+                		
+                         <data-owl-carousel id="carousel_19" class="owl-carousel about-carousel">
+                              <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_lap">
+                  			<div class="product-thumb">
+                             <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                    			<div class="image">
+                               		<a href="#"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Aspire Ultrabook Laptop" class="img-responsive" /></a>                                </div>
+                    			<div class="caption">
+                      				<h4><a href="product.html">{{slid_data.title}}</a></h4>
+                      				<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> <span class="rev_c">(05)</span>                                   </div>                                    
+                      				<p class="price"> 
+                                    	 
+                                        <span class="price-old">{{slid_data.d_price}}</span> 
+                                         <span class="price-new">{{slid_data.price}}</span>
+                                    	<span class="saving">{{slid_data.off_p}}</span>                                    </p>
+                    			</div>
+                    			
+                  			</div>
+                  			
+                		</div>
+                        </data-owl-carousel>
+              		</div>
+              		<div id="tab-cat14" class="tab_content">
+                		 <data-owl-carousel id="carousel_20" class="owl-carousel about-carousel">
+                              <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_desk">
+                  			<div class="product-thumb">
+                            <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                    			<div class="image">
+                                	<a href="#"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Hp Pavilion G6 2314ax Notebok Laptop" class="img-responsive" /></a>                                </div>
+                    			<div class="caption">
+                      				<h4><a href="#">{{slid_data.title}}</a></h4>
+                      				<p class="price"> {{slid_data.price}} </p>
+                    			</div>
+                    			
+                  			</div>
+                           
+                		</div>
+                         </data-owl-carousel>
+              		</div>
+              		<div id="tab-cat15" class="tab_content">
+                		 <data-owl-carousel id="carousel_21" class="owl-carousel about-carousel">
+                              <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_came">
+                  			<div class="product-thumb">
+                             <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                    			<div class="image">
+                                	<a href="#"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="FinePix S8400W Long Zoom Camera" class="img-responsive" /></a>                                </div>
+                    			<div class="caption">
+                      				<h4><a href="#">{{slid_data.title}}</a></h4>
+                      				<p class="price"> {{slid_data.price}} </p>
+                    			</div>
+                  			</div>
+                  			
+                		     </div>
+                          </data-owl-carousel>
+              		</div>
+              		<div id="tab-cat16" class="tab_content">
+                		 <data-owl-carousel id="carousel_22" class="owl-carousel about-carousel">
+                              <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_phon">
+                  			     <div class="product-thumb">
+                                <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                    			<div class="image">
+                                	<a href="#"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Aspire Ultrabook Laptop" class="img-responsive" /></a>                                </div>
+                    			<div class="caption">
+                     				<h4><a href="#">{{slid_data.title}}</a></h4>
+                      				<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> <span class="rev_c">(165)</span>                                   </div>                                    
+                      				<p class="price"> 
+                                        
+                                        <span class="price-old">{{slid_data.d_price}}</span>
+                                        <span class="price-new">{{slid_data.price}}</span>  
+                                        <span class="saving" ng-if="slid_data.off_p">{{slid_data.off_p}}</span>                                    </p>
+                    			</div>
+                    			
+                  			</div>
+                		      </div>
+                         </data-owl-carousel>
+              		</div>
+              		<div id="tab-cat17" class="tab_content">
+                		 <data-owl-carousel id="carousel_23" class="owl-carousel about-carousel">
+                              <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_tv">
+                  			<div class="product-thumb">
+                                <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                    			<div class="image">
+                                	<a href="#"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Aspire Ultrabook Laptop" class="img-responsive" /></a>                                </div>
+                    			<div class="caption">
+                      				<h4><a href="#">{{slid_data.title}}</a></h4>
+                      				<div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span> 
+                                        <span class="fa fa-stack"><i class="fa fa-star dark-stack fa-stack-2x"></i></span> <span class="rev_c">(635)</span>                                   </div>                                    
+                      				<p class="price"> 
+                                      
+                                        <span class="price-old">{{slid_data.d_price}}</span> 
+                                         <span class="price-new">{{slid_data.price}}</span> 
+                                        <span class="saving" ng-if="slid_data.off_p">{{slid_data.off_p}}</span>                                    </p>
+                    			</div>
+                    			
+                  			</div>
+                  			
+                		     </div>
+                        </data-owl-carousel>
+              		</div>
+              		<div id="tab-cat18" class="tab_content">
+                		<data-owl-carousel id="carousel_24"  class="owl-carousel about-carousel">
+                              <div class="latest_category_tabs" owl-carousel-item="" ng-repeat="slid_data in e_product_slide_a_mp3">
+                  			  <div class="product-thumb">
+                              <div class="button-group hidden-xs hidden-sm">
+                                 <div class="add-to-links">
+                                    <div class="row ico_data">
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Add to Wish List">
+                                          <i class="fa fa-heart"></i> <span>Favorite</span></button>
+                                       </div>
+                                       <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <button type="button" data-toggle="tooltip" title="" onclick="" class="btn btn-primary btn-block"  data-original-title="Compare this Product">
+                                          <img src="images/compare.png"><span>Compare</span></button>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12 "> 
+                                          <a href="#product-modal" data-toggle="modal" class="view_pro"><img src="images/eye.png" alt="view" /></a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                    			<div class="image">
+                                	<a href="#"><img bn-lazy-src="{{slid_data.thum_img}}" alt="" title="Portable Mp3 Player" class="img-responsive" /></a>                                </div>
+                    			<div class="caption">
+                      				<h4><a href="#">{{slid_data.title}}</a></h4>
+                      				<p class="price"> {{slid_data.price}} </p>
+                    			</div>
+                    			
+                  			</div>
+               			</div>
+                        </data-owl-carousel>
+            		</div>
+            	</div>
+               <div class="panel panel-default last_cro">
+                    <div class="panel-body slid_footer">
+                            <div class="row slid_foo">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <span class="pull-left"><b>What’s Popular Now:</b> </span>
+                                    <ul class="list-inline pull-left">
+                                        <li><a href="#">Perfume 1</a></li>
+                                        <li><a href="#">Perfume 2</a></li>
+                                        <li><a href="#">Perfume 3</a></li>
+                                        <li><a href="#">Perfume 4</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6col-md-6 col-sm-6 col-xs-12">
+                                 <h5><a class="view_3" href="#"></a> Perfumes</h5>
+                                </div>
+                            </div> 
+                     </div>
+               </div>
+                 
+          	</div>
+          <!-- Categories Product Slider End-->
+          
+    </div>
+ 
+
+  <!--Footer Start-->
+  <footer id="footer">
+    <div class="fpart-first">
+      <div class="container">
+        <div class="row">
+          <div class="column col-lg-2 col-md-2 col-sm-3 col-xs-12">
+            <h5>Acount </h5>
+            <ul>
+              <li><a href="#">My Shoping Cart</a> </li>
+			  <li><a href="#">Wish List</a> </li>
+            </ul>
+          </div>
+          <div class="column col-lg-4 col-md-4 col-sm-3 col-xs-12">
+            <h5>Buying & Selling on ShopinDiscount.com</h5>
+           <div>		   </div class="row">
+		   <div class="column col-lg-6 col-md-6 col-sm-6 col-xs-6">
+		    <ul >
+              <li><a href="#">Term & Condition</a></li>
+			  <li><a href="#">Privarcy Policy</a></li>
+            </ul>
+			</div>
+			 <div class="column col-lg-6 col-md-6 col-sm-6 col-xs-6">
+		    <ul >
+              <li><a href="#">Seller Term & Condition</a></li>
+			  <li><a href="#">Seller Policy</a></li>
+            </ul>
+			</div>
+          </div>
+          <div class="column col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <h5>Follow Us On</h5>
+             <img src="images/socialicons/follo_us.jpg" alt="Follow Us" title="Follow Us"  class="img_follo"/>          
+             </div>
+          
+          <div class="column col-lg-3 col-md-3 col-sm-3 col-xs-12 foot_for">
+            <h5>Sign Up for Our Newsletter</h5>
+            <div class="form-group">
+            <input id="full_nam" type="text" required placeholder="Full Name" name="fname" class="form-control" />
+			 <input id="email" type="email" required placeholder="email" name="email" class="form-control" />
+			 <input id="mobile" type = "tel" required placeholder="Mobile No" name="mobile" class="form-control" />
+                            <select class="form-control" >
+                                   <option value="">Occupation </option>
+                                   <option value="Business Man">Business Man</option>
+                                    <option value="Designer">Designer </option>
+                                    <option value="Programmer">Programmer</option>
+                                    <option value="Student">Student</option>
+                                    <option value="Teacher">Teacher </option>
+                                    <option value="Worker">Worker</option>
+                            </select>
+			
+                         
+                            <select id="cityId" class="form-control" name="city" required="required">
+                                    <option value="">Select City</option>
+                                    <option value="Banepa" cityid="29785">Banepa</option>
+                                    <option value="Bhaktapur" cityid="29786">Bhaktapur</option>
+                                    <option value="Bidur" cityid="29787">Bidur</option>
+                                    <option value="Bishalter" cityid="29788">Bishalter</option>
+                                    <option value="Dhulikhel" cityid="29789">Dhulikhel</option>
+                                    <option value="Kathmandu" cityid="29790">Kathmandu</option>
+                                    <option value="Kirtipur" cityid="29791">Kirtipur</option>
+                                    <option value="Lalitpur" cityid="29792">Lalitpur</option>
+                                    <option value="Madhyapur Thimi" cityid="29793">Madhyapur Thimi</option>
+                                    <option value="Panauti" cityid="29794">Panauti</option>
+                                    <option value="Tribuvannagar" cityid="29795">Tribuvannagar</option>
+                                    <option value="Birendranagar" cityid="29796">Birendranagar</option>
+                                    <option value="Gulariya" cityid="29797">Gulariya</option>
+                                    <option value="Narayan" cityid="29798">Narayan</option>
+                                    <option value="Nepalganj" cityid="29799">Nepalganj</option>
+                                    <option value="Surkhet" cityid="29800">Surkhet</option>
+                                    <option value="Baglung" cityid="29801">Baglung</option>
+                                    <option value="Weni" cityid="29802">Weni</option>
+                                    <option value="Byas" cityid="29803">Byas</option>
+                                    <option value="Leknath" cityid="29804">Leknath</option>
+                                    <option value="Pokhara" cityid="29805">Pokhara</option>
+                                    <option value="Prithivinarayan" cityid="29806">Prithivinarayan</option>
+                                    <option value="Putalibazar" cityid="29807">Putalibazar</option>
+                                    <option value="Waling" cityid="29808">Waling</option>
+                                    <option value="Bhimeshwar" cityid="29809">Bhimeshwar</option>
+                                    <option value="Jaleshwar" cityid="29810">Jaleshwar</option>
+                                    <option value="Janakpur" cityid="29811">Janakpur</option>
+                                    <option value="Kamalamai" cityid="29812">Kamalamai</option>
+                                    <option value="Malangwa" cityid="29813">Malangwa</option>
+                                    <option value="Sinduli Marhi" cityid="29814">Sinduli Marhi</option>
+                                    <option value="Jumla" cityid="29815">Jumla</option>
+                                    <option value="Biratnagar" cityid="29816">Biratnagar</option>
+                                    <option value="Dhankuta" cityid="29817">Dhankuta</option>
+                                    <option value="Dharan" cityid="29818">Dharan</option>
+                                    <option value="Inaruwa" cityid="29819">Inaruwa</option>
+                                    <option value="Itahari" cityid="29820">Itahari</option>
+                                    <option value="Khandbari" cityid="29821">Khandbari</option>
+                                    <option value="Butwal" cityid="29822">Butwal</option>
+                                    <option value="Kapilwastu" cityid="29823">Kapilwastu</option>
+                                    <option value="Ramgram" cityid="29824">Ramgram</option>
+                                    <option value="Sidharthanagar" cityid="29825">Sidharthanagar</option>
+                                    <option value="Tansen" cityid="29826">Tansen</option>
+                                    <option value="Wahadurganj" cityid="29827">Wahadurganj</option>
+                                    <option value="Amargadhi" cityid="29828">Amargadhi</option>
+                                    <option value="Dashrathchand" cityid="29829">Dashrathchand</option>
+                                    <option value="Mahendranagar" cityid="29830">Mahendranagar</option>
+                                    <option value="Bhadrapur" cityid="29831">Bhadrapur</option>
+                                    <option value="Damak" cityid="29832">Damak</option>
+                                    <option value="Ilam" cityid="29833">Ilam</option>
+                                    <option value="Mechinagar" cityid="29834">Mechinagar</option>
+                                    <option value="Bharatpur" cityid="29835">Bharatpur</option>
+                                    <option value="Birganj" cityid="29836">Birganj</option>
+                                    <option value="Chitwan" cityid="29837">Chitwan</option>
+                                    <option value="Gaur" cityid="29838">Gaur</option>
+                                    <option value="Hetauda" cityid="29839">Hetauda</option>
+                                    <option value="Kalaiya" cityid="29840">Kalaiya</option>
+                                    <option value="Ratnanagar" cityid="29841">Ratnanagar</option>
+                                    <option value="Salyan" cityid="29842">Salyan</option>
+                                    <option value="Tulsipur" cityid="29843">Tulsipur</option>
+                                    <option value="Lahan" cityid="29844">Lahan</option>
+                                    <option value="Rajbiraj" cityid="29845">Rajbiraj</option>
+                                    <option value="Siraha" cityid="29846">Siraha</option>
+                                    <option value="Triyuga" cityid="29847">Triyuga</option>
+                                    <option value="Dhangadi" cityid="29848">Dhangadi</option>
+                                    <option value="Dipayal" cityid="29849">Dipayal</option>
+                                    <option value="Tikapur" cityid="29850">Tikapur</option>
+
+                           </select>
+                         
+                         
+                         
+                         
+             <div class="form-group radio">            
+                         
+			<span> <input type="radio" class="gender_ca" id="gender" value="male" name="gender" />   Male</span>
+			<span> <input type="radio" class="gender_ca" id="gender" value="Female" name="gender" />  Female </span> 
+            </div>          
+            
+            </div>
+            <input type="submit" value="Subscribe" class="btn btn-primary">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fpart-second">
+      <div class="container">
+        <div id="powered" class="clearfix">
+          <div class="powered_text pull-left flip">   
+<p><a href="#" target="_blank" class="categ">Mobiles:</a> <a href="#" class="sub_cat" title="mobile" target="_blank"> HTC Mobiles</a> / <a href="#" class="sub_cat" title="mobile" target="_blank">iPhones </a>/ <a href="#" class="sub_cat" title="mobile" target="_blank">LG Mobiles</a> /<a href="#" class="sub_cat" title="mobile" target="_blank"> Karbonn Mobiles</a> / <a href="#" class="sub_cat" title="mobile" target="_blank">Intex Mobiles</a> / <a href="#" class="sub_cat" title="mobile" target="_blank">Micromax Mobiles</a> / <a href="#" class="sub_cat" title="mobile" target="_blank">Asus Mobiles </a>/ <a href="#" class="sub_cat" title="mobile" target="_blank">Samsung Mobiles </a>/ <a href="#" class="sub_cat" title="mobile" target="_blank">Lenovo Mobiles</a> / <a href="#" class="sub_cat" title="mobile" target="_blank">Oppo Mobiles</a> / <a href="#" class="sub_cat" title="mobile" target="_blank">Xolo Mobiles </a>/ <a href="#" class="sub_cat" title="mobile" target="_blank">Panasonic Mobiles</a> </p>
+<p><a href="#" target="_blank" class="categ">Tablets:</a> <a href="#" class="sub_cat" title="tablet" target="_blank">Apple iPads</a> / <a href="#" class="sub_cat" title="tablet" target="_blank">Samsung Tablets</a> / <a href="#" class="sub_cat" title="tablet" target="_blank">Windows Tablets </a>/<a href="#" class="sub_cat" title="tablet" target="_blank"> 3G Tablets</a> / <a href="#" class="sub_cat" title="tablet" target="_blank">Calling Tablets </a>/ <a href="#" class="sub_cat" title="tablet" target="_blank">Micromax Tablets</a> / <a href="#" class="sub_cat" title="tablet" target="_blank">Lenovo Tablets</a> / <a href="#" class="sub_cat" title="tablet" target="_blank">Asus Tablets</a> / <a href="#" class="sub_cat" title="tablet" target="_blank">Dell Tablets</a> /<a href="#" class="sub_cat" title="tablet" target="_blank"> iBall Tablets </a>/ <a href="#" class="sub_cat" title="tablet" target="_blank">Ambrane Tablets</a></p>
+<p><a href="#" target="_blank" class="categ">Mobiles Accessories:</a><a href="#" class="sub_cat" title="mobile accessories" target="_blank"> Mobile Covers </a>/ <a href="#" class="sub_cat" title="mobile accessories" target="_blank">Power Banks</a> / <a href="#" class="sub_cat" title="mobile accessories" target="_blank">Samsung Power Banks</a> / <a href="#" class="sub_cat" title="mobile accessories" target="_blank">Ambrane Power Banks </a>/ <a href="#" class="sub_cat" title="mobile accessories" target="_blank">Intex Power Banks </a>/ <a href="#" class="sub_cat" title="mobile accessories" target="_blank">Sony Power Banks </a>/ <a href="#" class="sub_cat" title="mobile accessories" target="_blank">Lenovo Power Banks</a> / <a href="#" class="sub_cat" title="mobile accessories" target="_blank">PNY Power Banks</a> / <a href="#" class="sub_cat" title="mobile accessories" target="_blank">Portronics Power Banks</a></p>
+<p><a href="#" target="_blank" class="categ">Computers:</a><a href="#" class="sub_cat" title="computers" target="_blank"> Lenovo Laptops</a> / <a href="#" class="sub_cat" title="computers" target="_blank">Acer Laptops </a>/ <a href="#" class="sub_cat" title="computers" target="_blank">Apple Macbooks</a> / <a href="#" class="sub_cat" title="computers" target="_blank">Notebook </a>/ <a href="#" class="sub_cat" title="computers" target="_blank">Laptops </a>/ <a href="#" class="sub_cat" title="computers" target="_blank">External Hard Disks</a> / <a href="#" class="sub_cat" title="computers" target="_blank">Dell Laptops </a>/ <a href="#" class="sub_cat" title="computers" target="_blank">HP Laptops </a>/<a href="#" class="sub_cat" title="computers" target="_blank"> Pen Drives </a></p>
+<p><a href="#" target="_blank" class="categ">Camera:</a><a href="#" class="sub_cat" title="camera" target="_blank"> DSLR Cameras </a>/<a href="#" class="sub_cat" title="camera" target="_blank"> Canon Cameras </a>/ <a href="#" class="sub_cat" title="camera" target="_blank">Nikon Coolpix </a>/ <a href="#" class="sub_cat" title="camera" target="_blank">Nikon DSLR Cameras</a> /<a href="#" class="sub_cat" title="camera" target="_blank"> Sony Cameras </a>/ <a href="#" class="sub_cat" title="camera" target="_blank">Digital Cameras </a>/ <a href="#" class="sub_cat" title="camera" target="_blank">Panasonic Cameras</a> /<a href="#" class="sub_cat" title="camera" target="_blank"> Samsung Cameras</a> </p>
+<p><a href="#" target="_blank" class="categ">Watches:</a> <a href="#" class="sub_cat" title="watches" target="_blank">Men's Watches </a>/ <a href="#" class="sub_cat" title="watches" target="_blank">Women's Watches </a>/ <a href="#" class="sub_cat" title="watches" target="_blank">Casio Watches </a>/ <a href="#" class="sub_cat" title="watches" target="_blank">Titan Watches</a> / <a href="#" class="sub_cat" title="watches" target="_blank">Fastrack Watches</a> /<a href="#" class="sub_cat" title="watches" target="_blank"> Fossil watches</a> /<a href="#" class="sub_cat" title="watches" target="_blank"> Casio Edifice </a>/<a href="#" class="sub_cat" title="watches" target="_blank"> Tissot Watches </a></p>
+<p><a href="#" target="_blank" class="categ">Fashion:</a><a href="#" class="sub_cat" title="fashion" target="_blank"> Bags </a>/ <a href="#" class="sub_cat" title="fashion" target="_blank">Wildcraft </a>/<a href="#" class="sub_cat" title="fashion" target="_blank"> American Tourister </a>/<a href="#" class="sub_cat" title="fashion" target="_blank"> Skybags</a> /<a href="#" class="sub_cat" title="fashion" target="_blank"> Fastrack Bags </a>/ <a href="#" class="sub_cat" title="fashion" target="_blank">Shoes </a>/ <a href="#" class="sub_cat" title="fashion" target="_blank">Boots</a> / <a href="#" class="sub_cat" title="fashion" target="_blank">Kurta</a> /<a href="#" class="sub_cat" title="fashion" target="_blank">Raymond</a> / <a href="#" class="sub_cat" title="fashion" target="_blank">Ray-Ban </a></p>
+<p><a href="#" target="_blank" class="categ">Home & Kitchen:</a><a href="#" class="sub_cat" title="home & kitchen" target="_blank"> Home Decor</a> /<a href="#" class="sub_cat" title="home & kitchen" target="_blank"> Paintings </a>/<a href="#" class="sub_cat" title="home & kitchen" target="_blank"> Clocks</a> /<a href="#" class="sub_cat" title="home & kitchen" target="_blank"> Flasks & Thermos </a>/<a href="#" class="sub_cat" title="home & kitchen" target="_blank"> Photo Frames</a> / <a href="#" class="sub_cat" title="home & kitchen" target="_blank">Tupperware Kitchenware </a>/<a href="#" class="sub_cat" title="home & kitchen" target="_blank"> Hawkins </a></p><a href="#" class="sub_cat" title="home & kitchen" target="_blank">Kitchenware / Milton Kitchenware</a> </p>
+<p><a href="#" target="_blank" class="categ">Appliances:</a> <a href="#" class="sub_cat" title="appliances" target="_blank">Air Conditioners </a>/ <a href="#" class="sub_cat" title="appliances" target="_blank">Air Coolers</a> / <a href="#" class="sub_cat" title="appliances" target="_blank">Refrigerators </a>/<a href="#" class="sub_cat" title="appliances" target="_blank"> Fans</a> / <a href="#" class="sub_cat" title="appliances" target="_blank">Washing Machines </a>/ <a href="#" class="sub_cat" title="appliances" target="_blank">Inverters & Stabilizers</a> / <a href="#" class="sub_cat" title="appliances" target="_blank">Mircowaves</a></p>
+<p><a href="#" target="_blank" class="categ">Home Furnishing:</a> <a href="#" class="sub_cat" title="home furnishing" target="_blank">Bed Linen </a>/ <a href="#" class="sub_cat" title="home furnishing" target="_blank">Bed Sheets</a> / <a href="#" class="sub_cat" title="home furnishing" target="_blank">Bath Linen</a> / <a href="#" class="sub_cat" title="home furnishing" target="_blank">Mattresses </a>/ <a href="#" class="sub_cat" title="home furnishing" target="_blank">Curtains </a>/ <a href="#" class="sub_cat" title="home furnishing" target="_blank">Cushion Covers</a> / <a href="#" class="sub_cat" title="home furnishing" target="_blank">Pillows </a>/<a href="#" class="sub_cat" title="home furnishing" target="_blank"> Blankets </a>/ <a href="#" class="sub_cat" title="home furnishing" target="_blank">Carpets</a> / <a href="#" class="sub_cat" title="home furnishing" target="_blank">Kids Bedding</a> / <a href="#" class="sub_cat" title="home furnishing" target="_blank">Sleepwell Mattress </a>/ <a href="#" class="sub_cat" title="home furnishing" target="_blank">Kurlon Mattress</a> </p>
+<p><a href="#" target="_blank" class="categ">Furniture:</a><a href="#" class="sub_cat" title="furniture" target="_blank"> Living Room </a>/ <a href="#" class="sub_cat" title="furniture" target="_blank">Bedroom Furniture</a>/<a href="#" class="sub_cat" title="furniture" target="_blank"> Chairs</a> / <a href="#" class="sub_cat" title="furniture" target="_blank">Dining Sets</a> / <a href="#" class="sub_cat" title="furniture" target="_blank">Dining Chairs</a> / <a href="#" class="sub_cat" title="furniture" target="_blank">Bean Bags</a> / <a href="#" class="sub_cat" title="furniture" target="_blank">Tables and Desks</a> / <a href="#" class="sub_cat" title="furniture" target="_blank">Shoe Storage </a>/ <a href="#" class="sub_cat" title="storage cabinates toys & games" target="_blank">Storage Cabinets Toys & Games:</a><a href="#" class="sub_cat" title="storage cabinates toys & games" target="_blank"> Soft Toys</a> /<a href="#" class="sub_cat" title="storage cabinates toys & games" target="_blank"> Dolls </a>/ <a href="#" class="sub_cat" title="storage cabinates toys & games" target="_blank">Musical Toys</a> /<a href="#" class="sub_cat" title="storage cabinates toys & games" target="_blank"> Electric Scooters </a>/ <a href="#" class="sub_cat" title="storage cabinates toys & games" target="_blank">Skate Scooters</a> /<a href="#" class="sub_cat" title="storage cabinates toys & games" target="_blank"> Barbie Dolls</a>/ <a href="#" class="sub_cat" title="storage cabinates toys & games" target="_blank">Barbie Games</a> / <a href="#" class="sub_cat" title="storage cabinates toys & games" target="_blank">Action Figures </a></p>
+    
+          </div>
+        </div>
+        <div class="bottom-row">          </div>
+          <div> 
+		  <label class="pay_ca"> Payment Method</label>
+		  <a href="#" target="_blank"> <img data-toggle="tooltip" src="images/payment/pay_1.jpg" alt="paypal" title="VISA"></a>
+                  
+                  <a href="#" target="_blank"> <img data-toggle="tooltip" src="images/payment/pay_2.jpg" alt="american-express" title="Maestro">
+                  </a> <a href="#" target="_blank"> <img data-toggle="tooltip" src="images/payment/pay_3.jpg" alt="2checkout" title="PayPal"></a> 
+                  <a href="#" target="_blank"> <img data-toggle="tooltip" src="images/payment/pay_4.jpg" alt="maestro" title="Net Banking"></a> 
+                  <a href="#" target="_blank"> <img data-toggle="tooltip" src="images/payment/pay_5.jpg" alt="discover" title="Cash on Delivery"></a> 
+                 
+          </div>
+        </div>
+		<div class="bootm_foo">
+	     <p>Copyright © 2016 Shop in Discount by <a href="#" target="_blank">Trilogydigital Media Pvt. Ltd</a></p>
+	    </div>
+      </div>
+    </div>
+	
+    <div id="back-top"><a data-toggle="tooltip" title="Back to Top" href="javascript:void(0)" class="backtotop"><i class="fa fa-chevron-up"></i></a></div>
+  </footer>
+  <!--Footer End-->
+   <!--Login Modal-->
+  
+  
+   <div id="login-modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                   <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>-->
+                  <a href="#"  title="close" class="close" data-dismiss="modal" aria-hidden="true" ><img src="images/close.png" alt="close" /></a> 
+                </div>
+                <div class="modal-body">
+                              <div class="loginmodal-container">
+                                <h4>Login</h4><br>
+                              <form>
+                                <div class="form-group">
+                                   
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="Email Or Username">
+                                </div>
+                                <div class="form-group">
+                                   
+                                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox"> Remember me</label>
+                                    <a href="#Forgot-modal" data-toggle="modal" id="forgetPassword" class="forgot-pass">Forgot Password?</a>
+                                </div>
+                                <button type="submit" class="btn btn-primary rg_btn btn-lg btn-block">Login</button>
+                               
+                            </form>
+                           
+                             
+                            </div>
+                            <div class="row">
+                                 <div class="col-lg-12 fb-permission">
+                                     <p class="login-with-fb"><i> </i></p>
+                                 <div class="or-seperator"><span>Or</span></div>
+                                </div>
+                            </div>
+                             <div class="row fa_ub">
+                                 <div class="col-lg-12">
+                                  <a href="#" class="btn btn-primary btn-lg btn-block face_cla">
+                                  <i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;  Login With Facebook</a>
+                                 </div>
+                             </div>
+                             <div class="row">
+                                 <div class="col-lg-12">
+                                  <a  href="#" class="btn btn-danger btn-lg btn-block">
+                                  <i class="fa fa-google-plus" aria-hidden="true"></i>&nbsp;&nbsp;  Login With Google +</a>
+                                 </div>
+                             </div>
+                   
+                   
+                    
+                    <div class="row regi_na">
+                        <div class="col-lg-12"><p> Don't Have an Account <a href="#reg-modal" data-toggle="modal" id="hide_log" >Register Now!</a></p></div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <div id="Forgot-modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                   <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>-->
+                  <a href="#"  title="close" class="close" data-dismiss="modal" aria-hidden="true" ><img src="images/close.png" alt="close" /></a> 
+                </div>
+                <div class="modal-body">
+                              <div class="loginmodal-container">
+                                <h4>Forgot Password</h4><br>
+                              <form>
+                                <div class="form-group">
+                                   
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="Email Or Username">
+                                </div>
+                               
+                                <button type="submit" class="btn btn-primary rg_btn btn-lg btn-block">Login</button>
+                               
+                            </form>
+                           
+                             
+                            </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    
+    <!--Registration Modal-->
+    
+ <div id="reg-modal" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>-->
+                <a href="#"  title="close" class="close" data-dismiss="modal" aria-hidden="true" ><img src="images/close.png" alt="close" /></a> 
+			</div>
+			<div class="modal-body">
+				<div class="loginmodal-container">
+					<h4>Register</h4>
+					<br>
+						<form>
+                        <div class="form-group">
+							<div class="row">
+								<div class="col-md-6 col-sm-6 col-xs-6 columns">
+									<input type="text" id="firstname" name="firstname" class="form-control" placeholder="First Name" value="">
+									
+									</div>
+									<div class="col-md-6 col-sm-6 col-xs-6 columns">
+										<input type="text" id="lastname" name="lastname" class="form-control" placeholder="Last Name" value="">
+											
+									</div>
+							</div>
+                            
+                            </div>
+									<div class="form-group">
+										<input type="text" id="email" name="email" class="form-control" placeholder="Email Address" >
+											
+									</div>
+										<div class="form-group">
+									
+												<!--<span class="glyphicon glyphicon-calendar"></span>-->
+												<input type="date" id="date_of_birth" name="date_of_birth" value="" class="form-control" placeholder="Date of Birth">
+                                              
+												
+											</div>
+                                            
+                                           
+                                            
+											<div class="form-group radio">
+												<span><input type="radio" id="GENDER_MALE" name="gender" value="male" checked="checked" > Male   </span>           
+                
+												<span><input type="radio" id="GENDER_FEMALE" name="gender" value="female" > Female</span>                
+            
+											</div>
+													<div class="form-group">
+														<select id="select_country" name="select_country" class="register-country form-control"  placeholder="Country">
+															<option selected="selected" value="ae">United Arab Emirates</option>
+															<option value="eg">Egypt</option>
+															<option value="sa">Saudi Arabia</option>
+															<option value="kw">Kuwait</option>
+															<option value="bh">Bahrain</option>
+															<option value="om">Oman</option>
+															<option value="qa">Qatar</option>
+														</select>
+													</div>
+												
+												<div class="form-group">
+													<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+												</div>
+													<div class="form-group checkbox">
+                                                    
+														<p><input type="checkbox" id="term" /> By clicking the 'Register' button, you confirm that you accept our 
+															<a href="#">Terms of use</a>                    and                    
+															<a href="#">Privacy Policy .</a>
+														</p>
+													</div>
+								 					<button type="submit" class="btn btn-primary rg_btn  btn-lg btn-block">Register</button>
+												</form>
+                                                
+                        <div class="row">
+                        <div class="col-lg-12 fb-permission">
+                            <p class="login-with-fb">
+                                <i></i>
+                            </p>
+                            <div class="or-seperator ">
+                                <span>Or</span>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="row fa_ub">
+                        <div class="col-lg-12">
+                            <a href="#" class="btn btn-primary btn-lg btn-block face_cla">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp; Register With Facebook
+                            </a>
+                            </div>
+                        </div>
+                       
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <a  href="#" class="btn btn-danger btn-lg btn-block">
+                                    <i class="fa fa-google-plus" aria-hidden="true"></i>&nbsp;&nbsp; Register With Google +
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row regi_na">
+                            <div class="col-lg-12">
+                                <p>Have an account? 
+                                    <a href="#login-modal" data-toggle="modal" id="hide_reg" >Login!</a>
+                                </p>
+                            </div>
+                        </div>
+					</div>
+											   
+			</div>
+		</div>
+     </div> 
+</div>
+
+
+
+
+
+
+<!-- JS Part Start-->
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="library/js/framework.min.js"></script>
+ <script type="text/javascript" src="js/webslidemenu.js"></script>
+<script type="text/javascript" src="js/jquery.easing-1.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.dcjqaccordion.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<!-- JS Part End-->
+
+<!--angular-js Part-->
+<script type="text/javascript" src="js/angular.js"></script>
+<script type="text/javascript" src="js/angular-animate.min.js"></script>
+<script type="text/javascript" src="js/angular-aria.min.js"></script>
+<script type="text/javascript" src="js/angular-material.min.js"></script>
+<script type="text/javascript" src="js/jk-carousel.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>

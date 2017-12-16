@@ -1,0 +1,575 @@
+ <!-- Top Bar Start-->
+    <nav id="top" class="htop">
+      		<div class="container">
+        		<div class="row"> 
+                <div class="col-xs-12">
+                	<span class="drop-icon visible-sm visible-xs me_top"><i class="fa fa-align-justify"></i></span>
+          			<div class="flip">
+            			<div class="links-left">
+                        	<div id="currency" class="btn-group">
+             					<button class="btn-link"><img src="images/flags/nrs.png" alt=""> <span> NRS <i class="fa fa-caret-down"></i></span></button>
+              					<!-- data-toggle="dropdown"  <ul class="dropdown-menu">
+                                    <li><button class="currency-select btn btn-link btn-block" type="button" name="USD"><img src="images/flags/gb.png"> US Dollar</button></li>
+              					</ul>-->
+            				</div>
+              				<ul>
+                				<li class="mobile"><i class="fa fa-phone"></i> Phone: (+977) 1 4780680</li>
+								<li><a href="javascript:void(0)">Home Delivery</a></li>                               
+              				</ul>
+            			</div>
+
+          				<div id="top-links" class="left-top nav pull-right flip">
+          					<div class="links">
+            					<ul>
+                                    <li><a href="javascript:void(0)">Advertise</a></li>
+                                    <li><a href="javascript:void(0)">24x7 Customer Care</a></li> 
+                                    <li><a href="javascript:void(0)">Track Order</a></li>
+                                    <li><a href="javascript:void(0)">Deal of the Day</a></li>
+                                    <li><a href="javascript:void(0)">Sell with Us</a></li>         
+                                   <!-- <li><a href="#login-modal" data-toggle="modal">Log In</a></li>-->
+                                    <button class="bt_lo" ui-sref="Modal.confirmAddToCart">Log In</button>
+                                    
+            					</ul>
+            				</div>
+          				</div>
+          			</div>
+                    </div>
+        		</div>
+      		</div>
+    	</nav>
+    <!-- Top Bar End-->
+    <!-- Header Start-->
+    <div class="row mob_lo">
+    	<div class="col-xs-3">
+        <div class="wsmenuexpandermain slideRight"><a id="navToggle" class="animated-arrow slideLeft" href="javascript:void(0)"><span></span></a></div>
+        <div class="wsmenucontent overlapblackbg"></div> 
+      
+        </div>
+        <div class="col-xs-6 res_are">
+        
+            <div id="logo"><a href="index.html"><img class="img-responsive" src="images/logo_w.png" title="MarketShop" alt="MarketShop" /></a></div>
+          		
+        </div>
+        <div class="col-xs-3 right_pa">
+        <ul>
+        <li><a href="javascript:void(0)" ><img src="images/user.png" title="user" /> </a></li>
+        <li><a href="javascript:void(0)"> <img src="images/cart.png" title="cart" /> </a></li>
+        </ul>
+        </div>
+    </div>
+    <header class="header-row">
+		<div class="container mob_bg">
+        	<div class="table-container">
+          	<!-- Logo Start -->
+          		<div class="col-table-cell col-lg-5 col-md-5 col-sm-4 col-xs-12 inner">
+            		<div id="logo"><a href="index.html"><img class="img-responsive" src="images/logo.png" title="MarketShop" alt="MarketShop" /></a></div>
+          		</div>
+               
+          	<!-- Logo End -->
+          	<!-- Search Start-->
+          	<div class="col-table-cell col-lg-6 col-md-6  col-sm-6  col-xs-12 ">
+            	
+                    <div id="search" class="input-group mb_sea">
+              		<input id="filter_name" type="text" name="search" value="" placeholder="What are you looking for today" class="form-control input-lg" />
+              		<button type="button" class="button-search"><i class="fa fa-search"></i></button>
+            	   </div>
+                    
+            
+    
+		    <div class="input-group cate_sear">
+               
+                <input type="hidden" name="search_param" value="all" id="search_param">         
+                <input type="text" class="form-control" name="x" placeholder="I'am looking for...">
+                 <div class="input-group-btn search-panel">
+                    <button type="button" class="btn btn-default dropdown-toggle categr" data-toggle="dropdown">
+                    	<span id="search_concept">All Categories</span>&nbsp;&nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </button>
+                  <ul class="dropdown-menu drop category_lis" role="menu">
+                      <li><a href="javascript:void(0)">Clothing</a></li>
+                      <li><a href="javascript:void(0)">Electronics</a></li>
+                      <li><a href="javascript:void(0)">Shoes</a></li>
+                      <li><a href="javascript:void(0)">Watches</a></li>
+                        <li><a href="javascript:void(0)">Jewellery</a></li> 
+                       <li><a href="javascript:void(0)"> Health & Beauty</a></li>
+                       <li><a href="javascript:void(0)"> Kids & Babies</a></li>
+                      <li><a href="javascript:void(0)">  Sports</a></li>
+                        <li><a href="javascript:void(0)">Home & Garden</a></li>
+                       <li><a href="javascript:void(0)"> Wines & Spirits</a></li>
+                
+                     
+                    </ul>
+                </div>
+                <span class="input-group-btn">
+                    <button class="btn btn-default sear" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+            </div>
+        
+
+                    
+          	</div>
+          	<!-- Search End-->
+          	<!-- Mini Cart Start-->
+          	<div class="col-table-cell col-lg-1 col-md-2 col-sm-2 col-xs-12 inner">
+            	<div id="cart">
+              		<button type="button" data-toggle="dropdown" data-loading-text="Loading..." class="heading dropdown-toggle"> 
+                            <!--<i class="fa fa-shopping-cart" aria-hidden="true"></i>--><i class="fa fa-shopping-cart" aria-hidden="true"></i><span id="cart-total">Cart <b>1</b></span></button>
+              	<ul class="dropdown-menu">
+                    <li>
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <td class="text-center"><a href="javascript:void(0)"><img class="img-thumbnail" title="Xitefun Causal Wear Fancy Shoes" alt="Xitefun Causal Wear Fancy Shoes" src="images/product/sony_vaio_1-50x50.jpg"></a></td>
+                            <td class="text-left"><a href="javascript:void(0)">Xitefun Causal Wear Fancy Shoes</a></td>
+                            <td class="text-right">x 1</td>
+                            <td class="text-right">Rs.902.00</td>
+                            <td class="text-center"><button class="btn btn-danger btn-xs remove" title="Remove" onClick="" type="button"><i class="fa fa-times"></i></button></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><a href="javascript:void(0)"><img class="img-thumbnail" title="Aspire Ultrabook Laptop" alt="Aspire Ultrabook Laptop" src="images/product/samsung_tab_1-50x50.jpg"></a></td>
+                            <td class="text-left"><a href="javascript:void(0)">Aspire Ultrabook Laptop</a></td>
+                            <td class="text-right">x 1</td>
+                            <td class="text-right">Rs.230.00</td>
+                            <td class="text-center"><button class="btn btn-danger btn-xs remove" title="Remove" onClick="" type="button"><i class="fa fa-times"></i></button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </li>
+                    <li>
+                      <div>
+                        <table class="table table-bordered">
+                          <tbody>
+                            <tr>
+                              <td class="text-right"><strong>Sub-Total</strong></td>
+                              <td class="text-right">Rs.940.00</td>
+                            </tr>
+                            <tr>
+                              <td class="text-right"><strong>Eco Tax (-2.00)</strong></td>
+                              <td class="text-right">Rs.4.00</td>
+                            </tr>
+                            <tr>
+                              <td class="text-right"><strong>VAT (20%)</strong></td>
+                              <td class="text-right">Rs.188.00</td>
+                            </tr>
+                            <tr>
+                              <td class="text-right"><strong>Total</strong></td>
+                              <td class="text-right">Rs.1,132.00</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <p class="checkout"><a href="javascript:void(0)" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> View Cart</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0)" class="btn btn-primary"><i class="fa fa-share"></i> Checkout</a></p>
+                      </div>
+                    </li>
+              	</ul>
+            </div>
+          </div>
+          <!-- Mini Cart End-->
+        </div>
+      </div>
+    </header>
+    <!-- Header End-->
+    <!-- Main Menu Start-->
+ 
+    
+
+	<nav id="menu" class="navbar wsmenu slideLeft clearfix">
+    	<div class="container">
+        	<ul class="mobile-sub wsmenu-list">
+                <li><a href="javascript:void(0)">All Categories</a>
+					<ul class="wsmenu-submenu">
+                  		<li> <a href="javascript:void(0)">Clothing<span>&rsaquo;</span></a>
+                      		<ul class="wsmenu-submenu-sub">
+                        		<li><a href="javascript:void(0)">Men <span>&rsaquo;</span></a>
+									<ul class="wsmenu-submenu-sub-sub">
+										<li><a href="javascript:void(0)">Sub Categories</a></li>
+                                        <li><a href="javascript:void(0)">Sub Categories</a></li>
+                                        <li><a href="javascript:void(0)">Sub Categories</a></li>
+                                        <li><a href="javascript:void(0)">Sub Categories</a></li>
+                                        <li><a href="javascript:void(0)">Sub Categories New</a></li>
+									</ul>
+								</li>
+								<li><a href="javascript:void(0)" >Women</a></li>
+                        		<li><a href="javascript:void(0)">Girls<span>&rsaquo;</span></a>
+                          			<ul class="wsmenu-submenu-sub-sub">
+                                    	<li><a href="javascript:void(0)">Sub Categories </a></li>
+                                        <li><a href="javascript:void(0)">Sub Categories New</a></li>
+                                        <li><a href="javascript:void(0)">Sub Categories New</a></li>
+									</ul>
+								</li>
+								<li><a href="javascript:void(0)">Boys</a></li>
+                                <li><a href="javascript:void(0)">Baby</a></li>
+                        		<li><a href="javascript:void(0)">Accessories <span>&rsaquo;</span></a>
+									<ul class="wsmenu-submenu-sub-sub">
+                              			<li><a href="javascript:void(0)">New Sub Categories</a></li>
+                            		</ul>
+								</li>
+							</ul>
+						</li>
+						<li> <a href="javascript:void(0)">Electronics<span>&rsaquo;</span></a>
+                    		<ul class="wsmenu-submenu-sub">
+								<li> <a href="javascript:void(0)">Laptops <span>&rsaquo;</span></a>
+                          			<ul class="wsmenu-submenu-sub-sub">
+										<li> <a href="javascript:void(0)">New Sub Categories </a> </li>
+                                        <li> <a href="javascript:void(0)">New Sub Categories </a> </li>
+                                        <li> <a href="javascript:void(0)">Sub Categories New </a> </li>
+									</ul>
+                          		</li>
+                        		<li> <a href="javascript:void(0)">Desktops <span>&rsaquo;</span></a>
+                          			<ul class="wsmenu-submenu-sub-sub">
+										<li> <a href="javascript:void(0)">New Sub Categories </a> </li>
+                                        <li> <a href="javascript:void(0)">Sub Categories New </a> </li>
+                                        <li> <a href="javascript:void(0)">Sub Categories New </a> </li>
+									</ul>
+								</li>
+                        		<li> <a href="javascript:void(0)">Cameras <span>&rsaquo;</span></a>
+                          			<ul class="wsmenu-submenu-sub-sub">
+                              			<li> <a href="javascript:void(0)">New Sub Categories</a></li>
+									</ul>
+								</li>
+                        		<li><a href="javascript:void(0)">Mobile Phones <span>&rsaquo;</span></a>
+                          			<ul class="wsmenu-submenu-sub-sub">
+										<li><a href="javascript:void(0)">New Sub Categories</a></li>
+                                        <li><a href="javascript:void(0)">New Sub Categories</a></li>
+									</ul>
+								</li>
+                        		<li><a href="javascript:void(0)">TV &amp; Home Audio <span>&rsaquo;</span></a>
+									<ul class="wsmenu-submenu-sub-sub">
+										<li><a href="javascript:void(0)">New Sub Categories </a> </li>
+                                        <li><a href="javascript:void(0)">Sub Categories New </a> </li>
+									</ul>
+								</li>
+                        		<li><a href="javascript:void(0)">MP3 Players</a> </li>
+							</ul>
+						</li>
+						<li><a href="javascript:void(0)">Shoes<span>&rsaquo;</span></a>
+							<ul class="wsmenu-submenu-sub">
+								<li><a href="javascript:void(0)">Men</a> </li>
+                        		<li><a href="javascript:void(0)">Women <span>&rsaquo;</span></a>
+									<ul class="wsmenu-submenu-sub-sub">
+                            			<li><a href="javascript:void(0)">New Sub Categories </a> </li>
+                            			<li><a href="javascript:void(0)">Sub Categories </a> </li>
+									</ul>
+								</li>
+                                <li><a href="javascript:void(0)">Girls</a> </li>
+                                <li><a href="javascript:void(0)">Boys</a> </li>
+                                <li><a href="javascript:void(0)">Baby</a> </li>
+                        		<li><a href="javascript:void(0)">Accessories <span>&rsaquo;</span></a>
+									<ul class="wsmenu-submenu-sub-sub">
+										<li><a href="javascript:void(0)">New Sub Categories</a></li>
+                                        <li><a href="javascript:void(0)">New Sub Categories</a></li>
+                                        <li><a href="javascript:void(0)">Sub Categories</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li> <a href="javascript:void(0)">Watches<span>&rsaquo;</span></a>
+                      		<ul class="wsmenu-submenu-sub">
+                            	<li> <a href="javascript:void(0)">Men's Watches</a></li>
+                                <li> <a href="javascript:void(0)">Women's Watches</a></li>
+                                <li> <a href="javascript:void(0)">Kids' Watches</a></li>
+                                <li> <a href="javascript:void(0)">Accessories</a></li>
+							</ul>
+						</li>
+						<li> <a href="javascript:void(0)">Jewellery<span>&rsaquo;</span></a>
+                      		<ul class="wsmenu-submenu-sub">
+                        		<li> <a href="javascript:void(0)">Silver <span>&rsaquo;</span></a>
+									<ul class="wsmenu-submenu-sub-sub">
+										<li> <a href="javascript:void(0)">New Sub Categories</a></li>
+                                        <li> <a href="javascript:void(0)">New Sub Categories</a></li>
+									</ul>
+								</li>
+                        		<li><a href="javascript:void(0)">Gold <span>&rsaquo;</span></a>
+                          			<ul class="wsmenu-submenu-sub">
+										<li><a href="javascript:void(0)">test 1</a></li>
+                                        <li><a href="javascript:void(0)">test 2</a></li>
+									</ul>
+								</li>
+                        		<li><a href="javascript:void(0)">Diamond</a></li>
+                        		<li><a href="javascript:void(0)">Pearl <span>&rsaquo;</span></a>
+                          			<ul class="wsmenu-submenu-sub">
+										<li><a href="javascript:void(0)">New Sub Categories</a></li>
+									</ul>
+								</li>
+                        		<li><a href="javascript:void(0)">Men's Jewellery</a></li>
+                        		<li><a href="javascript:void(0)">Children's Jewellery <span>&rsaquo;</span></a>
+                          			<ul class="wsmenu-submenu-sub">
+										<li><a href="javascript:void(0)">New Sub Categories </a> </li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+                  		<li><a href="javascript:void(0)">Health &amp; Beauty<span>&rsaquo;</span></a>
+							<ul class="wsmenu-submenu-sub">
+                            	<li> <a href="javascript:void(0)">Perfumes</a></li>
+                                <li> <a href="javascript:void(0)">Makeup</a></li>
+                                <li> <a href="javascript:void(0)">Sun Care</a></li>
+                                <li> <a href="javascript:void(0)">Skin Care</a></li>
+                                <li> <a href="javascript:void(0)">Eye Care</a></li>
+                                <li> <a href="javascript:void(0)">Hair Care</a></li>
+							</ul>
+						</li>
+                  		<li> <a href="javascript:void(0)">Kids &amp; Babies<span>&rsaquo;</span></a>
+							<ul class="wsmenu-submenu-sub">
+                        		<li><a href="javascript:void(0)">Toys</a></li>
+                        		<li><a href="javascript:void(0)">Games <span>&rsaquo;</span></a>
+                          			<ul class="wsmenu-submenu-sub-sub">
+                              			<li><a href="javascript:void(0)">test 25</a></li>
+									</ul>
+								</li>
+                                <li><a href="javascript:void(0)">Puzzles</a></li>
+                                <li><a href="javascript:void(0)">Hobbies</a></li>
+                                <li><a href="javascript:void(0)">Strollers</a></li>
+                                <li><a href="javascript:void(0)">Health &amp; Safety</a></li>
+							</ul>
+						</li>
+                  		<li> <a href="javascript:void(0)">Sports<span>&rsaquo;</span></a>
+							<ul class="wsmenu-submenu-sub">
+                            	<li><a href="javascript:void(0)">Cycling</a></li>
+                                <li><a href="javascript:void(0)">Running</a></li>
+                                <li><a href="javascript:void(0)">Swimming</a></li>
+                                <li><a href="javascript:void(0)">Football</a></li>
+                                <li><a href="javascript:void(0)">Golf</a></li>
+                                <li><a href="javascript:void(0)">Windsurfing</a></li>
+							</ul>
+						</li>
+                  		<li> <a href="javascript:void(0)">Home &amp; Garden<span>&rsaquo;</span></a>
+							<ul class="wsmenu-submenu-sub">
+                            	<li><a href="javascript:void(0)">Bedding</a></li>
+                                <li><a href="javascript:void(0)">Food</a></li>
+                                <li><a href="javascript:void(0)">Furniture</a></li>
+                                <li><a href="javascript:void(0)">Kitchen</a></li>
+                                <li><a href="javascript:void(0)">Lighting</a></li>
+                                <li><a href="javascript:void(0)">Tools</a></li>
+							</ul>
+						</li>
+                  		<li> <a href="javascript:void(0)">Wines &amp; Spirits<span>&rsaquo;</span></a>
+							<ul class="wsmenu-submenu-sub">
+                            	<li><a href="javascript:void(0)">Wine</a></li>
+                                <li><a href="javascript:void(0)">Whiskey</a></li>
+                                <li><a href="javascript:void(0)">Vodka</a></li>
+                                <li><a href="javascript:void(0)">Liqueurs</a></li>
+                                <li><a href="javascript:void(0)">Beer</a></li>
+							</ul>
+						</li>
+					</ul>                    
+                  </li>
+                  <li><a href="javascript:void(0)">Electronics</a>
+                  	<div class="megamenu clearfix">
+                    	<ul class="col-lg-2 col-md-2 col-xs-12 col-sm-4 link-list">
+                        	<li class="title"><b>TV,Audio & Video</b></li>
+                         	<li><a href="javascript:void(0)">TVs</a></li>
+                        	<li><a href="javascript:void(0)">Speakers &amp; Home Theaters</a></li>
+                        	<li><a href="javascript:void(0)">Headphones</a></li>
+                        	<li><a href="javascript:void(0)">TV Accessories</a></li>
+                        	<li><a href="javascript:void(0)">MP3 &amp; MP4 Players</a></li>
+                        	<li><a href="javascript:void(0)">Musical Instruments &amp; DJ</a></li>
+                        	<li><a href="javascript:void(0)">Shop All</a></li>
+                      	</ul>
+                      	<ul class="col-lg-2 col-md-2 col-xs-12 col-sm-4 link-list">
+                 			<li class="title"><b>Cameras</b></li>
+                			<li><a href="javascript:void(0)">DSLRS</a></li>
+                			<li><a href="javascript:void(0)">Point and Shoot</a></li>
+                			<li><a href="javascript:void(0)">Action Cameras</a></li>
+                			<li><a href="javascript:void(0)">Camcorders</a></li>
+                			<li><a href="javascript:void(0)">Lenses &amp; Flashes</a></li>
+                			<li><a href="javascript:void(0)">Camera Accessories</a></li>
+                			<li><a href="javascript:void(0)">Shop All</a></li>                      
+                		</ul>
+                      	<ul class="col-lg-2 col-md-2 col-xs-12 col-sm-4 link-list">
+              				<li class="title"><b>Laptops</b></li>
+                   			<li><a href="javascript:void(0)">Macbooks</a></li>
+                    		<li><a href="javascript:void(0)">Everyday Use</a></li>
+                    		<li><a href="javascript:void(0)">Gaming Laptops</a></li>
+                    		<li><a href="javascript:void(0)">High Performance</a></li>
+                    		<li><a href="javascript:void(0)">2 in 1 laptops</a></li>
+                    		<li><a href="javascript:void(0)">Software</a></li>
+                    		<li><a href="javascript:void(0)">Shop All</a></li>
+                		</ul> 
+                      	<ul class="col-lg-2 col-md-2 col-xs-12 col-sm-4 link-list">
+              				<li class="title"><b>Small Appliances</b></li>
+                 			<li><a href="javascript:void(0)">Food Preparation</a></li>
+                			<li><a href="javascript:void(0)">Vaccum Cleaners</a></li>
+                			<li><a href="javascript:void(0)">Irons</a></li>
+                			<li><a href="javascript:void(0)">Juice Extractors</a></li>
+                			<li><a href="javascript:void(0)">Coffee &amp; Tea Maker</a></li>
+                			<li><a href="javascript:void(0)">Power Tools</a></li>
+                			<li><a href="javascript:void(0)">Shop All</a></li>
+                		</ul>    
+                      	<ul class="col-lg-2 col-md-2 col-xs-12 col-sm-4  link-list">
+              				<li class="title"><b>Large Appliances</b></li>
+                			<li><a href="javascript:void(0)">Refrigerators</a></li>
+                			<li><a href="javascript:void(0)">Washing Machines</a></li>
+                			<li><a href="javascript:void(0)">Cooking</a></li>
+                			<li><a href="javascript:void(0)">Dish Washers</a></li>
+                			<li><a href="javascript:void(0)">Microwaves</a></li>
+                			<li><a href="javascript:void(0)">Water Dispensers</a></li>
+                			<li><a href="javascript:void(0)">Shop All</a></li>
+                		</ul>  
+                      	<ul class="col-lg-2 col-md-2 col-xs-12 col-sm-4  link-list">
+              				<li class="title"><b>IT Accessories</b></li>
+                			<li><a href="javascript:void(0)">Game Console &amp; Titles</a></li>
+                			<li><a href="javascript:void(0)">Hard Disks and USB</a></li>
+                			<li><a href="javascript:void(0)">Routers</a></li>
+                			<li><a href="javascript:void(0)">Printers &amp; Office Supplies</a></li>
+                			<li><a href="javascript:void(0)">Cables</a></li>
+                			<li><a href="javascript:void(0)">Car Accessories</a></li>
+                			<li><a href="javascript:void(0)">Shop All</a></li>
+                		</ul>       
+                        <div class="row">
+			<ul class="brands">
+            <li class="inline-block">
+              <a href="javascript:void(0)">
+              <img src="images/logo/samsung-f-logo.jpg" alt="Samsung" title="Samsung"></a>
+            </li>
+            
+            <li class="inline-block">
+              <a href="javascript:void(0)">
+              <img src="images/logo/lg.jpg"  alt="LG" title="LG" ></a>
+            </li>
+            
+            <li class="inline-block">
+              <a href="javascript:void(0)">
+              <img src="images/logo/hisense.jpg"  alt="Hisense" title="Hisense" ></a>
+            </li>
+            
+            <li class="inline-block">
+              <a href="javascript:void(0)">
+              <img src="images/logo/sony.jpg"  alt="Sony" title="Sony" ></a>
+            </li>
+            
+            <li class="inline-block">
+              <a href="javascript:void(0)">
+              <img src="images/logo/canon.jpg"  alt="Canon" title="Canon"></a>
+            </li>
+            
+            <li class="inline-block">
+              <a href="javascript:void(0)">
+              <img src="images/logo/bose.jpg" alt="Bose" title="Bose" ></a>
+            </li>
+            
+            <li class="inline-block">
+              <a href="javascript:void(0)">
+              <img src="images/logo/beats.jpg" alt="Beats" title="Beats"></a>
+            </li>
+            
+              <li class="inline-block">
+              <a href="javascript:void(0)">
+              <img src="images/logo/apple.jpg" alt="Apple" title="Apple" ></a>
+            </li>
+            
+              
+            
+              <li class="inline-block">
+              <a href="javascript:void(0)">
+              <img src="images/logo/yamaha.jpg"  alt="Yamaha" title="Yamaha"></a>
+            </li>
+            
+            <li class="inline-block">
+              <a href="javascript:void(0)">
+              <img src="images/logo/gopro.jpg"  alt="GoPro" title="GoPro"></a>
+            </li>
+            
+            <li class="inline-block">
+              <a href="javascript:void(0)">
+              <img src="images/logo/hp.jpg"  alt="HP" title="HP" ></a>
+            </li>
+            
+            <li class="inline-block">
+              <a href="javascript:void(0)">
+              <img src="images/logo/dell.jpg" alt="Dell" title="Dell"></a>
+            </li>
+
+            
+            <li class="inline-block">
+              <a href="javascript:void(0)">
+              <img src="images/logo/lenovo.jpg" alt="Lenovo" title="Lenovo" ></a>
+            </li>
+            
+            <li class="inline-block">
+              <a href="javascript:void(0)">
+              <img src="images/logo/kenwood.jpg"  alt="Kenwood" title="Kenwood" ></a>
+            </li>
+              
+            <li class="inline-block">
+              <a href="javascript:void(0)">
+              <img src="images/logo/delonghi.jpg"  alt="DeLonghi" title="DeLonghi" ></a>
+            </li>
+            
+            <li class="inline-block">
+              <a href="javascript:void(0)">
+              <img src="images/logo/braun.jpg"  alt="Braun" title="Braun" ></a>
+            </li>
+            
+            <li class="inline-block">
+              <a href="javascript:void(0)">
+              <img src="images/logo/moulinex.jpg"  alt="Moulinex" title="Moulinex"></a>
+            </li>
+            
+            <li class="inline-block">
+              <a href="javascript:void(0)">
+              <img src="images/logo/hitachi.jpg"  alt="Hitachi" title="Hitachi" ></a>
+            </li>
+            
+            <li class="inline-block">
+              <a href="javascript:void(0)">
+              <img src="images/logo/playstation.jpg"  alt="Playstation" title="Playstation"></a>
+            </li>
+            
+              <li class="inline-block">
+              <a href="javascript:void(0)">
+              <img src="images/logo/microsoft-logo.jpg" alt="Microsoft" title="Microsoft"></a>
+            </li>
+            
+          </ul>
+
+        </div>                                                                                   
+                    </div>
+                  </li>
+		  <li><a href="javascript:void(0)">Appliances</a></li>       
+                  <li><a href="javascript:void(0)">Mobile & Tablets</a></li>       
+                  <li><a href="javascript:void(0)">Men</a></li>       
+                  <li><a href="javascript:void(0)">Women</a></li>       
+                  <li><a href="javascript:void(0)">Watches</a></li>       
+                  <li><a href="javascript:void(0)">Perfumes & Beauty </a></li>      
+                  <li><a href="javascript:void(0)">Sports & Fitness </a></li>   
+                  <li class="custom-link-right"><a href="javascript:void(0)" target="_blank">Offers</a></li>                                    
+			</ul>
+    	</div>
+	</nav>
+<script>
+jQuery(document).ready(function($){
+	
+	  jQuery(".category_lis a").click(function(){ jQuery('#search_concept').html(jQuery(this).html());});
+	});
+     $("#navToggle").click(function(){
+		$("body.ng-scope").animate(5000).toggleClass('slide_heade');
+		
+		
+		});
+		
+ /*---------------------------------------------------
+        Mobile Main Menu
+    ----------------------------------------------------- */
+    $('#menu .navbar-header > span').on("click", function() {
+        $(this).toggleClass("active");
+        $("#menu .navbar-collapse").slideToggle('medium');
+        return false;
+    });
+
+    //mobile sub menu plus/mines button
+    $('#menu .nav > li > div > .column > div, .submenu, #menu .nav > li .dropdown-menu').before('<span class="submore"></span>');
+
+    //mobile sub menu click function
+    $('span.submore').on("click", function() {
+        $(this).next().slideToggle('fast');
+        $(this).toggleClass('plus');
+        return false;
+    });
+    //mobile top link click
+    $('.drop-icon').on("click", function() {
+        $('#header .htop').find('.left-top').slideToggle('fast');
+        return false;
+    });
+
+</script>
+
+<script type="text/javascript" src="js/webslidemenu.js"></script>
